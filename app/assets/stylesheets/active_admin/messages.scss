@@ -1,0 +1,25 @@
+// login & logout flash messages
+.logged_out .flash {
+  font-size: 1.1em;
+  padding: 13px 30px 11px !important;
+}
+
+.logged_out .flash.flash_notice {
+  background: #dce9dd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dce9dd), to(#ccdfcd));
+  background: -moz-linear-gradient(-90deg, #dce9dd, #ccdfcd);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dce9dd', endColorstr='#ccdfcd');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dce9dd', endColorstr='#ccdfcd');
+  border-bottom: 1px solid #adcbaf;
+  color: #416347;
+}
+
+.logged_out .flash.flash_alert {
+  background: #f5e4e4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5e4e4), to(#f1dcdc));
+  background: -moz-linear-gradient(-90deg, #f5e4e4, #f1dcdc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5e4e4', endColorstr='#f1dcdc');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5e4e4', endColorstr='#f1dcdc');
+  border-bottom: 1px solid #e0c2c0;
+  color: #b33c33;
+}
