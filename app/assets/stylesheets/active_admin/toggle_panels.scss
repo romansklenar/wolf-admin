@@ -1,0 +1,13 @@
+// toggle panels
+.panel {
+  h3 {
+    cursor: pointer;
+
+    span {
+      padding-left: 5px;
+    }
+  }
+  .panel_contents {
+    display:block;
+  }
+}
