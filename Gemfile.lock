@@ -202,11 +202,17 @@ GEM
     rails-assets-jquery-validate (1.11.1)
     rails-assets-messenger (1.4.2)
       rails-assets-jquery
+    rails-assets-microplugin (0.0.3)
     rails-assets-moment (2.5.1)
     rails-assets-momentjs (2.5.1)
     rails-assets-offline (0.7.13)
     rails-assets-select2 (3.4.8)
       rails-assets-jquery (>= 1.7.1)
+    rails-assets-selectize (0.12.1)
+      rails-assets-jquery (>= 1.7.0)
+      rails-assets-microplugin (~> 0.0.0)
+      rails-assets-sifter (~> 0.4.0)
+    rails-assets-sifter (0.4.3)
     rails-assets-summernote (0.6.16)
       rails-assets-bootstrap (>= 3.0.1)
       rails-assets-font-awesome (>= 4.2.0)
@@ -323,6 +329,7 @@ DEPENDENCIES
   rails-assets-moment (~> 2.5.1)!
   rails-assets-offline (~> 0.7.13)!
   rails-assets-select2 (~> 3.4.5)!
+  rails-assets-selectize (~> 0.12.1)!
   rails-assets-summernote (~> 0.6.10)!
   rails-assets-tether-shepherd (~> 0.5.1)!
   rails-assets-zoomerang (~> 0.1.8)!

@@ -1,0 +1,25 @@
+@import "selectize";
+
+// selectize
+.active_admin .selectize-control {
+  .selectize-input, .selectize-input.focus {
+    padding: 5px 7px;
+    min-width: 110px;
+    max-width: 240px;
+  }
+}
+
+.active_admin.index .selectize-control {
+  .selectize-input, .selectize-input.focus {
+    float: left;
+    margin-bottom: 10px;
+
+    &.dropdown-active { margin-bottom: 0px }
+  }
+}
+
+.active_admin.index .select_and_search .selectize-control {
+  .selectize-input, .selectize-input.focus {
+    max-width: 110px;
+  }
+}

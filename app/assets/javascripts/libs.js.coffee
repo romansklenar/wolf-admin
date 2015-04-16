@@ -8,6 +8,7 @@
 #= require bootstrap-datepicker
 #= require bootstrap-daterangepicker
 #= require select2
+#= require selectize
 #= require jquery-cookie
 #= require jquery-maskedinput
 #= require jquery-raty/lib/jquery.raty

@@ -1,0 +1,6 @@
+@import "selectize/selectize";
+@import "selectize/selectize.bootstrap3";
+
+.selectize-control.single .selectize-input:after {
+  right: 10px;
+}

@@ -33,6 +33,7 @@ group :assets do
     gem 'rails-assets-bootstrap', '~> 3.3.5'
     gem 'rails-assets-font-awesome', '~> 4.3.0'
     gem 'rails-assets-ionicons', '~> 2.0.1'
+    gem 'rails-assets-selectize', '~> 0.12.1'
     gem 'rails-assets-select2', '~> 3.4.5'
     gem 'rails-assets-messenger', '~> 1.4.2'
     gem 'rails-assets-datatables', '~> 1.10.7'
