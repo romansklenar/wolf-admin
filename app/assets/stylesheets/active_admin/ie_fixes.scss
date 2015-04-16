@@ -1,0 +1,54 @@
+// IE 7 fixes
+#header ul#tabs > li {
+  display: inline-block;
+  margin-right: 0;
+  zoom: 1;
+  *display: inline;
+}
+
+.table_tools_segmented_control,
+.table_tools_segmented_control li {
+  zoom: 1;
+  *display: inline;
+}
+
+#title_bar {
+  *width: auto;
+
+  #titlebar_left, #titlebar_right {
+    *display: block;
+  }
+
+  #titlebar_left {
+    *float: left;
+  }
+
+  #titlebar_right {
+    *float: right;
+  }
+
+  h2 {
+    *line-height: 1.2em;
+  }
+}
+
+#active_admin_content.without_sidebar #main_content_wrapper #main_content {
+  margin-right: 1px;
+}
+
+
+// IE 9 rounded buttons gradient problem, @see: http://github.com/gregbell/active_admin/issues/1923
+a.button, a:link.button, a:visited.button, input[type=submit],
+.action_items a, a.table_tools_button, .table_tools .dropdown_menu_button {
+  filter: none !important;
+
+  &:not(.disabled) {
+    &:hover{
+      filter: none !important;
+    }
+
+    &:active {
+      filter: none !important;
+    }
+  }
+}
