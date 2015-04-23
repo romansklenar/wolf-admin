@@ -1,0 +1,35 @@
+en:
+  active_admin:
+    # grep -r "batch_action" * | grep "app/admin"
+    batch_actions:
+      labels:
+        synchronize: :active_admin.buttons.position.synchronize
+
+    # grep -r "show :title" * | grep "app/admin"
+    titles:
+
+    # grep -r "status_tag" * | grep "app/admin"
+    statuses:
+      opened: opened
+      locked: locked
+      closed: closed
+      pending: pending
+
+    # grep -r "scope " * | grep "app/admin"
+    scopes:
+      all: All
+
+    # grep -r "sidebar" * | grep "app/admin"
+    sidebars:
+      hint: Hint
+      legend: Legend
+      stats: Stats
+
+    # grep -r "panel" * | grep "app/admin" | grep " panel "
+    panels:
+      login_details: Login details
+      server_stats: Server stats
+      last_logged_in_users: Last logged in users
+      stats: Stats
+      trends:  Trends
+      graphs:  Graphs
