@@ -1,0 +1,43 @@
+en:
+  attributes:
+    # general attributes
+    id: ID
+    name: Name
+    title: Title
+    description: Description
+    text: Text
+    kind: Kind
+    type: Type
+    body: Body
+    state: State
+    slug: Permalink
+    url: URL
+    email: E-mail
+    homepage: Homepage
+    created_at: Created
+    updated_at: Updated
+    deleted_at: Deleted
+    who: Who
+    where: Where
+    when: When
+    date: Date
+    time: Time
+    actions: Actions
+    _clear: Clear
+    _destroy: Destroy?
+
+
+  # activemodel:
+  #   errors:
+  #     messages:
+  #   models:
+  #   attributes:
+
+
+  activerecord:
+    # errors:
+    #   messages:
+
+      user:
+        one: User
+        other: Users
