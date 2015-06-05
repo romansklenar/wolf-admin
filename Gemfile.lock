@@ -68,6 +68,7 @@ GEM
       sass (~> 3.4)
       thor
     builder (3.2.2)
+    cancancan (1.12.0)
     chunky_png (1.3.4)
     coderay (1.1.0)
     coffee-rails (4.1.0)
@@ -296,6 +297,7 @@ DEPENDENCIES
   autoprefixer-rails
   better_errors
   binding_of_caller
+  cancancan
   coffee-rails
   compass-rails
   devise

@@ -1,0 +1,13 @@
+en:
+  unauthorized:
+    manage:
+      all: "You are not authorized to %{action} %{subject}."
+      category: "You are not allowed to manage this category."
+    update:
+      category: "You are not allowed to update this category."
+    new:
+      audit: "You are not authorized to create assessment for this academy."
+      conversation: "You are not authorized to start new conversation for this assessment."
+      message: "You are not authorized to start new conversation for this assessment."
+    show:
+      conversation: "You are not authorized to display this conversation."
