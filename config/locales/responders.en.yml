@@ -8,3 +8,12 @@ en:
       destroy:
         notice: "%{resource_name} was successfully destroyed."
         alert:  "%{resource_name} could not be destroyed."
+
+    users:
+      reset_password:
+        notice:
+          one: "Password reset instructions were successfully sent"
+          other: "Password reset instructions were successfully sent to %{count} users"
+        alert:
+          one: "Password reset instructions could not be sent"
+          other: "Password reset instructions could not be sent to %{count} users"

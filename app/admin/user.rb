@@ -25,4 +25,20 @@ ActiveAdmin.register User do
     f.actions
   end
 
+
+  action_item :reset_password, only: [:show, :edit], if: -> { current_user.has_role?(:administrator) } do
+    title = I18n.t("active_admin.buttons.user.reset_password")
+    link_to(title, reset_password_admin_user_path(user))
+  end
+
+  member_action :reset_password do
+    resource.send_reset_password_instructions
+    redirect_to :back, notice: I18n.t("flash.users.reset_password.notice", count: 1, resource_name: resource_class.model_name.human)
+  end
+
+  batch_action :reset_password, priority: 5 do |selection|
+    User.find(selection).each { |user| user.send_reset_password_instructions }
+    redirect_to :back, notice: I18n.t("flash.users.reset_password.notice", count: selection.size, resource_name: resource_class.model_name.human(count: selection.size))
+  end
+
 end
