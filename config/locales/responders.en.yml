@@ -10,6 +10,10 @@ en:
         alert:  "%{resource_name} could not be destroyed."
 
     users:
+      sessions:
+        become_host: "Assuming identity of host."
+        become_user: "Assuming identity of user %{user}."
+        not_found:   "User not found."
       reset_password:
         notice:
           one: "Password reset instructions were successfully sent"

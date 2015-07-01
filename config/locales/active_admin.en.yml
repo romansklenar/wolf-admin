@@ -6,6 +6,7 @@ en:
     buttons:
       user:
         reset_password: Reset password
+        become: Overtake identity
 
     # grep -r "batch_action" * | grep "app/admin"
     batch_actions:

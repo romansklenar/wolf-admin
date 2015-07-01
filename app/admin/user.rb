@@ -41,4 +41,14 @@ ActiveAdmin.register User do
     redirect_to :back, notice: I18n.t("flash.users.reset_password.notice", count: selection.size, resource_name: resource_class.model_name.human(count: selection.size))
   end
 
+
+  action_item :become, only: [:show, :edit], if: -> { current_user.has_role?(:administrator) } do
+    link_to I18n.t("active_admin.buttons.user.become"), become_admin_user_path(resource)
+  end
+
+  member_action :become do
+    sign_in resource, bypass: true
+    redirect_to after_sign_in_path_for(resource), notice: I18n.t("flash.users.sessions.become_user", user: resource.display_name)
+  end
+
 end
