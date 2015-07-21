@@ -38,14 +38,14 @@
 		$("#summernote").summernote({
 			height: 240,
 			toolbar: [
-			    ['style', ['style']],
-			    ['style', ['bold', 'italic', 'underline', 'clear']],
-			    ['fontsize', ['fontsize']],
-			    ['para', ['ul', 'ol', 'paragraph']],
-			    ['height', ['height']],
-			    ['insert', ['picture', 'link', 'video']],
-			    ['view', ['fullscreen', 'codeview']],
-			    ['table', ['table']],
+				['style', ['style']],
+				['style', ['bold', 'italic', 'underline', 'clear']],
+				['fontsize', ['fontsize']],
+				['para', ['ul', 'ol', 'paragraph']],
+				['height', ['height']],
+				['insert', ['picture', 'link', 'video']],
+				['view', ['fullscreen', 'codeview']],
+				['table', ['table']],
 			]
 		});
 
@@ -56,19 +56,19 @@
 		});
 
 		// Datepicker
-        $('.datepicker').datepicker({
-        	autoclose: true,
-        	orientation: 'left bottom',
-        });
+		$('.datepicker').datepicker({
+			autoclose: true,
+			orientation: 'left bottom',
+		});
 
-        // Minicolors colorpicker
-        $('input.minicolors').minicolors({
-        	position: 'top left',
-        	defaultValue: '#9b86d1',
-        	theme: 'bootstrap'
-        });
+		// Minicolors colorpicker
+		$('input.minicolors').minicolors({
+			position: 'top left',
+			defaultValue: '#9b86d1',
+			theme: 'bootstrap'
+		});
 
-        // masked input example using phone input
+		// masked input example using phone input
 		$(".mask-phone").mask("(999) 999-9999");
 		$(".mask-cc").mask("9999 9999 9999 9999");
 	};

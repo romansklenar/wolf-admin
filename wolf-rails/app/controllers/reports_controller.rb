@@ -1,9 +1,9 @@
 class ReportsController < ApplicationController
 
-	def orders
-	end
+  def orders
+  end
 
-	def sales
-	end
+  def sales
+  end
 
 end

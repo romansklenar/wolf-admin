@@ -11,7 +11,7 @@ plugin to compute it for you.
 In order to name the other series, you need to give it an id, like this:
 
 	var dataset = [
-		{ data: [ ... ], id: "foo" } ,         // use default bottom
+		{ data: [ ... ], id: "foo" } ,		 // use default bottom
 		{ data: [ ... ], fillBetween: "foo" }, // use first dataset as bottom
 	];
 

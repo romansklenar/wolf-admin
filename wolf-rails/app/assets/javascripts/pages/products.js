@@ -32,25 +32,25 @@
 		});
 
 		// Datepicker
-	    $('.datepicker').datepicker({
-	    	autoclose: true
-	    	, orientation: 'right top'
-	    	// , endDate: new Date()
-	    });
+		$('.datepicker').datepicker({
+			autoclose: true
+			, orientation: 'right top'
+			// , endDate: new Date()
+		});
 
 
-	    // Datatable
-	    var $table = $("#products-datatable");
+		// Datatable
+		var $table = $("#products-datatable");
 
-        $table.dataTable({
-	        "sPaginationType": "full_numbers",
-	        "iDisplayLength": 20,
+		$table.dataTable({
+			"sPaginationType": "full_numbers",
+			"iDisplayLength": 20,
 			"aLengthMenu": [[20, 50, 100, -1], [20, 50, 100, "All"]],
 			bDestroy: true
-	    });
+		});
 
 
-	    // Bulk actions checkboxes
+		// Bulk actions checkboxes
 
 		var $toggle_all = $("input:checkbox.toggle-all");
 		var $checkboxes = $("[name='select-product']");

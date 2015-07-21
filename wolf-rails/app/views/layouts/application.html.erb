@@ -11,22 +11,22 @@
   	<%= csrf_meta_tags %>
 
   	<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body id="<%= yield :body_id %>">
 	
 	<div id="wrapper">
-    
-        <%= render "shared/sidebar_menu" %>
+	
+		<%= render "shared/sidebar_menu" %>
 
-        <div id="content">
-          <%= yield %>
-        </div>  
-    </div>
+		<div id="content">
+		  <%= yield %>
+		</div>  
+	</div>
 
-    <%= render "shared/skin_switcher" %>
+	<%= render "shared/skin_switcher" %>
 
-    <%= yield :bottom_content %>
+	<%= yield :bottom_content %>
 </body>
 </html>

@@ -15,8 +15,8 @@
 
 			// initialize datepicker when the modal is shown, does not work if the input is hidden
 			$("#form-modal .datepicker").datepicker({
-	        	autoclose: true
-	        });
+				autoclose: true
+			});
 		})
 
 		// Show message on submit
@@ -59,7 +59,7 @@
 
 		Messenger.options = {
 			extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-right',
-		    theme: 'flat'
+			theme: 'flat'
 		}
 
 		$(".normal-notification").click(function (e) {
@@ -85,16 +85,16 @@
 			  	message: 'Uploading new files...',
 			  	type: 'info',
 			  	actions: {
-			    	cancel: {
-			      		label: 'cancel upload',
-			      		action: function() {
-			        		return msg.update({
-			          			message: 'File uploading was canceled',
-			          			type: 'success',
-			          			actions: false
-			        		});
-			      		}
-			    	}
+					cancel: {
+				  		label: 'cancel upload',
+				  		action: function() {
+							return msg.update({
+					  			message: 'File uploading was canceled',
+					  			type: 'success',
+					  			actions: false
+							});
+				  		}
+					}
 				}
 			});
 		});
@@ -107,15 +107,15 @@
 			  	errorMessage: 'Error sending message',
 			  	successMessage: 'Message sent!',
 			  	action: function(opts) {
-			    	if (++i < 2) {
-			      		return opts.error({
-			        		status: 500,
-			        		readyState: 0,
-			        		responseText: 0
-			      		});
-			    	} else {
-			      		return opts.success();
-			    	}
+					if (++i < 2) {
+				  		return opts.error({
+							status: 500,
+							readyState: 0,
+							responseText: 0
+				  		});
+					} else {
+				  		return opts.success();
+					}
 			  	}
 			});
 		});
@@ -128,7 +128,7 @@
 		  	defaults: {
 				classes: 'shepherd-element shepherd-open shepherd-theme-arrows',
 				showCancelLink: true
-		    }
+			}
 		});
 
 		tour.addStep('example-step', {
@@ -139,15 +139,15 @@
 		  	},
 		  	buttons: [
 		  	{
-		      	text: 'Exit',
-		      	classes: 'btn btn-default',
-		    	action: tour.cancel
-		    },
-		    {
-		    	text: 'Next',
-		    	classes: 'btn btn-primary',
-		      	action: tour.next
-		    }]
+			  	text: 'Exit',
+			  	classes: 'btn btn-default',
+				action: tour.cancel
+			},
+			{
+				text: 'Next',
+				classes: 'btn btn-primary',
+			  	action: tour.next
+			}]
 		});
 
 		tour.addStep('example-step', {
@@ -158,15 +158,15 @@
 		  	},
 		  	buttons: [
 		  	{
-		      	text: 'Back',
-		      	classes: 'btn btn-default',
-		    	action: tour.back
-		    },
-		    {
-		    	text: 'Next',
-		    	classes: 'btn btn-primary',
-		      	action: tour.next
-		    }]
+			  	text: 'Back',
+			  	classes: 'btn btn-default',
+				action: tour.back
+			},
+			{
+				text: 'Next',
+				classes: 'btn btn-primary',
+			  	action: tour.next
+			}]
 		});
 
 		tour.addStep('example-step', {
@@ -177,15 +177,15 @@
 		  	},
 		  	buttons: [
 		  	{
-		      	text: 'Back',
-		      	classes: 'btn btn-default',
-		    	action: tour.back
-		    },
-		    {
-		    	text: 'Next',
-		    	classes: 'btn btn-primary',
-		      	action: tour.next
-		    }]
+			  	text: 'Back',
+			  	classes: 'btn btn-default',
+				action: tour.back
+			},
+			{
+				text: 'Next',
+				classes: 'btn btn-primary',
+			  	action: tour.next
+			}]
 		});
 
 		tour.addStep('example-step', {
@@ -196,15 +196,15 @@
 		  	},
 		  	buttons: [
 		  	{
-		      	text: 'Back',
-		      	classes: 'btn btn-default',
-		    	action: tour.back
-		    },
-		    {
-		    	text: 'Done',
-		    	classes: 'btn btn-success',
-		      	action: tour.next
-		    }]
+			  	text: 'Back',
+			  	classes: 'btn btn-default',
+				action: tour.back
+			},
+			{
+				text: 'Done',
+				classes: 'btn btn-success',
+			  	action: tour.next
+			}]
 		});
 
 		$(".start-tour").click(function (e) {
@@ -225,13 +225,13 @@
 		if ("undefined" == typeof Offline || null === Offline) throw new Error("Offline simulate UI brought in without Offline.js");
 		console.info("The offline.simulate.ui.js module is a development-only resource. Make sure to remove offline.simulate.ui.js in production."), 
 		Offline.options.reconnect = {
-		    initialDelay: 10
+			initialDelay: 10
 		}, 
 		a = function () {
-		    var a;
-		    return document.getElementById("offline-simulate-check").addEventListener("click", function () {
+			var a;
+			return document.getElementById("offline-simulate-check").addEventListener("click", function () {
 				var a;
-		        return null == (a = Offline.options).checks && (a.checks = {}), Offline.options.checks.active = this.checked ? "down" : "up", Offline.check()
+				return null == (a = Offline.options).checks && (a.checks = {}), Offline.options.checks.active = this.checked ? "down" : "up", Offline.check()
 			})
 		}, 
 		"interactive" === (b = document.readyState) || "complete" === b ? a() : document.addEventListener("DOMContentLoaded", a)

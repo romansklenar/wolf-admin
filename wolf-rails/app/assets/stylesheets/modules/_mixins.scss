@@ -1,19 +1,19 @@
 @mixin transition($transitions) {
 	-webkit-transition: $transitions;
-    -moz-transition: $transitions;
-    -ms-transition: $transitions;
-    -o-transition: $transitions;
-    transition: $transitions;
+	-moz-transition: $transitions;
+	-ms-transition: $transitions;
+	-o-transition: $transitions;
+	transition: $transitions;
 }
 
 /* this mixin makes possible to add transition to a specific vendor, example: */
 /* -webkit-transition: -webkit-transform 0.5s linear; */
 @mixin transitionPrefix($property, $values) {
 	-webkit-transition: -webkit-#{$property} #{$values};
-    -moz-transition: -moz-#{$property} #{$values};
-    -ms-transition: -ms-#{$property} #{$values};
-    -o-transition: -o-#{$property} #{$values};
-    transition: #{$property} #{$values};	
+	-moz-transition: -moz-#{$property} #{$values};
+	-ms-transition: -ms-#{$property} #{$values};
+	-o-transition: -o-#{$property} #{$values};
+	transition: #{$property} #{$values};	
 }
 
 @mixin background-gradient($from, $to) {
@@ -42,9 +42,9 @@
 
 @mixin placeholder {
   &::-webkit-input-placeholder {@content}
-  &:-moz-placeholder           {@content}
-  &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}  
+  &:-moz-placeholder		   {@content}
+  &::-moz-placeholder		  {@content}
+  &:-ms-input-placeholder	  {@content}  
 }
 
 @mixin animation($animations) {

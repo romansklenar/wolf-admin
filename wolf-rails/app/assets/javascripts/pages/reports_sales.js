@@ -1,6 +1,6 @@
 (function () {
-    var page_scripts = function () {
-        if (!$("#reports-alt").length) return;
+	var page_scripts = function () {
+		if (!$("#reports-alt").length) return;
 
 		// daterange input
 		$('input[name="daterange"]').daterangepicker({
@@ -18,27 +18,27 @@
 
 
 		// Datatable
-        var $table = $("#datatable-example");
+		var $table = $("#datatable-example");
 
-        $table.dataTable({
-            "sPaginationType": "full_numbers",
-            "iDisplayLength": 20,
+		$table.dataTable({
+			"sPaginationType": "full_numbers",
+			"iDisplayLength": 20,
 			"aLengthMenu": [[20, 50, 100, -1], [20, 50, 100, "All"]],
 			bDestroy: true
-        });
+		});
 
-        
+		
 
 		// bar chart
-        var $chrt_border_color = "#efefef";
+		var $chrt_border_color = "#efefef";
 		var $chrt_second = "#4fa3d5";
 
 		var dBar = [["Jan", 2300.33], ["Feb", 1899.99], ["March", 8830.00], ["April", 1778.00], ["May", 4298.00], ["Jun", 2298.00], ["Jul", 4298.00], ["Aug", 1798.00], ["Sep", 6139.99], ["Oct", 834.00], ["Nov", 1855.99], ["Dec", 3433.99]];
 
 		var options = {
 			yaxes: {
-		        min: 0
-		    },
+				min: 0
+			},
 			xaxis : {
 				mode: "categories",
 				tickLength: 0,

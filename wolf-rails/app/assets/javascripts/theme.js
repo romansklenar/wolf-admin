@@ -18,23 +18,23 @@ var ready = function() {
 
 	// retina display
 	if(window.devicePixelRatio >= 1.2){
-	    $("[data-2x]").each(function(){
-	        if(this.tagName == "IMG"){
-	            $(this).attr("src",$(this).attr("data-2x"));
-	        } else {
-	            $(this).css({"background-image":"url("+$(this).attr("data-2x")+")"});
-	        }
-	    });
+		$("[data-2x]").each(function(){
+			if(this.tagName == "IMG"){
+				$(this).attr("src",$(this).attr("data-2x"));
+			} else {
+				$(this).css({"background-image":"url("+$(this).attr("data-2x")+")"});
+			}
+		});
 	}
 
 	Number.prototype.formatMoney = function(c, d, t){
 		var n = this, 
-		    c = isNaN(c = Math.abs(c)) ? 2 : c, 
-		    d = d == undefined ? "." : d, 
-		    t = t == undefined ? "," : t, 
-		    s = n < 0 ? "-" : "", 
-		    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", 
-		    j = (j = i.length) > 3 ? j % 3 : 0;
+			c = isNaN(c = Math.abs(c)) ? 2 : c,
+			d = d == undefined ? "." : d,
+			t = t == undefined ? "," : t,
+			s = n < 0 ? "-" : "",
+			i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
+			j = (j = i.length) > 3 ? j % 3 : 0;
 		   return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
 	};
 };
@@ -43,13 +43,13 @@ $(document).on("ready page:load", ready);
 
 $(document).on("page:change", function () {
 	window.prevPageYOffset = window.pageYOffset;
-    window.prevPageXOffset = window.pageXOffset;
+	window.prevPageXOffset = window.pageXOffset;
 });
 
 $(document).on("page:load", function () {
 	if ($(".fix-scroll").length > 0) {
 		$('.fix-scroll').hide().show() // force re-render -- having an issue with that on Chrome/OSX
-      	//window.scrollTo(window.prevPageXOffset, window.prevPageYOffset);
+	  	//window.scrollTo(window.prevPageXOffset, window.prevPageYOffset);
 	}
 });
 
@@ -134,7 +134,7 @@ var Skins = {
 var Sidebar = {
 	initialize: function () {
 		var $sidebar_menu = $(".main-sidebar");
-		
+
 		// my account dropdown menu
 		var $account_menu = $sidebar_menu.find(".current-user .menu");
 		$(".current-user .name").click(function (e) {
@@ -163,7 +163,7 @@ var Sidebar = {
 				var $dropdown = $(this).siblings(".submenu");
 
 				$trigger.toggleClass("toggled");
-				
+
 				if ($trigger.hasClass("toggled")) {
 					$dropdown.slideDown(300, check_height);
 				} else {
@@ -231,6 +231,6 @@ window.utils = {
 		return ($(".main-sidebar").width() < 100);
 	},
 	get_timestamp: function (less_days) {
-    	return moment().subtract('days', less_days).toDate().getTime();
-    }
+		return moment().subtract('days', less_days).toDate().getTime();
+	}
 };

@@ -119,7 +119,7 @@ html .fc,
 /* Cell Styles
 ------------------------------------------------------------------------*/
 
-.fc-widget-header,    /* <th>, usually */
+.fc-widget-header,	/* <th>, usually */
 .fc-widget-content {  /* <td>, usually */
 	border: 1px solid #ebf0f2;
 	}
@@ -261,7 +261,7 @@ html .fc,
 .fc-event {
 	border: 0px solid #3a87ad; /* default BORDER color */
 	background-color: #3a87ad; /* default BACKGROUND color */
-	color: #fff;               /* default TEXT color */
+	color: #fff;			   /* default TEXT color */
 	font-size: 13px;
 	cursor: default;
 	font-family: 'Helvetica Neue', Arial;
@@ -330,18 +330,18 @@ a.fc-event,
 /* resizable */
 	
 .fc-event-hori .ui-resizable-e {
-	top: 0           !important; /* importants override pre jquery ui 1.7 styles */
-	right: -3px      !important;
-	width: 7px       !important;
-	height: 100%     !important;
+	top: 0		   !important; /* importants override pre jquery ui 1.7 styles */
+	right: -3px	  !important;
+	width: 7px	   !important;
+	height: 100%	 !important;
 	cursor: e-resize;
 	}
 	
 .fc-event-hori .ui-resizable-w {
-	top: 0           !important;
-	left: -3px       !important;
-	width: 7px       !important;
-	height: 100%     !important;
+	top: 0		   !important;
+	left: -3px	   !important;
+	width: 7px	   !important;
+	height: 100%	 !important;
 	cursor: w-resize;
 	}
 	
@@ -584,9 +584,9 @@ table.fc-border-separate {
 /* resizable */
 	
 .fc-event-vert .ui-resizable-s {
-	bottom: 0        !important; /* importants override pre jquery ui 1.7 styles */
-	width: 100%      !important;
-	height: 8px      !important;
+	bottom: 0		!important; /* importants override pre jquery ui 1.7 styles */
+	width: 100%	  !important;
+	height: 8px	  !important;
 	overflow: hidden !important;
 	line-height: 8px !important;
 	font-size: 11px  !important;

@@ -72,9 +72,9 @@ ul.messenger.messenger-fixed.messenger-on-top, ul.messenger.messenger-fixed.mess
 @media (max-width: 960px) {
   /* line 54, ../../src/sass/messenger.sass */
   ul.messenger.messenger-fixed.messenger-on-top, ul.messenger.messenger-fixed.messenger-on-bottom {
-    left: 10%;
-    width: 80%;
-    margin-left: 0px;
+	left: 10%;
+	width: 80%;
+	margin-left: 0px;
   }
 }
 /* line 64, ../../src/sass/messenger.sass */

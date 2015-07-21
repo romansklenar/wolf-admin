@@ -7,9 +7,9 @@ body {
 		#wrapper {
 			#content {
 				-webkit-perspective: 0px;
-			    -ms-perspective: 0px;
-			    -moz-perspective: 0px;
-			    
+				-ms-perspective: 0px;
+				-moz-perspective: 0px;
+				
 				@include transform(translate3d(230px, 0, 0));
 			}
 		}

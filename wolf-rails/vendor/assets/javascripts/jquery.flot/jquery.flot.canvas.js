@@ -18,7 +18,7 @@ every element of the plot to be rendered directly to canvas.
 The plugin supports these options:
 
 {
-    canvas: boolean
+	canvas: boolean
 }
 
 The "canvas" option controls whether full canvas drawing is enabled, making it
@@ -121,27 +121,27 @@ browser, but needs to redraw with canvas text when exporting as an image.
 		// When the canvas option is set, the object looks like this:
 		//
 		// {
-		//     width: Width of the text's bounding box.
-		//     height: Height of the text's bounding box.
-		//     positions: Array of positions at which this text is drawn.
-		//     lines: [{
-		//         height: Height of this line.
-		//         widths: Width of this line.
-		//         text: Text on this line.
-		//     }],
-		//     font: {
-		//         definition: Canvas font property string.
-		//         color: Color of the text.
-		//     },
+		//	 width: Width of the text's bounding box.
+		//	 height: Height of the text's bounding box.
+		//	 positions: Array of positions at which this text is drawn.
+		//	 lines: [{
+		//		 height: Height of this line.
+		//		 widths: Width of this line.
+		//		 text: Text on this line.
+		//	 }],
+		//	 font: {
+		//		 definition: Canvas font property string.
+		//		 color: Color of the text.
+		//	 },
 		// }
 		//
 		// The positions array contains objects that look like this:
 		//
 		// {
-		//     active: Flag indicating whether the text should be visible.
-		//     lines: Array of [x, y] coordinates at which to draw the line.
-		//     x: X coordinate at which to draw the text.
-		//     y: Y coordinate at which to draw the text.
+		//	 active: Flag indicating whether the text should be visible.
+		//	 lines: Array of [x, y] coordinates at which to draw the line.
+		//	 x: X coordinate at which to draw the text.
+		//	 y: Y coordinate at which to draw the text.
 		// }
 
 		Canvas.prototype.getTextInfo = function(layer, text, font, angle, width) {

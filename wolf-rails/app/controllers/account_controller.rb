@@ -1,15 +1,15 @@
 class AccountController < ApplicationController
 
-	def settings
-	end
+  def settings
+  end
 
-	def billing
-	end
+  def billing
+  end
 
-	def notifications
-	end
+  def notifications
+  end
 
-	def support
-	end
+  def support
+  end
 
 end

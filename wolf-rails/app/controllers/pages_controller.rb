@@ -1,21 +1,21 @@
 class PagesController < ApplicationController
 
-	def inbox
-	end
+  def inbox
+  end
 
-	def profile
-	end
+  def profile
+  end
 
-	def latest_activity
-	end
+  def latest_activity
+  end
 
-	def projects
-	end
+  def projects
+  end
 
-	def steps
-	end
+  def steps
+  end
 
-	def calendar
-	end
+  def calendar
+  end
 
 end

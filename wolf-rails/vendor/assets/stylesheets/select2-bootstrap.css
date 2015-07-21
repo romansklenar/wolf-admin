@@ -9,8 +9,8 @@
  * are copied to the .select2-container.
  *
  * 1. Overwrite .select2-container's original display:inline-block
- *    with Bootstrap 3's default for .form-control, display:block;
- *    courtesy of @juristr (@see https://github.com/fk/select2-bootstrap-css/pull/1)
+ *	with Bootstrap 3's default for .form-control, display:block;
+ *	courtesy of @juristr (@see https://github.com/fk/select2-bootstrap-css/pull/1)
  */
 .select2-container.form-control {
   background: transparent;
@@ -411,7 +411,7 @@
  *
  * 1. For Select2 v.3.3.2.
  * 2. Revert border-left:0 inherited from Select2's CSS to prevent the arrow
- *    from jumping when switching from disabled to enabled state and vice versa.
+ *	from jumping when switching from disabled to enabled state and vice versa.
  */
 .select2-container.select2-container-disabled .select2-choice,
 .select2-container.select2-container-disabled .select2-choices {
