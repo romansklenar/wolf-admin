@@ -17,6 +17,7 @@
  *= require bootstrap-daterangepicker/daterangepicker-bs3
  *= require select2
  *= require messenger
+ *= require animate-css
  *= require_tree ../../../vendor/assets/stylesheets/.
  *= require theme
  */
