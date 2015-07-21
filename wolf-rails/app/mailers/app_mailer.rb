@@ -17,4 +17,3 @@ class AppMailer < ActionMailer::Base
     mail to: "<to_address>", subject: "Activation!"
   end
 end
-

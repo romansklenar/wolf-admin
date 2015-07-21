@@ -76,7 +76,7 @@
 			if (show) {
 				$bulk_actions_btn.removeClass("disabled");
 			} else {
-				$bulk_actions_btn.addClass("disabled");	
+				$bulk_actions_btn.addClass("disabled");
 			}
 		}
 	};

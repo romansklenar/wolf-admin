@@ -217,23 +217,23 @@
 
 
 	var set_up_offline_plugin = function () {
-		// This is an internal script that allows you to test the Offline.js plugin and see how your pages respond to 
+		// This is an internal script that allows you to test the Offline.js plugin and see how your pages respond to
 		// different connectivity states without having to use brute-force methods to disable your actual connectivity.
 
 		// Only used for demonstration purposes, make sure to remove this in production.
 		var a, b;
 		if ("undefined" == typeof Offline || null === Offline) throw new Error("Offline simulate UI brought in without Offline.js");
-		console.info("The offline.simulate.ui.js module is a development-only resource. Make sure to remove offline.simulate.ui.js in production."), 
+		console.info("The offline.simulate.ui.js module is a development-only resource. Make sure to remove offline.simulate.ui.js in production."),
 		Offline.options.reconnect = {
 			initialDelay: 10
-		}, 
+		},
 		a = function () {
 			var a;
 			return document.getElementById("offline-simulate-check").addEventListener("click", function () {
 				var a;
 				return null == (a = Offline.options).checks && (a.checks = {}), Offline.options.checks.active = this.checked ? "down" : "up", Offline.check()
 			})
-		}, 
+		},
 		"interactive" === (b = document.readyState) || "complete" === b ? a() : document.addEventListener("DOMContentLoaded", a)
 	}
 })();

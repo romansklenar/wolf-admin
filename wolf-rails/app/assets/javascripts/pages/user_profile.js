@@ -18,7 +18,7 @@
 		});
 
 
-		// orders datatable 
+		// orders datatable
 		$('#datatable-example').dataTable({
 			"sPaginationType": "full_numbers",
 			"iDisplayLength": 20,

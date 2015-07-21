@@ -2,7 +2,7 @@
 	outline: none;
 }
 
-a, 
+a,
 button,
 input[type="submit"] {
 	&:focus {
@@ -286,7 +286,7 @@ textarea {
 	}
 }
 
-/* 
+/*
 	Create a custom select by adding a [data-smart-select]
 	to any select. e.g. <select class="form-control" data-smart-select>
 	and it will automatically be converted into a customized select
@@ -564,11 +564,8 @@ form {
 
 
 /* ==============================================================================
-// jQuery Datepicker 
+// jQuery Datepicker
 // ============================================================================== */
 .datepicker-dropdown {
 	z-index: 9999999 !important;
 }
-
-
-

@@ -28,7 +28,7 @@ var ready = function() {
 	}
 
 	Number.prototype.formatMoney = function(c, d, t){
-		var n = this, 
+		var n = this,
 			c = isNaN(c = Math.abs(c)) ? 2 : c,
 			d = d == undefined ? "." : d,
 			t = t == undefined ? "," : t,

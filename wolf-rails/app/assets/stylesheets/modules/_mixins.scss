@@ -13,7 +13,7 @@
 	-moz-transition: -moz-#{$property} #{$values};
 	-ms-transition: -ms-#{$property} #{$values};
 	-o-transition: -o-#{$property} #{$values};
-	transition: #{$property} #{$values};	
+	transition: #{$property} #{$values};
 }
 
 @mixin background-gradient($from, $to) {
@@ -44,7 +44,7 @@
   &::-webkit-input-placeholder {@content}
   &:-moz-placeholder		   {@content}
   &::-moz-placeholder		  {@content}
-  &:-ms-input-placeholder	  {@content}  
+  &:-ms-input-placeholder	  {@content}
 }
 
 @mixin animation($animations) {
@@ -84,4 +84,3 @@
 		@content
 	}
 }
-
