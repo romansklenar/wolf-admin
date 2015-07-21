@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require moment
 //= require bootstrap
+//= require bootstrap-daterangepicker
 //= require select2
 //= require jquery-flot
 //= require messenger
