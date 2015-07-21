@@ -21,7 +21,7 @@
 //= require jquery.flot/jquery.flot.tooltip
 //= require messenger/messenger
 //= require messenger/messenger-theme-flat
-//= require ../../../vendor/assets/javascripts/moment.min
+//= require moment
 //= require_directory ../../../vendor/assets/javascripts/.
 
 //= require theme

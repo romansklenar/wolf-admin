@@ -29,6 +29,7 @@ source 'https://rails-assets.org' do
 	gem 'rails-assets-select2', '~> 3.4.5'
 	gem 'rails-assets-messenger', '~> 1.4.2'
 	gem 'rails-assets-jquery-flot', '~> 0.8.3'
+  gem 'rails-assets-moment', '~> 2.5.1'
 end
 
 group :development do
