@@ -12,8 +12,8 @@
  *
  *= require_self
  *= require bootstrap/bootstrap
- *= require ../../../vendor/assets/stylesheets/select2
- *= require ../../../vendor/assets/stylesheets/select2-bootstrap
+ *= require select2/select2
+ *= require select2/select2-bootstrap
  *= require ../../../vendor/assets/stylesheets/messenger/messenger
  *= require ../../../vendor/assets/stylesheets/messenger/messenger-theme-flat
  *= require_tree ../../../vendor/assets/stylesheets/.
