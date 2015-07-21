@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap/bootstrap.min
+//= require bootstrap/bootstrap
 //= require ../../../vendor/assets/javascripts/jquery.flot/jquery.flot
 //= require ../../../vendor/assets/javascripts/jquery.flot/jquery.flot.time
 //= require ../../../vendor/assets/javascripts/jquery.flot/jquery.flot.categories
