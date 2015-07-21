@@ -13,14 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap/bootstrap
-//= require select2/select2
-//= require jquery.flot/jquery.flot
-//= require jquery.flot/jquery.flot.time
-//= require jquery.flot/jquery.flot.categories
-//= require jquery.flot/jquery.flot.tooltip
-//= require messenger/messenger
-//= require messenger/messenger-theme-flat
+//= require bootstrap
+//= require select2
+//= require jquery-flot
+//= require messenger
 //= require moment
 //= require_directory ../../../vendor/assets/javascripts/.
 
