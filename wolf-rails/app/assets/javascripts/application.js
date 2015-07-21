@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require moment
 //= require bootstrap
+//= require bootstrap-datepicker
 //= require bootstrap-daterangepicker
 //= require select2
 //= require jquery-flot
