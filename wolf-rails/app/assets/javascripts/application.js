@@ -15,10 +15,10 @@
 //= require turbolinks
 //= require bootstrap/bootstrap
 //= require select2/select2
-//= require ../../../vendor/assets/javascripts/jquery.flot/jquery.flot
-//= require ../../../vendor/assets/javascripts/jquery.flot/jquery.flot.time
-//= require ../../../vendor/assets/javascripts/jquery.flot/jquery.flot.categories
-//= require ../../../vendor/assets/javascripts/jquery.flot/jquery.flot.tooltip
+//= require jquery.flot/jquery.flot
+//= require jquery.flot/jquery.flot.time
+//= require jquery.flot/jquery.flot.categories
+//= require jquery.flot/jquery.flot.tooltip
 //= require messenger/messenger
 //= require messenger/messenger-theme-flat
 //= require ../../../vendor/assets/javascripts/moment.min
