@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>Wolf - Bootstrap Admin Theme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/brankic.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/datepicker.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/shepherd.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/offline.chrome.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/messenger/messenger.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/messenger/messenger-theme-flat.css" />
+
+	<!-- javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/vendor/bootstrap-datepicker.js"></script>
+	<script src="js/vendor/jquery.validate.min.js"></script>
+	<script src="js/vendor/offline.min.js"></script>
+	<script src="js/vendor/shepherd.min.js"></script>
+	<script src="js/vendor/messenger/messenger.min.js"></script>
+	<script src="js/vendor/messenger/messenger-theme-flat.js"></script>
+	<script src="js/theme.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="ui">
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="name">
+					<img class="avatar" src="images/avatars/1.jpg" />
+					<span>
+						John Smith
+						<i class="fa fa-chevron-down"></i>
+					</span>
+				</a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>General</h3>
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="ion-android-earth"></i> 
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-person-stalker"></i> <span>Lists & Tables</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="users.html">Customers list</a></li>
+							<li><a href="datatables.html">Orders (Datatables)</a></li>
+							<li><a href="search.html">Products (Filters)</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-stats-bars"></i> <span>Reports</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="reports.html">Reports orders</a></li>
+							<li><a href="reports-alt.html">Report sales</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-pricetags"></i> <span>Forms</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="form.html">New Customer (validation)</a></li>
+							<li><a href="form-product.html">New Product (add-ons)</a></li>
+							<li><a href="wizard.html">Wizard</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Application</h3>
+				<ul>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-earth"></i> <span>App Pages</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="sidebar.html">Inbox Messages</a></li>
+							<li><a href="user-profile.html">User profile</a></li>
+							<li><a href="latest-activity.html">Latest activity</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="steps.html">Steps to launch</a></li>
+							<li><a href="calendar.html">Calendar</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-card"></i> <span>Pricing</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="pricing.html">Pricing (Plans)</a></li>
+							<li><a href="pricing-alt.html">Pricing charts</a></li>
+							<li><a href="billing-form.html">Billing form</a></li>
+							<li><a href="invoice.html">Invoice</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="account.html" class="active" data-toggle="sidebar">
+							<i class="ion-flash"></i> <span>Features</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="email-templates.html">Email templates</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="ui.html" class="active">UI Extras</a></li>
+							<li><a href="docs.html">API Documentation</a></li>
+							<li><a href="signup.html">Sign up</a></li>
+							<li><a href="signin.html">Sign in</a></li>
+							<li><a href="status.html">App Status</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Admin</h3>
+				<ul>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-person"></i> <span>My account</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="account-profile.html">Settings</a></li>
+							<li><a href="account-billing.html">Billing</a></li>
+							<li><a href="account-notifications.html">Notifications</a></li>
+							<li><a href="account-support.html">Support</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" data-toggle="sidebar">
+							<i class="ion-usb"></i> <span>Level Navigation</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li>
+								<a href="invoice.html" data-toggle="sidebar">
+									Submenu
+									<i class="fa fa-chevron-down"></i>
+								</a>
+								<ul class="submenu">
+									<li><a href="#">Last menu</a></li>
+									<li><a href="#">Last menu</a></li>
+								</ul>
+							</li>
+							<li><a href="invoice.html">Menu link</a></li>
+							<li><a href="#">Extra link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+			<div class="menubar">
+				<div class="sidebar-toggler visible-xs">
+					<i class="ion-navicon"></i>
+				</div>
+				
+				<div class="page-title">
+					User Interface Showcase
+				</div>
+			</div>
+
+			<div class="content-wrapper">
+
+				<section class="intro">
+					<h3>
+						UI Examples
+					</h3>
+					<p>
+						This page demos some ready-to-use UI samples that you can use to increment the funcionality of your own Admin.
+					</p>
+				</section>
+
+				<section class="modals">
+					<h4>Modals</h4>
+
+					<a href="#" class="tour-first-step" data-toggle="modal" data-target="#welcome-modal">First time welcome Modal</a>
+					<a href="#" data-toggle="modal" data-target="#prompt-modal">Prompt Modal</a>
+					<a href="#" data-toggle="modal" data-target="#confirm-modal">Confirm Modal</a>
+					<a href="#" data-toggle="modal" data-target="#form-modal">Form Modal</a>
+					<a href="#" data-toggle="modal" data-target="#form-validation-modal">Form with Validation Modal</a>
+				</section>
+
+				<section class="notifications">
+					<h4>Notifications</h4>
+
+					<a href="#" class="normal-notification">New Notification</a>
+					<a href="#" class="error-notification">Error Message</a>
+					<a href="#" class="button-notification tour-second-step">Message with button</a>
+					<a href="#" class="run-notification">Error with try again option</a>
+				</section>
+
+				<section class="offline">
+					<h4>
+						Offline Notification
+						<small>
+							Include <code>offline.chrome.css</code> and <code>offline.min.js</code> and automatically detects when your users lose connection and a message is shown.
+						</small>
+					</h4>
+
+					<div class="checkbox tour-third-step">
+    					<label>
+      						<input type="checkbox" id="offline-simulate-check" /> 
+      						Click on the checkbox to start a simulation of a connectivity problem and un-check to connect again.
+    					</label>
+  					</div>
+				</section>
+
+				<section class="tour">
+					<h4>
+						Guided Tour
+						<small>
+							Useful to highlight some important features to your users by focusing on a section of the page.
+						</small>
+					</h4>
+
+					<a href="#" class="start-tour">Start the tour</a>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<!-- First time welcome Modal -->
+	<div class="modal fade" id="welcome-modal" tabindex="-1" role="dialog">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		      	</div>
+		      	<div class="modal-body">
+		      		<header>
+		      			Welcome to Wolf Admin!
+		      		</header>
+					
+					<p>
+						This is a welcome message to some one that just signed up to your
+						service, you can show some features of your dashboard or links to configuration.
+					</p>
+
+					<div class="get-started">
+						<div class="row">
+							<div class="col-md-4 animated fadeInDown">
+								<i class="ion-wrench"></i>
+								<a href="#">Configure your account</a>
+							</div>
+							<div class="col-md-4 animated fadeInDown two">
+								<i class="ion-person-stalker"></i>
+								<a href="#">Invite your teammates</a>
+							</div>
+							<div class="col-md-4 animated fadeInDown three">
+								<i class="ion-email"></i>
+								<a href="#">Setup your notifications</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 animated fadeInDown four">
+								<i class="ion-help-circled"></i>
+								<a href="#">Watch our tutorials</a>
+							</div>
+							<div class="col-md-4 animated fadeInDown five">
+								<i class="ion-upload"></i>
+								<a href="#">Import your contacts</a>
+							</div>
+							<div class="col-md-4 animated fadeInDown six">
+								<i class="ion-code-working"></i>
+								<a href="#">Get your API Keys</a>
+							</div>
+						</div>
+					</div>
+
+					<a href="#" data-dismiss="modal" class="go-dashboard">
+						Just go straight to my dashboard
+						<i class="fa fa-angle-double-right"></i>
+					</a>
+		      	</div>
+		    </div>
+	  	</div>
+	</div>
+
+	<!-- Prompt Modal -->
+	<div class="modal fade" id="prompt-modal" tabindex="-1" role="dialog">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+		        <form role="form">
+			      	<div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        	<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      	</div>
+			      	<div class="modal-body">
+					  	<div class="form-group">
+					    	<label>Enter a value:</label>
+					    	<input type="text" class="form-control" />
+					  	</div>
+			      	</div>
+			      	<div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				        <button type="submit" class="btn btn-primary">Save changes</button>
+			      	</div>
+				</form>
+		    </div>
+	  	</div>
+	</div>
+
+	<!-- Confirm Modal -->
+	<div class="modal fade" id="confirm-modal" tabindex="-1" role="dialog">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+		    	<form method="post" action="#" role="form">
+			      	<div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        	<h4 class="modal-title" id="myModalLabel">
+			        		Are you sure you want to delete this?
+			        	</h4>
+			      	</div>
+			      	<div class="modal-body">
+						Do you want to delete your account? All your info will be erased.
+			      	</div>
+			      	<div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				        <button type="submit" class="btn btn-danger">Yes, delete it</button>
+			      	</div>
+			    </form>
+		    </div>
+	  	</div>
+	</div>
+
+	<!-- Form Modal -->
+	<div class="modal fade" id="form-modal" tabindex="-1" role="dialog">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+		    	<form method="post" action="#" role="form">
+			      	<div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        	<h4 class="modal-title" id="myModalLabel">
+			        		Create a new task
+			        	</h4>
+			      	</div>
+			      	<div class="modal-body">
+						<div class="form-group">
+					    	<label>Enter the task:</label>
+					    	<input type="text" class="form-control" />
+					  	</div>
+					  	<div class="form-group">
+					    	<label>Who's responsible?:</label>
+					    	<select class="form-control" data-smart-select>
+					    		<option>Me</option>
+					    		<option>John Smith</option>
+					    		<option>Karen Lawrence</option>
+					    	</select>
+					  	</div>
+					  	<div class="form-group">
+					    	<label>Date when it's due:</label>
+					    	<div class="input-group">
+							  	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+							  	<input type="text" class="form-control datepicker" placeholder="03/05/2014" />
+							</div>
+					  	</div>
+			      	</div>
+			      	<div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				        <button type="submit" class="btn btn-success">Save task</button>
+			      	</div>
+				</form>
+		    </div>
+	  	</div>
+	</div>
+
+	<!-- Form with Validation Modal -->
+	<div class="modal fade" id="form-validation-modal" tabindex="-1" role="dialog">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+		    	<form id="new-user-form" method="post" action="#" role="form">
+			      	<div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        	<h4 class="modal-title" id="myModalLabel">
+			        		Create a new user
+			        	</h4>
+			      	</div>
+			      	<div class="modal-body">
+						<div class="form-group">
+					    	<label>Full name:</label>
+					    	<input type="text" name="user[name]" class="form-control" />
+					  	</div>
+					  	<div class="form-group">
+					    	<label>Email:</label>
+					    	<input type="email" name="user[email]" class="form-control" />
+					  	</div>
+					  	<div class="form-group">
+					  		<label>Notes:</label>
+					  		<textarea class="form-control" name="user[notes]" rows="3"></textarea>
+					  	</div>
+			      	</div>
+			      	<div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				        <button type="submit" class="btn btn-success">Save user</button>
+			      	</div>
+				</form>
+		    </div>
+	  	</div>
+	</div>
+
+	<!-- Skin switcher -->
+	<div class="skin-switcher">
+		<div class="toggler">
+			<i class="brankic-brush"></i>
+		</div>
+		<ul class="menu">
+			<li>
+				<a class="active" data-skin="sidebar-default" href="#">
+					<span class="color default"></span> Default
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-clear" href="#">
+					<span class="color clear"></span> Clear
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-black" href="#">
+					<span class="color black"></span> Black
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-dark" href="#">
+					<span class="color dark"></span> Dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat" href="#">
+					<span class="color flat"></span> Flat
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat-dark" href="#">
+					<span class="color flat-dark"></span> Flat dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<script type="text/javascript">
+		$(function () {
+
+			// Focus input when prompt modal is shown
+			$('#prompt-modal').on('shown.bs.modal', function (e) {
+				$("#prompt-modal").find("input:text").focus();
+			})
+
+			// Focus first input when form modal is shown
+			$('#form-modal').on('shown.bs.modal', function (e) {
+				$("#form-modal").find("input:text:eq(0)").focus();
+
+				// initialize datepicker when the modal is shown, does not work if the input is hidden
+				$("#form-modal .datepicker").datepicker({
+		        	autoclose: true
+		        });
+			})
+
+			// Show message on submit
+			$("#form-modal").submit(function () {
+				$(this).modal('hide');
+				Messenger().post("Your task was created succesfully.");
+				return false;
+			});
+
+
+			// Focus first input when form modal is shown
+			$('#form-validation-modal').on('shown.bs.modal', function (e) {
+				$("#form-validation-modal").find("input:text:eq(0)").focus();
+			})
+
+			// Form validation
+			$('#new-user-form').validate({
+				rules: {
+					"user[name]": {
+						required: true
+					},
+					"user[email]": {
+						required: true,
+						email: true
+					},
+					"user[notes]": {
+						required: true
+					}
+				},
+				highlight: function (element) {
+					$(element).closest('.form-group').removeClass('success').addClass('error');
+				},
+				success: function (element) {
+					element.addClass('valid').closest('.form-group').removeClass('error').addClass('success');
+				}
+			});
+
+
+			// Notifications
+
+			Messenger.options = {
+				extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-right',
+			    theme: 'flat'
+			}
+
+			$(".normal-notification").click(function (e) {
+				e.preventDefault();
+				Messenger().post("A new order has been placed by John Williams!");
+			});
+
+			$(".error-notification").click(function (e) {
+				e.preventDefault();
+
+				Messenger().post({
+				  	message: 'Sorry, there was problem while processing your request.',
+				  	type: 'error',
+				  	showCloseButton: true
+				});
+			});
+
+			$(".button-notification").click(function (e) {
+				e.preventDefault();
+
+				var msg;
+				msg = Messenger().post({
+				  	message: 'Uploading new files...',
+				  	type: 'info',
+				  	actions: {
+				    	cancel: {
+				      		label: 'cancel upload',
+				      		action: function() {
+				        		return msg.update({
+				          			message: 'File uploading was canceled',
+				          			type: 'success',
+				          			actions: false
+				        		});
+				      		}
+				    	}
+					}
+				});
+			});
+
+			$(".run-notification").click(function (e) {
+				e.preventDefault();
+
+				var i = 0;
+				Messenger().run({
+				  	errorMessage: 'Error sending message',
+				  	successMessage: 'Message sent!',
+				  	action: function(opts) {
+				    	if (++i < 2) {
+				      		return opts.error({
+				        		status: 500,
+				        		readyState: 0,
+				        		responseText: 0
+				      		});
+				    	} else {
+				      		return opts.success();
+				    	}
+				  	}
+				});
+			});
+
+
+			// Guided Tour in app with shepherd.js
+			var tour;
+
+			tour = new Shepherd.Tour({
+			  	defaults: {
+					classes: 'shepherd-element shepherd-open shepherd-theme-arrows',
+					showCancelLink: true
+			    }
+			});
+
+			tour.addStep('example-step', {
+			  	text: 'This modal looks really cool for welcoming new users',
+			  	attachTo: {
+			  		element: '.tour-first-step',
+			  		on: 'bottom'
+			  	},
+			  	buttons: [
+			  	{
+			      	text: 'Exit',
+			      	classes: 'btn btn-default',
+			    	action: tour.cancel
+			    },
+			    {
+			    	text: 'Next',
+			    	classes: 'btn btn-primary',
+			      	action: tour.next
+			    }]
+			});
+
+			tour.addStep('example-step', {
+			  	text: 'This button is useful to show users a message regarding an action on your app',
+			  	attachTo: {
+			  		element: '.tour-second-step',
+			  		on: 'top'
+			  	},
+			  	buttons: [
+			  	{
+			      	text: 'Back',
+			      	classes: 'btn btn-default',
+			    	action: tour.back
+			    },
+			    {
+			    	text: 'Next',
+			    	classes: 'btn btn-primary',
+			      	action: tour.next
+			    }]
+			});
+
+			tour.addStep('example-step', {
+			  	text: 'This plugin is very useful to notify users of their connections',
+			  	attachTo: {
+			  		element: '.tour-third-step',
+			  		on: 'top'
+			  	},
+			  	buttons: [
+			  	{
+			      	text: 'Back',
+			      	classes: 'btn btn-default',
+			    	action: tour.back
+			    },
+			    {
+			    	text: 'Next',
+			    	classes: 'btn btn-primary',
+			      	action: tour.next
+			    }]
+			});
+
+			tour.addStep('example-step', {
+			  	text: 'You can change the theme skins here',
+			  	attachTo: {
+			  		element: '.skin-switcher',
+			  		on: 'left'
+			  	},
+			  	buttons: [
+			  	{
+			      	text: 'Back',
+			      	classes: 'btn btn-default',
+			    	action: tour.back
+			    },
+			    {
+			    	text: 'Done',
+			    	classes: 'btn btn-success',
+			      	action: tour.next
+			    }]
+			});
+
+			$(".start-tour").click(function (e) {
+				e.preventDefault();
+				tour.start();
+			});
+
+		});
+
+
+		
+		// This is an internal script that allows you to test the Offline.js plugin and see how your pages respond to 
+		// different connectivity states without having to use brute-force methods to disable your actual connectivity.
+
+		// Only used for demonstration purposes, make sure to remove this in production.
+
+		(function () {
+		    var a, b;
+		    if ("undefined" == typeof Offline || null === Offline) throw new Error("Offline simulate UI brought in without Offline.js");
+		    console.info("The offline.simulate.ui.js module is a development-only resource. Make sure to remove offline.simulate.ui.js in production."), 
+		    Offline.options.reconnect = {
+		        initialDelay: 10
+		    }, 
+		    a = function () {
+		        var a;
+		        return document.getElementById("offline-simulate-check").addEventListener("click", function () {
+					var a;
+			        return null == (a = Offline.options).checks && (a.checks = {}), Offline.options.checks.active = this.checked ? "down" : "up", Offline.check()
+				})
+		    }, 
+		    "interactive" === (b = document.readyState) || "complete" === b ? a() : document.addEventListener("DOMContentLoaded", a)
+		}).call(this);
+	</script>
+
+</body>
+</html>

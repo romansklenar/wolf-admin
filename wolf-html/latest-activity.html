@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>Wolf - Bootstrap Admin Theme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/brankic.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+
+	<!-- javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/theme.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="latest-activity">
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="name">
+					<img class="avatar" src="images/avatars/1.jpg" />
+					<span>
+						John Smith
+						<i class="fa fa-chevron-down"></i>
+					</span>
+				</a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>General</h3>
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="ion-android-earth"></i> 
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-person-stalker"></i> <span>Lists & Tables</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="users.html">Customers list</a></li>
+							<li><a href="datatables.html">Orders (Datatables)</a></li>
+							<li><a href="search.html">Products (Filters)</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-stats-bars"></i> <span>Reports</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="reports.html">Reports orders</a></li>
+							<li><a href="reports-alt.html">Report sales</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="form.html" data-toggle="sidebar">
+							<i class="ion-pricetags"></i> <span>Forms</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="form.html">New Customer (validation)</a></li>
+							<li><a href="form-product.html">New Product (add-ons)</a></li>
+							<li><a href="wizard.html">Wizard</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Application</h3>
+				<ul>
+					<li>
+						<a href="account.html" class="active" data-toggle="sidebar">
+							<i class="ion-earth"></i> <span>App Pages</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="sidebar.html">Inbox Messages</a></li>
+							<li><a href="user-profile.html">User profile</a></li>
+							<li><a href="latest-activity.html" class="active">Latest activity</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="steps.html">Steps to launch</a></li>
+							<li><a href="calendar.html">Calendar</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-card"></i> <span>Pricing</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="pricing.html">Pricing (Plans)</a></li>
+							<li><a href="pricing-alt.html">Pricing charts</a></li>
+							<li><a href="billing-form.html">Billing form</a></li>
+							<li><a href="invoice.html">Invoice</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-flash"></i> <span>Features</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="email-templates.html">Email templates</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="ui.html">UI Extras</a></li>
+							<li><a href="docs.html">API Documentation</a></li>
+							<li><a href="signup.html">Sign up</a></li>
+							<li><a href="signin.html">Sign in</a></li>
+							<li><a href="status.html">App Status</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Admin</h3>
+				<ul>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-person"></i> <span>My account</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="account-profile.html">Settings</a></li>
+							<li><a href="account-billing.html">Billing</a></li>
+							<li><a href="account-notifications.html">Notifications</a></li>
+							<li><a href="account-support.html">Support</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" data-toggle="sidebar">
+							<i class="ion-usb"></i> <span>Level Navigation</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li>
+								<a href="invoice.html" data-toggle="sidebar">
+									Submenu
+									<i class="fa fa-chevron-down"></i>
+								</a>
+								<ul class="submenu">
+									<li><a href="#">Last menu</a></li>
+									<li><a href="#">Last menu</a></li>
+								</ul>
+							</li>
+							<li><a href="invoice.html">Menu link</a></li>
+							<li><a href="#">Extra link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom-menu hidden-sm">
+				<ul>
+					<li><a href="#"><i class="ion-help"></i></a></li>
+					<li>
+						<a href="#">
+							<i class="ion-archive"></i>
+							<span class="flag"></span>
+						</a>
+						<ul class="menu">
+							<li><a href="#">5 unread messages</a></li>
+							<li><a href="#">12 tasks completed</a></li>
+							<!-- <li><a href="#">3 features added</a></li> -->
+						</ul>
+					</li>
+					<li><a href="signup.html"><i class="ion-log-out"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+			<div class="menubar">
+				<div class="sidebar-toggler visible-xs">
+					<i class="ion-navicon"></i>
+				</div>
+
+				<div class="page-title">
+					Recent Activity Feed
+				</div>
+			</div>
+
+			<div class="content-wrapper">
+				<!-- Single button -->
+				<div class="filter-user btn-group">
+				  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				    	Filter by user <span class="caret"></span>
+				  	</button>
+				  	<ul class="dropdown-menu" role="menu">
+				    	<li><a href="#">Jessie</a></li>
+				    	<li><a href="#">Robb Stark</a></li>
+					    <li><a href="#">Anna Sophia</a></li>
+				  	</ul>
+				</div>
+				<h3>
+					Today
+					<small>August 03, 2014</small>
+				</h3>
+				<div class="moment first">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon">
+								<i class="fa fa-comment"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/10.jpg" />
+							<div class="content">
+								<strong>John Smith</strong> commented on your thread <a href="#">What's up guys</a>.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="moment">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon violet">
+								<i class="fa fa-upload"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/15.jpg" />
+
+							<div class="content">
+								<strong>Jessie</strong> uploaded 3 files.
+								<div class="files">
+									<div class="file">
+										<img class="img-responsive" src="images/shots/1.png" />
+
+										<span class="name">
+											Some cool file name
+										</span>
+									</div>
+									<div class="file">
+										<img class="img-responsive" src="images/shots/2.png" />
+
+										<span class="name">
+											Website design screenshot
+										</span>
+									</div>
+									<div class="file">
+										<img class="img-responsive" src="images/shots/3.png" />
+
+										<span class="name">
+											New Dashboard panel
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="moment">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon purple">
+								<i class="fa fa-quote-left"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/5.jpg" />
+							<div class="content">
+								<strong>Robb Stark</strong> added a new note on project <a href="#">Web design</a>.
+
+								<p>
+									I want everything we do to be beautiful. I don’t give a damn whether the client understands that that’s worth anything, or that the client thinks it’s worth anything, or whether it is worth anything. It’s worth it to me. It’s the way I want to live my life. I want to make beautiful things, even if nobody cares.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="moment">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon violet">
+								<i class="fa fa-upload"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/16.jpg" />
+							<div class="content">
+								<strong>Ana Sophia</strong> uploaded a text file <a href="#">site_documentation.txt</a> from Google Drive.
+
+								<div class="big-file clearfix">
+									<img src="images/google-drive.png" />
+									<a href="#" class="name">
+										New Website Project Documentation for the team
+									</a>
+									<div class="size">
+										20/01/2014. 135 KB.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="moment">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon">
+								<i class="fa fa-comment"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/17.jpg" />
+							<div class="content">
+								<strong>George Smith</strong> made 2 comments on project <a href="#">PSD to HTML</a>.
+								<p class="border-bottom">
+									<span class="date">2 hours ago</span>
+									You have to roll up your sleeves and be a stonecutter before you can become a sculptor – command of craft always precedes art: apprentice, journeyman, master.
+								</p>
+								<p>
+									<span class="date">5 hours ago</span>
+									It doesn’t matter one damn bit whether fashion is art or not. You don’t question whether an incredible chef is an artist or not – his cakes are delicious and that’s all that matters.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="moment">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon">
+								<i class="fa fa-comment"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/8.jpg" />
+							<div class="content">
+								<strong>Brandon Johnson</strong> added a new comment on project <a href="#">This is great</a>.
+								<p>
+									Some people say design is about solving problems. Obviously designers solve problems but so do dentists. Design is about cultural invention.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="moment">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon yellow">
+								<i class="fa fa-check"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/9.jpg" />
+							<div class="content">
+								<strong>Ana Sophia</strong> completed <a href="#">4 tasks</a>.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="moment last">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon dark">
+								<i class="fa fa-files-o"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/17.jpg" />
+							<div class="content">
+								<strong>George Smith</strong> uploaded <a href="#">8 files</a>.
+							</div>
+						</div>
+					</div>
+				</div>
+				<h3>
+					Last week
+					<small>July 23 - August 02, 2014</small>
+				</h3>
+				<div class="moment first">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon">
+								<i class="fa fa-comment"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/10.jpg" />
+							<div class="content">
+								<strong>John Smith</strong> commented on your thread <a href="#">What's up guys</a>.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="moment">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon violet">
+								<i class="fa fa-upload"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/15.jpg" />
+
+							<div class="content">
+								<strong>Jessie</strong> uploaded 3 files.
+								<div class="files">
+									<div class="file">
+										<img class="img-responsive" src="images/shots/4.png" />
+
+										<span class="name">
+											Some cool file name
+										</span>
+									</div>
+									<div class="file">
+										<img class="img-responsive" src="images/shots/5.png" />
+
+										<span class="name">
+											Website design screenshot
+										</span>
+									</div>
+									<div class="file">
+										<img class="img-responsive" src="images/shots/6.jpg" />
+
+										<span class="name">
+											New Dashboard panel
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="moment last">
+					<div class="row event clearfix">
+						<div class="col-sm-1">
+							<div class="icon purple">
+								<i class="fa fa-quote-left"></i>
+							</div>
+						</div>
+						<div class="col-sm-11 message">
+							<img class="avatar" src="images/avatars/16.jpg" />
+							<div class="content">
+								<strong>Anna Sophia</strong> added a new note on project <a href="#">Web design</a>.
+
+								<p>
+									I want everything we do to be beautiful. I don’t give a damn whether the client understands that that’s worth anything, or that the client thinks it’s worth anything, or whether it is worth anything. It’s worth it to me.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="skin-switcher">
+		<div class="toggler">
+			<i class="brankic-brush"></i>
+		</div>
+		<ul class="menu">
+			<li>
+				<a class="active" data-skin="sidebar-default" href="#">
+					<span class="color default"></span> Default
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-clear" href="#">
+					<span class="color clear"></span> Clear
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-black" href="#">
+					<span class="color black"></span> Black
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-dark" href="#">
+					<span class="color dark"></span> Dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat" href="#">
+					<span class="color flat"></span> Flat
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat-dark" href="#">
+					<span class="color flat-dark"></span> Flat dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

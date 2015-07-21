@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>Wolf - Bootstrap Admin Theme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/brankic.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/select2.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/select2-bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/datepicker.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/jquery.minicolors.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/summernote.css" />
+
+	<!-- javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/vendor/select2.min.js"></script>
+	<script src="js/vendor/bootstrap-datepicker.js"></script>
+	<script src="js/vendor/jquery.validate.min.js"></script>
+	<script src="js/vendor/summernote.min.js"></script>
+	<script src="js/vendor/jquery.raty.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/vendor/jquery.minicolors.min.js"></script>
+	<script src="js/vendor/jquery.maskedinput.js"></script>
+	<script src="js/theme.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="form-product">
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="name">
+					<img class="avatar" src="images/avatars/1.jpg" />
+					<span>
+						John Smith
+						<i class="fa fa-chevron-down"></i>
+					</span>
+				</a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>General</h3>
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="ion-android-earth"></i> 
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-person-stalker"></i> <span>Lists & Tables</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="users.html">Customers list</a></li>
+							<li><a href="datatables.html">Orders (Datatables)</a></li>
+							<li><a href="search.html">Products (Filters)</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-stats-bars"></i> <span>Reports</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="reports.html">Reports orders</a></li>
+							<li><a href="reports-alt.html">Report sales</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="form.html" class="active" data-toggle="sidebar">
+							<i class="ion-pricetags"></i> <span>Forms</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="form.html">New Customer (validation)</a></li>
+							<li><a href="form-product.html" class="active">New Product (add-ons)</a></li>
+							<li><a href="wizard.html">Wizard</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Application</h3>
+				<ul>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-earth"></i> <span>App Pages</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="sidebar.html">Inbox Messages</a></li>
+							<li><a href="user-profile.html">User profile</a></li>
+							<li><a href="latest-activity.html">Latest activity</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="steps.html">Steps to launch</a></li>
+							<li><a href="calendar.html">Calendar</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-card"></i> <span>Pricing</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="pricing.html">Pricing (Plans)</a></li>
+							<li><a href="pricing-alt.html">Pricing charts</a></li>
+							<li><a href="billing-form.html">Billing form</a></li>
+							<li><a href="invoice.html">Invoice</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-flash"></i> <span>Features</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="email-templates.html">Email templates</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="ui.html">UI Extras</a></li>
+							<li><a href="docs.html">API Documentation</a></li>
+							<li><a href="signup.html">Sign up</a></li>
+							<li><a href="signin.html">Sign in</a></li>
+							<li><a href="status.html">App Status</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Admin</h3>
+				<ul>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-person"></i> <span>My account</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="account-profile.html">Settings</a></li>
+							<li><a href="account-billing.html">Billing</a></li>
+							<li><a href="account-notifications.html">Notifications</a></li>
+							<li><a href="account-support.html">Support</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" data-toggle="sidebar">
+							<i class="ion-usb"></i> <span>Level Navigation</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li>
+								<a href="invoice.html" data-toggle="sidebar">
+									Submenu
+									<i class="fa fa-chevron-down"></i>
+								</a>
+								<ul class="submenu">
+									<li><a href="#">Last menu</a></li>
+									<li><a href="#">Last menu</a></li>
+								</ul>
+							</li>
+							<li><a href="invoice.html">Menu link</a></li>
+							<li><a href="#">Extra link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom-menu hidden-sm">
+				<ul>
+					<li><a href="#"><i class="ion-help"></i></a></li>
+					<li>
+						<a href="#">
+							<i class="ion-archive"></i>
+							<span class="flag"></span>
+						</a>
+						<ul class="menu">
+							<li><a href="#">5 unread messages</a></li>
+							<li><a href="#">12 tasks completed</a></li>
+							<!-- <li><a href="#">3 features added</a></li> -->
+						</ul>
+					</li>
+					<li><a href="signup.html"><i class="ion-log-out"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+			<div class="menubar">
+				<div class="sidebar-toggler visible-xs">
+					<i class="ion-navicon"></i>
+				</div>
+
+				<div class="page-title">
+					New product form 
+					
+					<small class="hidden-xs">
+						<strong>Showcase of form elements</strong>
+					</small>
+				</div>
+			</div>
+
+			<div class="content-wrapper">
+				<form id="new-product" class="form-horizontal" method="post" action="#" role="form">
+				  	<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Title</label>
+					    <div class="col-sm-10 col-md-8">
+					      <input type="text" class="form-control" name="product[first_name]" />
+					    </div>
+				  	</div>
+				  	<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Price</label>
+					    <div class="col-sm-10 col-md-8">
+					      <input type="text" class="form-control" name="product[last_name]" />
+					    </div>
+				  	</div>
+				  	<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Display picture</label>
+					    <div class="col-sm-10 col-md-8">
+					    	<div class="well">
+					    		<div class="pic">
+					    			<img src="images/product.jpg" class="img-responsive" />
+					    		</div>
+			                    
+			                    <div class="control-group">
+				                    <label for="post_featured_image">
+				                    	Choose a picture:
+				                    </label>
+				                    <input id="post_featured_image" name="post[featured_image]" type="file">
+				                </div>
+			                    <div class="control-group">
+		                            <label for="post_images_attributes_0_alt">Alt:</label>
+		                            <input class="form-control" name="post[images_attributes][0][alt]" size="30" style="width: 50%;" type="text" />
+		                        </div>
+		                        <a href="#" class="remove-image">Remove image</a>
+				            </div>
+					    </div>
+				  	</div>
+				  	<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">
+					    	SKU
+					    	<span class="help" data-toggle="tooltip" title="The Stock Keeping Unit">
+					    		<i class="fa fa-question-circle"></i>
+					    	</span>
+					    </label>
+					    <div class="col-sm-10 col-md-8">
+					      <input type="text" class="form-control" name="product[email]" />
+					    </div>
+				  	</div>
+				  	<div class="address">
+				  		<div class="form-group">
+						    <label class="col-sm-2 col-md-2 control-label">Product Handle</label>
+						    <div class="col-sm-10 col-md-8">
+						      	<input type="text" class="form-control" placeholder="/my-product-handle" name="product[address]" />
+						    </div>
+						</div>
+				  	</div>
+				  	<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Masked phone</label>
+					    <div class="col-sm-10 col-md-8">
+					    	<div class="has-feedback">
+								<input type="text" class="form-control mask-phone" name="customer[phone]" />
+						      	<i class="ion-information-circled form-control-feedback" data-toggle="tooltip" title="Tooltip helper example">
+						      	</i>
+							</div>
+					    </div>
+				  	</div>
+				  	<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Masked Credit Card</label>
+					    <div class="col-sm-10 col-md-8">
+					    	<div class="has-feedback">
+					      		<input type="text" class="form-control mask-cc" name="customer[cc]" />
+					      		<i class="ion-information-circled form-control-feedback" data-toggle="tooltip" title="Credit card masked input example">
+						      	</i>
+							</div>
+					    </div>
+				  	</div>
+			  		<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Product rating</label>
+					    <div class="col-sm-10 col-md-8">
+					      	<div id="raty"></div>
+					    </div>
+					</div>
+					<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Product Main Color</label>
+					    <div class="col-sm-10 col-md-8">
+					      	<input type="text" class="form-control minicolors" />
+					    </div>
+					</div>
+				  	<div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 col-md-2 control-label">Category</label>
+					    <div class="col-sm-10 col-md-8">
+					    	<select class="form-control" data-smart-select>
+					    		<option>Bicycles</option>
+					    		<option>Clothes</option>
+					    		<option>Gift Cards</option>
+					    	</select>
+					    </div>
+				  	</div>
+				  	<div class="form-group">
+				  		<label class="col-sm-2 col-md-2 control-label">Product description</label>
+				  		<div class="col-sm-10 col-md-8">
+				  			<div id="summernote"></div>
+				  		</div>
+				  	</div>
+				  	<div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 col-md-2 control-label">Product tags</label>
+					    <div class="col-sm-10 col-md-8">
+					      	<input type="hidden" id="product-tags" style="width:100%" value="ball, toy, clothes" name="product[tags]" />
+					    </div>
+				  	</div>
+				  	<div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 col-md-2 control-label">Specific publish date</label>
+					    <div class="col-sm-10 col-md-8">
+					    	<div class="input-group">
+							  	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+							  	<input type="text" class="form-control datepicker" placeholder="03/05/2014" />
+							</div>
+					    </div>
+				  	</div>
+				  	<div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10 col-md-offset-2 col-md-10">
+					      	<div class="checkbox">
+					        	<label>
+					          		<input type="checkbox" name="product[send_marketing]" /> Set product as visible
+				        		</label>
+					      	</div>
+					    </div>
+				  	</div>
+
+				  	<div class="form-group form-actions">
+				    	<div class="col-sm-offset-2 col-sm-10 col-md-offset-2 col-md-10">
+				    		<a href="form.html" class="btn btn-default">Cancel</a>
+				      		<button type="submit" class="btn btn-success">Save product</button>
+			    		</div>
+				  	</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="skin-switcher">
+		<div class="toggler">
+			<span class="brankic-brush"></span>
+		</div>
+		<ul class="menu">
+			<li>
+				<a class="active" data-skin="sidebar-default" href="#">
+					<span class="color default"></span> Default
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-clear" href="#">
+					<span class="color clear"></span> Clear
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-black" href="#">
+					<span class="color black"></span> Black
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-dark" href="#">
+					<span class="color dark"></span> Dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat" href="#">
+					<span class="color flat"></span> Flat
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat-dark" href="#">
+					<span class="color flat-dark"></span> Flat dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		$(function () {
+
+			// Form validation
+			$('#new-product').validate({
+				rules: {
+					"product[first_name]": {
+						required: true
+					},
+					"product[email]": {
+						required: true,
+						email: true
+					},
+					"product[address]": {
+						required: true
+					},
+					"product[notes]": {
+						required: true
+					}
+				},
+				highlight: function (element) {
+					$(element).closest('.form-group').removeClass('success').addClass('error');
+				},
+				success: function (element) {
+					element.addClass('valid').closest('.form-group').removeClass('error').addClass('success');
+				}
+			});
+
+			// Product tags with select2
+			$("#product-tags").select2({
+				placeholder: 'Select tags or add new ones',
+				tags:["shirt", "gloves", "socks", "sweater"],
+				tokenSeparators: [",", " "]
+			});
+
+			// Bootstrap wysiwyg
+			$("#summernote").summernote({
+				height: 240,
+				toolbar: [
+				    ['style', ['style']],
+				    ['style', ['bold', 'italic', 'underline', 'clear']],
+				    ['fontsize', ['fontsize']],
+				    ['para', ['ul', 'ol', 'paragraph']],
+				    ['height', ['height']],
+				    ['insert', ['picture', 'link', 'video']],
+				    ['view', ['fullscreen', 'codeview']],
+				    ['table', ['table']],
+				]
+			});
+
+			// jQuery rating
+			$('#raty').raty({
+				path: 'images/raty',
+				score: 4
+			});
+
+			// Datepicker
+	        $('.datepicker').datepicker({
+	        	autoclose: true,
+	        	orientation: 'left bottom',
+	        });
+
+	        // Minicolors colorpicker
+	        $('input.minicolors').minicolors({
+	        	position: 'top left',
+	        	defaultValue: '#9b86d1',
+	        	theme: 'bootstrap'
+	        });
+
+	        // masked input example using phone input
+			$(".mask-phone").mask("(999) 999-9999");
+			$(".mask-cc").mask("9999 9999 9999 9999");
+		});
+	</script>
+
+</body>
+</html>

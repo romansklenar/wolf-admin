@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>Wolf - Bootstrap Admin Theme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/brankic.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/icomoon.css" />
+
+	<!-- javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/theme.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="sidebar">
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="scroll-wrapper">
+				<div class="current-user">
+					<a href="index.html" class="name">
+						<img class="avatar" src="images/avatars/1.jpg" />
+						<span>
+							John Smith
+							<i class="fa fa-chevron-down"></i>
+						</span>
+					</a>
+					<ul class="menu">
+						<li>
+							<a href="account-profile.html">Account settings</a>
+						</li>
+						<li>
+							<a href="account-billing.html">Billing</a>
+						</li>
+						<li>
+							<a href="account-notifications.html">Notifications</a>
+						</li>
+						<li>
+							<a href="account-support.html">Help / Support</a>
+						</li>
+						<li>
+							<a href="signup.html">Sign out</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>General</h3>
+					<ul>
+						<li>
+							<a href="index.html">
+								<i class="ion-android-earth"></i> 
+								<span>Dashboard</span>
+							</a>
+						</li>
+						<li>
+							<a href="users.html" data-toggle="sidebar">
+								<i class="ion-person-stalker"></i> <span>Lists & Tables</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="users.html">Customers list</a></li>
+								<li><a href="datatables.html">Orders (Datatables)</a></li>
+								<li><a href="search.html">Products (Filters)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="users.html" data-toggle="sidebar">
+								<i class="ion-stats-bars"></i> <span>Reports</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="reports.html">Reports orders</a></li>
+								<li><a href="reports-alt.html">Report sales</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="form.html" data-toggle="sidebar">
+								<i class="ion-pricetags"></i> <span>Forms</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="form.html">New Customer (validation)</a></li>
+								<li><a href="form-product.html">New Product (add-ons)</a></li>
+								<li><a href="wizard.html">Wizard</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>Application</h3>
+					<ul>
+						<li>
+							<a href="account.html" class="active" data-toggle="sidebar">
+								<i class="ion-earth"></i> <span>App Pages</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="sidebar.html" class="active">Inbox Messages</a></li>
+								<li><a href="user-profile.html">User profile</a></li>
+								<li><a href="latest-activity.html">Latest activity</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="steps.html">Steps to launch</a></li>
+								<li><a href="calendar.html">Calendar</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="ion-card"></i> <span>Pricing</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="pricing.html">Pricing (Plans)</a></li>
+								<li><a href="pricing-alt.html">Pricing charts</a></li>
+								<li><a href="billing-form.html">Billing form</a></li>
+								<li><a href="invoice.html">Invoice</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="ion-flash"></i> <span>Features</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="email-templates.html">Email templates</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="ui.html">UI Extras</a></li>
+								<li><a href="docs.html">API Documentation</a></li>
+								<li><a href="signup.html">Sign up</a></li>
+								<li><a href="signin.html">Sign in</a></li>
+								<li><a href="status.html">App Status</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>Admin</h3>
+					<ul>
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="ion-person"></i> <span>My account</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="account-profile.html">Settings</a></li>
+								<li><a href="account-billing.html">Billing</a></li>
+								<li><a href="account-notifications.html">Notifications</a></li>
+								<li><a href="account-support.html">Support</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" data-toggle="sidebar">
+								<i class="ion-usb"></i> <span>Level Navigation</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li>
+									<a href="invoice.html" data-toggle="sidebar">
+										Submenu
+										<i class="fa fa-chevron-down"></i>
+									</a>
+									<ul class="submenu">
+										<li><a href="#">Last menu</a></li>
+										<li><a href="#">Last menu</a></li>
+									</ul>
+								</li>
+								<li><a href="invoice.html">Menu link</a></li>
+								<li><a href="#">Extra link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="bottom-menu hidden-sm">
+					<ul>
+						<li><a href="#"><i class="ion-help"></i></a></li>
+						<li>
+							<a href="#">
+								<i class="ion-archive"></i>
+								<span class="flag"></span>
+							</a>
+							<ul class="menu">
+								<li><a href="#">5 unread messages</a></li>
+								<li><a href="#">12 tasks completed</a></li>
+								<!-- <li><a href="#">3 features added</a></li> -->
+							</ul>
+						</li>
+						<li><a href="signup.html"><i class="ion-log-out"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="content">
+			<div id="app-sidebar">
+				<div class="scroll-wrapper">
+					<div class="menubar relative">
+						<div class="sidebar-toggler visible-xs">
+							<i class="ion-navicon"></i>
+						</div>
+						<form>
+							<i class="fa fa-search"></i>
+							<input type="text" class="form-control" placeholder="Search messages..." />
+						</form>
+					</div>
+					<div class="messages">
+						<div class="message clearfix">
+							<div class="time">
+								6:00
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/6.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">Jacob Sabludosky</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+						<div class="message active clearfix">
+							<div class="time">
+								Oct 14		
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/5.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">Karen Diaz</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+						<div class="message clearfix">
+							<div class="time">
+								Oct 05	
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/3.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">John Stewart</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+						<div class="message clearfix">
+							<div class="time">
+								Sep 29
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/4.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">David Gilmour</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+						<div class="message clearfix">
+							<div class="time">
+								Oct 14		
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/7.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">Jacob Sabludosky</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+						<div class="message clearfix">
+							<div class="time">
+								Oct 14		
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/8.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">Jacob Sabludosky</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+						<div class="message clearfix">
+							<div class="time">
+								Oct 14		
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/9.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">Jacob Sabludosky</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+						<div class="message clearfix">
+							<div class="time">
+								Oct 14		
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/10.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">Jacob Sabludosky</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+						<div class="message clearfix">
+							<div class="time">
+								Oct 14		
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/11.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">Jacob Sabludosky</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+						<div class="message clearfix">
+							<div class="time">
+								Oct 14		
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/12.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">Jacob Sabludosky</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+						<div class="message clearfix">
+							<div class="time">
+								Oct 14		
+							</div>
+							<div class="avatar pull-left">
+								<img src="images/avatars/13.jpg" />
+							</div>
+							<a href="#" class="info pull-left">
+								<span class="name">Jacob Sabludosky</span>
+								<span class="subject">Design</span>
+								<span class="intro">
+									Hey dude, i'm sure you'll like this new approach to design some...
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="paging">
+						<a class="disabled left" href="#" data-toggle="tooltip" data-placement="top" title="Previous page">
+							<i class="fa fa-chevron-left"></i>
+						</a>
+						<a class="right" href="#" data-toggle="tooltip" data-placement="top" title="Next page">
+							<i class="fa fa-chevron-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="app-message">
+				<div class="scroll-wrapper">
+					<div class="menubar relative">
+						<div class="page-title">
+							Good design is good business
+						</div>
+						<div class="paging">
+							<a class="left" href="#" data-toggle="tooltip" data-placement="bottom" title="Previous message"><i class="fa fa-chevron-left"></i></a>
+							<a class="right" href="#" data-toggle="tooltip" data-placement="bottom" title="Next message"><i class="fa fa-chevron-right"></i></a>
+							<a class="trash" href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash-o"></i></a>
+						</div>
+					</div>
+
+					<section>
+						<div class="message">
+							<div class="header">
+								<div class="info">
+									<img class="avatar" src="images/avatars/7.jpg" />
+									from <strong>Jon Snow</strong> <i>&bull;</i> <strong>16th Feb, 3:04pm</strong>
+								</div>
+							</div>
+							<div class="body">
+								<p>Hey there,</p>
+								<p>
+									In the most anticipated announcement in physics since the discovery of the <a href="#">Higgs Boson</a>, the first detection of a gravitational wave has been reported. If verified, the find will dispel any lingering doubts about Relativity theory, transform our understanding of the universe's beginning and provide astrophysicists with a new tool to probe the universe. The importance of the detection is hard to overstate.
+								</p>
+								<p>
+									As part of his General Theory of Relativity, Einstein predicted that acceleration of large masses would cause waves to ripple through space in a manner analogous to ripples on the surface of a pond. Indirect evidence abounds for gravitational waves, but almost a century after Einstein predicted it direct evidence remained elusive - until today's announcement by the Harvard-Smithsonian Center for Astrophysics. The paper is now available on arXiv.
+								</p>
+							</div>
+							<div class="attachments clearfix">
+								<div class="attachment">
+									<a href="#">
+										<span class="file-type html">HTML</span>
+										<span class="name">resume.html <span class="size">(5mb)</span></span>
+									</a>
+								</div>
+								<div class="attachment">
+									<a href="#">
+										<span class="file-type zip">ZIP</span>
+										<span class="name">theme.zip <span class="size">(3.2mb)</span></span>
+									</a>
+								</div>
+							</div>
+							<div class="reply">
+								<form>
+									<textarea placeholder="Reply message..." class="form-control" rows="4"></textarea>
+									<div class="actions text-right">
+										<input class="btn btn-primary" type="submit" value="Send message" />
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="message collapsed">
+							<a href="#">
+								<span class="sender">Andrea Lawrence</span>
+								<span class="receiver">to Jon Snow</span>
+								<span class="date pull-right">
+									12th Feb, 9:38pm
+								</span>
+							</a>
+						</div>
+						<div class="message collapsed">
+							<a href="#">
+								<span class="sender">Jon Snow</span>
+								<span class="receiver">to Andrea Lawrence</span>
+								<span class="date pull-right">
+									9th Feb, 10:31am
+								</span>
+							</a>
+						</div>
+						<div class="message collapsed">
+							<a href="#">
+								<span class="sender">Andrea Lawrence</span>
+								<span class="receiver">to Jon Snow</span>
+								<span class="date pull-right">
+									31th Jan, 12:05pm
+								</span>
+							</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="skin-switcher">
+		<div class="toggler">
+			<i class="brankic-brush"></i>
+		</div>
+		<ul class="menu">
+			<li>
+				<a class="active" data-skin="sidebar-default" href="#">
+					<span class="color default"></span> Default
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-clear" href="#">
+					<span class="color clear"></span> Clear
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-black" href="#">
+					<span class="color black"></span> Black
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-dark" href="#">
+					<span class="color dark"></span> Dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat" href="#">
+					<span class="color flat"></span> Flat
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat-dark" href="#">
+					<span class="color flat-dark"></span> Flat dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		$(function () {
+			$("html, body").css('height', '100%');
+		});
+	</script>
+</body>
+</html>

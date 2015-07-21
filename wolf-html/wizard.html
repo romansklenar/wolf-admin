@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>Wolf - Bootstrap Admin Theme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/brankic.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+
+	<!-- javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/theme.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="wizard">
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="name">
+					<img class="avatar" src="images/avatars/1.jpg" />
+					<span>
+						John Smith
+						<i class="fa fa-chevron-down"></i>
+					</span>
+				</a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>General</h3>
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="ion-android-earth"></i> 
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-person-stalker"></i> <span>Lists & Tables</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="users.html">Customers list</a></li>
+							<li><a href="datatables.html">Orders (Datatables)</a></li>
+							<li><a href="search.html">Products (Filters)</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-stats-bars"></i> <span>Reports</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="reports.html">Reports orders</a></li>
+							<li><a href="reports-alt.html">Report sales</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="form.html" class="active" data-toggle="sidebar">
+							<i class="ion-pricetags"></i> <span>Forms</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="form.html">New Customer (validation)</a></li>
+							<li><a href="form-product.html">New Product (add-ons)</a></li>
+							<li><a href="wizard.html" class="active">Wizard</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Application</h3>
+				<ul>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-earth"></i> <span>App Pages</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="sidebar.html">Inbox Messages</a></li>
+							<li><a href="user-profile.html">User profile</a></li>
+							<li><a href="latest-activity.html">Latest activity</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="steps.html">Steps to launch</a></li>
+							<li><a href="calendar.html">Calendar</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-card"></i> <span>Pricing</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="pricing.html">Pricing (Plans)</a></li>
+							<li><a href="pricing-alt.html">Pricing charts</a></li>
+							<li><a href="billing-form.html">Billing form</a></li>
+							<li><a href="invoice.html">Invoice</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-flash"></i> <span>Features</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="email-templates.html">Email templates</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="ui.html">UI Extras</a></li>
+							<li><a href="docs.html">API Documentation</a></li>
+							<li><a href="signup.html">Sign up</a></li>
+							<li><a href="signin.html">Sign in</a></li>
+							<li><a href="status.html">App Status</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Admin</h3>
+				<ul>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-person"></i> <span>My account</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="account-profile.html">Settings</a></li>
+							<li><a href="account-billing.html">Billing</a></li>
+							<li><a href="account-notifications.html">Notifications</a></li>
+							<li><a href="account-support.html">Support</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" data-toggle="sidebar">
+							<i class="ion-usb"></i> <span>Level Navigation</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li>
+								<a href="invoice.html" data-toggle="sidebar">
+									Submenu
+									<i class="fa fa-chevron-down"></i>
+								</a>
+								<ul class="submenu">
+									<li><a href="#">Last menu</a></li>
+									<li><a href="#">Last menu</a></li>
+								</ul>
+							</li>
+							<li><a href="invoice.html">Menu link</a></li>
+							<li><a href="#">Extra link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom-menu hidden-sm">
+				<ul>
+					<li><a href="#"><i class="ion-help"></i></a></li>
+					<li>
+						<a href="#">
+							<i class="ion-archive"></i>
+							<span class="flag"></span>
+						</a>
+						<ul class="menu">
+							<li><a href="#">5 unread messages</a></li>
+							<li><a href="#">12 tasks completed</a></li>
+							<!-- <li><a href="#">3 features added</a></li> -->
+						</ul>
+					</li>
+					<li><a href="signup.html"><i class="ion-log-out"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+
+			<div class="content-wrapper">
+				<div class="header">
+					<div class="sidebar-toggler visible-xs">
+						<i class="ion-navicon"></i>
+					</div>
+
+					<div class="steps clearfix">
+						<div class="step active">
+							Setup your account
+							<span></span>
+						</div>
+						<div class="step">
+							Configure your profile
+							<span></span>
+						</div>
+						<div class="step">
+							Credit Card Info
+							<span></span>
+						</div>
+						<div class="step">
+							Finish
+							<span></span>
+						</div>
+					</div>
+				</div>
+
+				<section class="form-wizard">
+
+					<form id="new-customer" method="post" action="#" role="form">
+						<div class="step active animated fadeInRightStep">
+							<div class="form-group">
+							    <label>Full name</label>
+							    <input type="text" class="form-control" name="customer[first_name]" />
+						  	</div>
+						  	<div class="form-group">
+							    <label>Email address</label>
+							    <input type="text" class="form-control" name="customer[email]" />
+						  	</div>
+						  	<div class="form-group">
+							    <label>Password</label>
+							   	<input type="password" class="form-control" name="customer[password]" />
+							</div>
+							<div class="form-group">
+							    <label>Confirm Password</label>
+							   	<input type="password" class="form-control" name="customer[password_confirmation]" />
+							</div>
+						  	<div class="form-group">
+							    <label for="inputPassword3">Extra notes</label>
+							    <textarea class="form-control" rows="4" name="customer[notes]"></textarea>
+						  	</div>
+						  	<div class="form-group form-actions">
+					      		<button type="submit" class="button" data-step="2">
+					      			<span>Next Step <i class="fa fa-angle-double-right"></i></span>
+					      		</button>
+						  	</div>
+						</div>
+						<div class="step">
+							<div class="form-group">
+							    <label>Username</label>
+							    <input type="text" class="form-control" name="customer[username]" />
+						  	</div>
+						  	<div class="form-group">
+							    <label>Display picture</label>
+							    <div class="display-field clearfix">
+							    	<div class="display">
+								    	<span>100x100</span>
+								    </div>
+								    <input type="file" name="customer[display]" />
+							    </div>
+						  	</div>
+						  	<div class="form-group">
+							    <label>Application name</label>
+							   	<input type="text" class="form-control" name="customer[]" />
+							</div>
+							<div class="form-group">
+							    <label>Timezone</label>
+							   	<select id="user_time_zone" data-smart-select>
+									<option value="Hawaii">(GMT-10:00) Hawaii</option>
+									<option value="Alaska">(GMT-09:00) Alaska</option>
+									<option value="Pacific Time (US &amp; Canada)">
+										(GMT-08:00) Pacific Time (US &amp; Canada)
+									</option>
+									<option value="Arizona">(GMT-07:00) Arizona</option>
+									<option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+									<option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
+									<option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+									<option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+									<option value="" disabled="disabled">-------------</option>
+									<option value="American Samoa">(GMT-11:00) American Samoa</option>
+									<option value="International Date Line West">(GMT-11:00) International Date Line West</option>
+									<option value="Midway Island">(GMT-11:00) Midway Island</option>
+									<option value="Tijuana">(GMT-08:00) Tijuana</option>
+									<option value="Chihuahua">(GMT-07:00) Chihuahua</option>
+									<option value="Mazatlan">(GMT-07:00) Mazatlan</option>
+									<option value="Central America">(GMT-06:00) Central America</option>
+									<option value="Guadalajara">(GMT-06:00) Guadalajara</option>
+									<option value="Mexico City">(GMT-06:00) Mexico City</option>
+									<option value="Monterrey" >(GMT-06:00) Monterrey</option>
+								</select>
+							</div>
+						  	<div class="form-group form-actions">
+						  		<a class="button" href="#" data-step="1">
+						  			<span><i class="fa fa-angle-double-left"></i> Back</span>
+						  		</a>
+					      		<button type="submit" class="button" data-step="3">
+					      			<span>Next Step <i class="fa fa-angle-double-right"></i></span>
+					      		</button>
+						  	</div>
+						</div>
+						<div class="step">
+							<div class="form-group">
+							    <label>Subscription Plan</label>
+							    <select data-smart-select>
+                                    <option value="1">Basic - $19.00/month (USD)</option>
+                                    <option value="2">Pro - $39.00/month (USD)</option>
+                                    <option value="3">Premium - $59.00/month (USD)</option>
+                                    <option value="4">Enterprise - $129.00/month (USD)</option>
+                                </select>
+						  	</div>
+							<div class="form-group">
+							    <label>Name on Card</label>
+							    <input type="text" class="form-control" name="customer[first_name]" />
+						  	</div>
+						  	<div class="form-group">
+							    <label>Credit Card Number</label>
+							    <input type="text" class="form-control" name="customer[email]" />
+						  	</div>
+						  	<div class="form-group clearfix">
+						  		<div class="column expiration-field">
+						  			<label>Card Expiration</label>
+								    <div class="clearfix">
+								    	<input type="text" placeholder="MM" class="form-control" name="customer[password]" />
+								   		<input type="text" placeholder="YYYY" class="form-control" name="customer[password]" />
+								    </div>
+						  		</div>
+						  		<div class="column pull-right">
+						  			<label>Card CVC Number</label>
+							   		<input type="text" class="form-control" name="customer[password_confirmation]" />
+						  		</div>
+							</div>
+						  	<div class="form-group form-actions">
+						  		<a class="button" href="#" data-step="2">
+						  			<span><i class="fa fa-angle-double-left"></i> Back</span>
+						  		</a>
+					      		<button type="submit" class="button" data-step="4">
+					      			<span>Make payment <i class="fa fa-angle-double-right"></i></span>
+					      		</button>
+						  	</div>
+						</div>
+						<div class="step">
+							<div class="success">
+								<i class="ion-checkmark-circled"></i>
+								<h3>
+									Your account has been configured successfully!
+								</h3>
+								<a href="wizard.html" class="button">
+									<span>Go to my account</span>
+								</a>
+							</div>
+						</div>
+					</form>
+
+				</section>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="skin-switcher">
+		<div class="toggler">
+			<i class="brankic-brush"></i>
+		</div>
+		<ul class="menu">
+			<li>
+				<a class="active" data-skin="sidebar-default" href="#">
+					<span class="color default"></span> Default
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-clear" href="#">
+					<span class="color clear"></span> Clear
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-black" href="#">
+					<span class="color black"></span> Black
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-dark" href="#">
+					<span class="color dark"></span> Dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat" href="#">
+					<span class="color flat"></span> Flat
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat-dark" href="#">
+					<span class="color flat-dark"></span> Flat dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		$(function () {
+			var $steps = $(".form-wizard .step"),
+				$buttons = $steps.find("[data-step]"),
+				$tabs = $(".header .steps .step"),
+				active_step = 0;
+
+			$buttons.click(function (e) {
+				e.preventDefault();
+
+				var step_index = $(this).data("step") - 1;
+				var in_fade_class = (step_index > active_step) ? "fadeInRightStep" : "fadeInLeftStep";
+				var out_fade_class = (in_fade_class === "fadeInRightStep") ? "fadeOutLeftStep" : "fadeOutRightStep";
+
+				var $out_step = $steps.eq(active_step);
+				$out_step.on(utils.animation_ends(), function () {
+					$out_step.removeClass("fadeInRightStep fadeInLeftStep fadeOutRightStep fadeOutLeftStep");
+				}).addClass(out_fade_class);
+
+				active_step = step_index;
+
+				$tabs.removeClass("active").filter(":lt(" + (active_step + 1) + ")").addClass("active");
+
+				$steps.removeClass("active");
+				$steps.eq(step_index).addClass("active animated " + in_fade_class);
+			});
+
+		});
+	</script>
+</body>
+</html>

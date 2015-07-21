@@ -1,0 +1,171 @@
+<div id="sidebar-default" class="main-sidebar fix-scroll">
+  <div class="current-user">
+      <a href="#" class="name">
+        <%= image_tag "avatars/1.jpg", class: "avatar" %>
+        <span>
+          John Smith
+          <i class="fa fa-chevron-down"></i>
+        </span>
+      </a>
+      <ul class="menu">
+        <li>
+          <a href="<%= settings_account_index_path %>">Account settings</a>
+        </li>
+        <li>
+          <a href="<%= billing_account_index_path %>">Billing</a>
+        </li>
+        <li>
+          <a href="<%= notifications_account_index_path %>">Notifications</a>
+        </li>
+        <li>
+          <a href="<%= support_account_index_path %>">Help / Support</a>
+        </li>
+        <li>
+          <a href="<%= signin_features_path %>">Sign out</a>
+        </li>
+      </ul>
+  </div>
+  <div class="menu-section">
+    <h3>General</h3>
+    <ul>
+      <li class="option">
+        <a href="<%= root_url %>" class="active">
+          <i class="ion-android-earth"></i> 
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="option">
+        <a href="#" data-toggle="sidebar">
+          <i class="ion-person-stalker"></i> <span>Lists & Tables</span>
+          <i class="fa fa-chevron-down"></i>
+        </a>
+        <ul class="submenu">
+          <li><a href="<%= users_lists_path %>">Customers list</a></li>
+          <li><a href="<%= datatables_lists_path %>">Orders (Datatables)</a></li>
+          <li><a href="<%= products_lists_path %>">Products (Filters)</a></li>
+        </ul>
+      </li>
+      <li class="option">
+        <a href="#" data-toggle="sidebar">
+          <i class="ion-stats-bars"></i> <span>Reports</span>
+          <i class="fa fa-chevron-down"></i>
+        </a>
+        <ul class="submenu">
+          <li><a href="<%= orders_reports_path %>">Reports orders</a></li>
+          <li><a href="<%= sales_reports_path %>">Report sales</a></li>
+        </ul>
+      </li>
+      <li class="option">
+        <a href="#" data-toggle="sidebar">
+          <i class="ion-pricetags"></i> <span>Forms</span>
+          <i class="fa fa-chevron-down"></i>
+        </a>
+        <ul class="submenu">
+          <li><a href="<%= new_customer_forms_path %>">New Customer (validation)</a></li>
+          <li><a href="<%= new_product_forms_path %>">New Product (add-ons)</a></li>
+          <li><a href="<%= wizard_forms_path %>">Wizard</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-section">
+    <h3>Application</h3>
+    <ul>
+      <li class="option">
+        <a href="#" data-toggle="sidebar">
+          <i class="ion-earth"></i> <span>App Pages</span>
+          <i class="fa fa-chevron-down"></i>
+        </a>
+        <ul class="submenu">
+          <li><a href="<%= inbox_pages_path %>">Inbox Messages</a></li>
+          <li><a href="<%= profile_pages_path %>">User profile</a></li>
+          <li><a href="<%= latest_activity_pages_path %>">Latest activity</a></li>
+          <li><a href="<%= projects_pages_path %>">Projects</a></li>
+          <li><a href="<%= steps_pages_path %>">Steps to launch</a></li>
+          <li><a href="<%= calendar_pages_path %>">Calendar</a></li>
+        </ul>
+      </li>
+      <li class="option">
+        <a href="#" data-toggle="sidebar">
+          <i class="ion-card"></i> <span>Pricing</span>
+          <i class="fa fa-chevron-down"></i>
+        </a>
+        <ul class="submenu">
+          <li><a href="<%= plans_pricing_index_path %>">Pricing (Plans)</a></li>
+          <li><a href="<%= charts_pricing_index_path %>">Pricing charts</a></li>
+          <li><a href="<%= form_pricing_index_path %>">Billing form</a></li>
+          <li><a href="<%= invoice_pricing_index_path %>">Invoice</a></li>
+        </ul>
+      </li>
+      <li class="option">
+        <a href="#" data-toggle="sidebar">
+          <i class="ion-flash"></i> <span>Features</span>
+          <i class="fa fa-chevron-down"></i>
+        </a>
+        <ul class="submenu">
+          <li><a href="<%= email_templates_features_path %>">Email templates</a></li>
+          <li><a href="<%= gallery_features_path %>">Gallery</a></li>
+          <li><a href="<%= ui_features_path %>" data-no-turbolink>UI Extras</a></li>
+          <li><a href="<%= api_features_path %>">API Documentation</a></li>
+          <li><a href="<%= signup_features_path %>">Sign up</a></li>
+          <li><a href="<%= signin_features_path %>">Sign in</a></li>
+          <li><a href="<%= status_features_path %>">App Status</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-section">
+    <h3>Admin</h3>
+    <ul>
+      <li class="option">
+        <a href="#" data-toggle="sidebar">
+          <i class="ion-person"></i> <span>My account</span>
+          <i class="fa fa-chevron-down"></i>
+        </a>
+        <ul class="submenu">
+          <li><a href="<%= settings_account_index_path %>">Settings</a></li>
+          <li><a href="<%= billing_account_index_path %>">Billing</a></li>
+          <li><a href="<%= notifications_account_index_path %>">Notifications</a></li>
+          <li><a href="<%= support_account_index_path %>">Support</a></li>
+        </ul>
+      </li>
+      <li class="option">
+        <a href="#" data-toggle="sidebar">
+          <i class="ion-usb"></i> <span>Level Navigation</span>
+          <i class="fa fa-chevron-down"></i>
+        </a>
+        <ul class="submenu">
+          <li>
+            <a href="invoice.html" data-toggle="sidebar">
+              Submenu
+              <i class="fa fa-chevron-down"></i>
+            </a>
+            <ul class="submenu">
+              <li><a href="#">Last menu</a></li>
+              <li><a href="#">Last menu</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu link</a></li>
+          <li><a href="#">Extra link</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="bottom-menu hidden-sm">
+    <ul>
+      <li><a href="#"><i class="ion-help"></i></a></li>
+      <li>
+        <a href="#">
+          <i class="ion-archive"></i>
+          <span class="flag"></span>
+        </a>
+        <ul class="menu">
+          <li><a href="#">5 unread messages</a></li>
+          <li><a href="#">12 tasks completed</a></li>
+          <!-- <li><a href="#">3 features added</a></li> -->
+        </ul>
+      </li>
+      <li><a href="<%= signin_features_path %>"><i class="ion-log-out"></i></a></li>
+    </ul>
+  </div>
+</div>

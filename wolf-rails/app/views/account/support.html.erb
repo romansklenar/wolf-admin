@@ -1,0 +1,113 @@
+<%= content_for :body_id, "account" %>
+
+<div id="sidebar">
+	<div class="sidebar-toggler visible-xs">
+		<i class="ion-navicon"></i>
+	</div>
+	
+	<h3>My account</h3>
+	<ul class="menu">
+		<li>
+			<a href="<%= settings_account_index_path %>">
+				<i class="ion-ios7-person-outline"></i>
+				Profile
+			</a>
+		</li>
+		<li>
+			<a href="<%= billing_account_index_path %>">
+				<i class="ion-card"></i>
+				Billing
+			</a>
+		</li>
+		<li>
+			<a href="<%= notifications_account_index_path %>">
+				<i class="ion-ios7-email-outline"></i>
+				Notifications
+			</a>
+		</li>
+		<li>
+			<a href="<%= support_account_index_path %>" class="active">
+				<i class="ion-ios7-help-outline"></i>
+				Support
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div id="panel" class="support">
+	<h3>
+		Help & Support
+	</h3>
+
+	<div class="topics">
+		<h4>Don't know where to start?</h4>
+		<p>Choose from the following topics to get more info:</p>
+
+		<div class="row topic">
+			<div class="col-md-1 col-sm-2">
+				<a href="#">
+					<i class="ion-person-stalker"></i>
+				</a>
+			</div>
+			<div class="col-sm-9">
+				<a href="#">Your contacts</a>
+				<p>
+					Learn how to create, manage and update your contacts data.
+				</p>
+			</div>
+		</div>
+		<div class="row topic">
+			<div class="col-md-1 col-sm-2">
+				<a href="#">
+					<i class="ion-pie-graph"></i>
+				</a>
+			</div>
+			<div class="col-sm-9">
+				<a href="#">Graphs & Reports</a>
+				<p>
+					Visualize your data in a meaningful way with our reports. Learn
+					how to get the most out of your information.
+				</p>
+			</div>
+		</div>
+		<div class="row topic">
+			<div class="col-md-1 col-sm-2">
+				<a href="#">
+					<i class="ion-archive"></i>
+				</a>
+			</div>
+			<div class="col-sm-9">
+				<a href="#">Orders</a>
+				<p>
+					Manage your orders and bill your customers.
+				</p>
+			</div>
+		</div>
+		<div class="row topic">
+			<div class="col-md-1 col-sm-2">
+				<a href="#">
+					<i class="ion-calendar"></i>
+				</a>
+			</div>
+			<div class="col-sm-9">
+				<a href="#">Calendar</a>
+				<p>
+					Learn how to delegate tasks and organize your activities.
+				</p>
+			</div>
+		</div>
+		<div class="row topic">
+			<div class="col-md-1 col-sm-2">
+				<a href="#">
+					<i class="ion-camera"></i>
+				</a>
+			</div>
+			<div class="col-sm-9">
+				<a href="#">Galleries</a>
+				<p>
+					Learn how to create beautiful galleries by uploading your pictures.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

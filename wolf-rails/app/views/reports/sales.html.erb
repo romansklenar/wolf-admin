@@ -1,0 +1,177 @@
+<%= content_for :body_id, "reports-alt" %>
+
+<div class="menubar">
+	<div class="sidebar-toggler visible-xs">
+		<i class="ion-navicon"></i>
+	</div>
+
+	<div class="page-title">
+		Reports / Sales this Year by Month
+	</div>
+	<div class="options pull-right hidden-xs">
+		<a href="#"><i class="fa fa-print"></i> Print</a>
+		<a href="#"><i class="fa fa-download"></i> Download</a>
+	</div>
+	<div class="date-range pull-right">
+		<div class="input-group input-group-sm">
+		  	<span class="input-group-addon">
+		  		<i class="fa fa-calendar-o"></i>
+		  	</span>
+		  	<input type="text" name="daterange" class="form-control" placeholder="05/01/2014 - 05/31/2014" />
+		</div>
+	</div>
+</div>
+
+<div class="content-wrapper">
+	<div class="chart">
+		<div class="bar-chart-wrapper">
+			<div id="bar-chart"></div>
+		</div>
+		<label class="yaxis">Month, year, Sales</label>
+	</div>
+
+	<div class="filters">
+		<!-- Single button -->
+		<div class="btn-group">
+		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		    	Edit properties <span class="caret"></span>
+		  	</button>
+		  	<ul class="dropdown-menu" role="menu">
+		    	<li><a href="#">Action</a></li>
+		    	<li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li class="divider"></li>
+			    <li><a href="#">Separated link</a></li>
+		  	</ul>
+		</div>
+	</div>
+
+	<div class="data">
+		<table id="datatable-example">
+            <thead>
+                <tr>
+                    <th tabindex="0" rowspan="1" colspan="1">Year
+                    </th>
+                    <th tabindex="0" rowspan="1" colspan="1">Month
+                    </th>
+                    <th tabindex="0" rowspan="1" colspan="1">Products Sold
+                    </th>
+                    <th tabindex="0" rowspan="1" colspan="1">Total Orders
+                    </th>
+                    <th tabindex="0" rowspan="1" colspan="1">Total Sales
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>January</td>
+                    <td>34</td>
+                    <td class="">78</td>
+                    <td class="center">$3,399.99</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>February</td>
+                    <td>153</td>
+                    <td class="">24</td>
+                    <td class="center">$6,299.99</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>March</td>
+                    <td>67</td>
+                    <td class="">56</td>
+                    <td class="center">$1,879.99</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>April</td>
+                    <td>89</td>
+                    <td class="">78</td>
+                    <td class="center">$2,179.99</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>May</td>
+                    <td>22</td>
+                    <td class="">232</td>
+                    <td class="center">$5,599.99</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>June</td>
+                    <td>145</td>
+                    <td class="">342</td>
+                    <td class="center">$3,389.99</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>July</td>
+                    <td>123</td>
+                    <td class="">12</td>
+                    <td class="center">$1,253.00</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>August</td>
+                    <td>78</td>
+                    <td class="">98</td>
+                    <td class="center">$1,845.00</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>September</td>
+                    <td>55</td>
+                    <td class="">24</td>
+                    <td class="center">$1,624.90</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>October</td>
+                    <td>203</td>
+                    <td class="">44</td>
+                    <td class="center">$1,832.83</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>November</td>
+                    <td>134</td>
+                    <td class="">122</td>
+                    <td class="center">$3,242.00</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<a href="#">#2014</a>
+                    </td>
+                    <td>December</td>
+                    <td>166</td>
+                    <td class="">98</td>
+                    <td class="center">$1,534.70</td>
+                </tr>
+           	</tbody>
+        </table>
+    </div>
+</div>

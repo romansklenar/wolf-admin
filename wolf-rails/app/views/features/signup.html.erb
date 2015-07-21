@@ -1,0 +1,73 @@
+<body id="signup">
+	<div class="bg clear">
+		<div class="signup-switcher">
+			<a href="#" class="active" data-class="clear">
+				<i class="fa fa-check"></i>
+				Clear
+			</a>
+			<a href="#" data-class="">
+				<i class="fa fa-check"></i>
+				Dark
+			</a>
+		</div>
+
+		<a href="<%= root_url %>" class="logo">
+			<i class="brankic-pen"></i>
+		</a>
+
+		<h3>Create Your Account Now</h3>
+
+		<div class="content">
+			<form>
+				<div class="fields">
+					<strong>Your information</strong>
+					<input class="form-control" type="text" placeholder="Your full name" />
+					<input class="form-control" type="text" placeholder="Company name" />
+					<input class="form-control" type="text" placeholder="Your age" />
+				</div>
+				<div class="fields">
+					<strong>Your access data</strong>
+					<input class="form-control" type="text" placeholder="Your email" />
+					<input class="form-control" type="password" placeholder="Password" />
+					<input class="form-control" type="password" placeholder="Confirm password" />
+				</div>
+				<div class="fields">
+					<strong>
+						Payment information
+						<%= image_tag "credit_card_types.gif", class: "pull-right" %>
+					</strong>
+					<input class="form-control" type="text" placeholder="Credit Card Number" />
+					<input class="form-control" type="text" placeholder="MM / YY" />
+					<input class="form-control" type="text" placeholder="CVV" />
+				</div>
+				<div class="info">
+					Your 30-day trial will start now. After your trial ends, your credit card will be charged for the monthly <strong>Business plan for $59.00 USD on April 12, 2014.</strong>
+				</div>
+				<div class="signup">
+					<a href="<%= root_url %>" class="btn btn-success btn-lg">Create my account</a>
+				</div>
+			</form>
+		</div>
+
+		<div class="bottom-wrapper">
+			<div class="message">
+				<span>Already have an account?</span>
+				<a href="<%= signin_features_path %>">Sign in here</a>.
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		$(function () {
+			var $switcher = $(".signup-switcher a");
+			$switcher.click(function (e) {
+				e.preventDefault();
+				$switcher.removeClass("active");
+				$(this).addClass("active");
+				$(".bg").attr("class", "bg " + $(this).data("class"));
+			});
+		});
+	</script>
+
+</body>

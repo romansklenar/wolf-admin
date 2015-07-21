@@ -1,0 +1,557 @@
+<%= content_for :body_id, "datatables" %>
+
+<div class="menubar">
+    <div class="sidebar-toggler visible-xs">
+        <i class="ion-navicon"></i>
+    </div>
+    
+	<div class="page-title">
+		Some DataTables
+	</div>
+</div>
+
+<div class="content-wrapper">
+	
+	<table id="orders-datatable">
+        <thead>
+            <tr>
+                <th tabindex="0" rowspan="1" colspan="1">Order
+                </th>
+                <th tabindex="0" rowspan="1" colspan="1">Customer
+                </th>
+                <th tabindex="0" rowspan="1" colspan="1">Date
+                </th>
+                <th tabindex="0" rowspan="1" colspan="1">Status
+                </th>
+                <th tabindex="0" rowspan="1" colspan="1">Total
+                </th>
+            </tr>
+        </thead>
+        
+        <tfoot>
+            <tr>
+                <th rowspan="1" colspan="1">Order</th>
+                <th rowspan="1" colspan="1">Customer</th>
+                <th rowspan="1" colspan="1">Date</th>
+                <th rowspan="1" colspan="1">Status</th>
+                <th rowspan="1" colspan="1">Total</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>
+                	<a href="#">#1445</a>
+                </td>
+                <td>John Stewart</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1897</a>
+                </td>
+                <td>Andrea</td>
+                <td>Mar 10, 06:50am</td>
+                <td class=""><span class="label label-warning">Pending</span></td>
+                <td class="center">$699.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1089</a>
+                </td>
+                <td>John Stewart</td>
+                <td>Mar 08, 01:43pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$1,879.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1883</a>
+                </td>
+                <td>Pete</td>
+                <td>Mar 07, 07:30pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$279.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1383</a>
+                </td>
+                <td>John Stewart</td>
+                <td>Mar 07, 04:30pm</td>
+                <td class=""><span class="label label-danger">Canceled</span></td>
+                <td class="center">$599.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1266</a>
+                </td>
+                <td>Patrick Johnson</td>
+                <td>Mar 07, 02:30pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$389.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1645</a>
+                </td>
+                <td>Karen Diaz</td>
+                <td>Mar 04, 04:30pm</td>
+                <td class=""><span class="label label-warning">Pending</span></td>
+                <td class="center">$199.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1864</a>
+                </td>
+                <td>Matthew Williams</td>
+                <td>Mar 02, 06:22pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#5192</a>
+                </td>
+                <td>John Stewart</td>
+                <td>Mar 01, 07:44pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$899.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1837</a>
+                </td>
+                <td>Matthew Williams</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#2397</a>
+                </td>
+                <td>Matthew Williams</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#4483</a>
+                </td>
+                <td>John Smith</td>
+                <td>Mar 04, 04:30pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#8734</a>
+                </td>
+                <td>Lawrence Ebert</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#7893</a>
+                </td>
+                <td>Lawrence Ebert</td>
+                <td>Mar 04, 04:30pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1937</a>
+                </td>
+                <td>John Smith</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#2093</a>
+                </td>
+                <td>Laura Gonzalez</td>
+                <td>Mar 04, 04:30pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#5792</a>
+                </td>
+                <td>Michelle</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#6873</a>
+                </td>
+                <td>Alexandra</td>
+                <td>Mar 04, 04:30pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#2983</a>
+                </td>
+                <td>Laura Gonzalez</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1963</a>
+                </td>
+                <td>Laura Gonzalez</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-danger">Canceled</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1665</a>
+                </td>
+                <td>Laura Gonzalez</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#2288</a>
+                </td>
+                <td>Laura Gonzalez</td>
+                <td>Mar 04, 04:30pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3978</a>
+                </td>
+                <td>Laura Gonzalez</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#6876</a>
+                </td>
+                <td>Lawrence Ebert</td>
+                <td>Mar 04, 04:30pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#5872</a>
+                </td>
+                <td>Erick</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#8762</a>
+                </td>
+                <td>Jade Alexandra</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#5767</a>
+                </td>
+                <td>Ernest Hemingway</td>
+                <td>Mar 04, 04:30pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3855</a>
+                </td>
+                <td>Ernest Hemingway</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#2375</a>
+                </td>
+                <td>Ernest Hemingway</td>
+                <td>Mar 04, 04:30pm</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#2885</a>
+                </td>
+                <td>Ernest Hemingway</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#1973</a>
+                </td>
+                <td>Matthew Williams</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Malorie Knox</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Jack Sparrow</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Andrea</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Bill</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Bill</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Bill</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Bill</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Bill</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Bill</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Gonzalez</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Gonzalez</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Gonzalez</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Bill</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Laura Bill</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Andrea</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Andrea</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Bill Gates</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Bill Gates</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Bill Gates</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Steve Bill</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Steve Bill</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>John</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Karen</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Carlton Douglas</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99
+            </tr>
+            <tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Jade</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td> 
+			</tr>
+			<tr>
+                <td>
+                	<a href="#">#3445</a>
+                </td>
+                <td>Phillip Dionne</td>
+                <td>Mar 11, 11:50am</td>
+                <td class=""><span class="label label-success">Paid</span></td>
+                <td class="center">$399.99</td>
+            </tr>
+       	</tbody>
+    </table>
+</div>
+

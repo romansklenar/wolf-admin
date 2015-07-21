@@ -1,0 +1,181 @@
+/* ==============================================================================
+// Pagination
+// ============================================================================== */
+.pagination>.active {
+	>a,
+	>span, 
+	>a:hover, 
+	>span:hover, 
+	>a:focus, 
+	>span:focus { 
+		background-color: #5585B3;
+		border-color: #4477A3;
+	}
+}
+.pagination >li>a, 
+.pagination >li>span,
+.pager li>a, 
+.pager li>span {
+	@include transition(all 0.25s linear);
+}
+
+/* ==============================================================================
+// Modal
+// ============================================================================== */
+.modal-backdrop {
+	z-index: 10400;
+	&.in {
+		opacity: .35;
+		filter: alpha(opacity=35);
+	}
+}
+
+.modal {
+	z-index: 10500;
+	
+	&.in { 
+		.modal-dialog {
+			@include transform(translate(0,0) scale3d(1,1,1) !important);
+		}
+	}
+
+	&.fade { 
+		@include transition(all .1s ease-out);
+
+		.modal-dialog {
+			@include transform(translate(0,0) scale3d(1.1,1.1,1.1));
+			@include transitionPrefix(transform, .1s ease-out);
+		}
+	}
+
+	.modal-dialog {
+		@include transform(translate(0,0) scale3d(1.1,1.1,1.1));
+		margin-top: 80px;
+	}
+}
+
+
+/* ==============================================================================
+// Tooltips
+// ============================================================================== */
+.tooltip {
+	font-size: 13px;
+
+	.tooltip-inner {
+		font-weight: 600;
+	}
+}
+
+/* ==============================================================================
+// Labels
+// ============================================================================== */
+.label-danger {
+	background: #D66363;
+}
+
+
+/* ==============================================================================
+// Buttons
+// ============================================================================== */
+.btn {
+	&.btn-default {
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+		@include transition(all .2s linear);
+
+		&:focus,
+		&:active {
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.14);
+		}
+	}
+
+	&.btn-primary {
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+		@include transition(all .2s linear);
+
+		&:focus,
+		&:active {
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14);
+		}
+	}
+
+	&.btn-success {
+		border: 1px solid #63a042;
+		background-color: #76b852;
+
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+		@include transition(all .2s linear);
+
+		&:focus,
+		&:active {
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14);
+		}
+
+		&:hover {
+			background-color: #47a447;
+		}
+	}
+
+	&.btn-danger {
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+		@include transition(all .2s linear);
+
+		&:focus,
+		&:active {
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14);
+		}
+	}
+
+	&.btn-info {
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+		@include transition(all .2s linear);
+
+		&:focus,
+		&:active {
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14);
+		}
+	}
+
+	&.btn-warning {
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+		@include transition(all .2s linear);
+
+		&:focus,
+		&:active {
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14);
+		}
+	}
+}
+
+/* ==============================================================================
+// Input groups
+// ============================================================================== */
+.input-group-addon {
+	background-color: #F2F7FA;
+}
+
+
+/* ==============================================================================
+// Forms related
+// ============================================================================== */
+.form-horizontal .has-feedback .form-control-feedback {
+	right: 8px;
+}
+
+/* ==============================================================================
+// <code></code>
+// ============================================================================== */
+code {
+	color: #256CC7;
+	background-color: #F8F2F9;
+}

@@ -1,0 +1,84 @@
+<%= content_for :body_id, "billing-form" %>
+
+<div class="menubar">
+	<div class="sidebar-toggler visible-xs">
+		<i class="ion-navicon"></i>
+	</div>
+
+	<div class="page-title">
+		Billing Form
+	</div>
+</div>
+
+<div class="content-wrapper">
+	<div class="billing">
+		<div class="secure clearfix">
+			<span class="lock pull-left">
+				<i class="fa fa-lock"></i>
+				Secure Billing Form
+			</span>
+			<div class="accepted-cards pull-right">
+				<%= image_tag "credit_card_types.gif" %>
+			</div>
+		</div>
+
+		<form id="billing" class="form-horizontal" method="post" action="#" role="form">
+		  	<div class="form-group">
+			    <label class="col-sm-3 control-label">Name on Card</label>
+			    <div class="col-sm-9">
+			      <input type="text" class="form-control" placeholder="Your full name" name="customer[first_name]" />
+			    </div>
+		  	</div>
+		  	<div class="address">
+		  		<div class="form-group">
+				    <label class="col-sm-3 control-label">Address</label>
+				    <div class="col-sm-9">
+				      	<input type="text" class="form-control" placeholder="Address" name="customer[address]" />
+				    </div>
+				</div>
+				<div class="form-group">
+				    <div class="col-sm-5 col-sm-offset-3">
+				      	<input type="text" class="form-control mobile-margin-bottom" placeholder="City" name="customer[city]" />
+				    </div>
+				    <div class="col-sm-4">
+				      	<input type="text" class="form-control" placeholder="Zip/Postal" name="customer[state]" />
+				    </div>
+			  	</div>
+			  	<div class="form-group">
+				    <div class="col-sm-5 col-sm-offset-3">
+				      	<input type="text" class="form-control mobile-margin-bottom" placeholder="Country" name="customer[city]" />
+				    </div>
+				    <div class="col-sm-4">
+				      	<input type="text" class="form-control" placeholder="State" name="customer[state]" />
+				    </div>
+			  	</div>
+		  	</div>
+		  	<div class="form-group">
+			    <label class="col-sm-3 control-label">Card Number</label>
+			    <div class="col-sm-9">
+			      <input type="text" class="form-control" placeholder="••••  ••••  ••••  ••••" name="customer[first_name]" />
+			    </div>
+		  	</div>
+		  	<div class="form-group">
+		  		<label class="col-sm-3 control-label">Expiration & CVC</label>
+			    <div class="col-sm-5">
+			      	<input type="text" class="form-control mobile-margin-bottom" placeholder="MM/YYY" name="customer[city]" />
+			    </div>
+			    <div class="col-sm-4">
+			      	<input type="text" class="form-control" placeholder="CVC" name="customer[state]" />
+			    </div>
+		  	</div>
+		  	
+		  	<div class="instructions">
+		  		Your credit card will be charged for the monthly <strong>Business plan of $59.00 USD</strong> on April 12, 2014. This will cover your subscription from: April 12, 2014 to May 12, 2014.
+		  	</div>
+
+		  	<div class="action clearfix">
+				<a href="#" class="btn btn-success">
+					Make payment $250.00
+					<i class="fa fa-chevron-right"></i>
+				</a>
+			</div>
+		</form>
+	</div>
+</div>

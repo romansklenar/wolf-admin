@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>Wolf - Bootstrap Admin Theme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/brankic.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+
+	<!-- javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/theme.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="account">
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="name">
+					<img class="avatar" src="images/avatars/1.jpg" />
+					<span>
+						John Smith
+						<i class="fa fa-chevron-down"></i>
+					</span>
+				</a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>General</h3>
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="ion-android-earth"></i> 
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-person-stalker"></i> <span>Lists & Tables</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="users.html">Customers list</a></li>
+							<li><a href="datatables.html">Orders (Datatables)</a></li>
+							<li><a href="search.html">Products (Filters)</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-stats-bars"></i> <span>Reports</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="reports.html">Reports orders</a></li>
+							<li><a href="reports-alt.html">Report sales</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="users.html" data-toggle="sidebar">
+							<i class="ion-pricetags"></i> <span>Forms</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="form.html">New Customer (validation)</a></li>
+							<li><a href="form-product.html">New Product (add-ons)</a></li>
+							<li><a href="wizard.html">Wizard</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Application</h3>
+				<ul>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-earth"></i> <span>App Pages</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="sidebar.html">Inbox Messages</a></li>
+							<li><a href="user-profile.html">User profile</a></li>
+							<li><a href="latest-activity.html">Latest activity</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="steps.html">Steps to launch</a></li>
+							<li><a href="calendar.html">Calendar</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-card"></i> <span>Pricing</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="pricing.html">Pricing (Plans)</a></li>
+							<li><a href="pricing-alt.html">Pricing charts</a></li>
+							<li><a href="billing-form.html">Billing form</a></li>
+							<li><a href="invoice.html">Invoice</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-flash"></i> <span>Features</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="email-templates.html">Email templates</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="ui.html">UI Extras</a></li>
+							<li><a href="docs.html">API Documentation</a></li>
+							<li><a href="signup.html">Sign up</a></li>
+							<li><a href="signin.html">Sign in</a></li>
+							<li><a href="status.html">App Status</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Admin</h3>
+				<ul>
+					<li>
+						<a href="account.html" class="active toggled" data-toggle="sidebar">
+							<i class="ion-person"></i> <span>My account</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="account-profile.html">Settings</a></li>
+							<li><a href="account-billing.html" class="active">Billing</a></li>
+							<li><a href="account-notifications.html">Notifications</a></li>
+							<li><a href="account-support.html">Support</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" data-toggle="sidebar">
+							<i class="ion-usb"></i> <span>Level Navigation</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li>
+								<a href="invoice.html" data-toggle="sidebar">
+									Submenu
+									<i class="fa fa-chevron-down"></i>
+								</a>
+								<ul class="submenu">
+									<li><a href="#">Last menu</a></li>
+									<li><a href="#">Last menu</a></li>
+								</ul>
+							</li>
+							<li><a href="invoice.html">Menu link</a></li>
+							<li><a href="#">Extra link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+
+			<div id="sidebar">
+				<div class="sidebar-toggler visible-xs">
+					<i class="ion-navicon"></i>
+				</div>
+				
+				<h3>My account</h3>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">
+							<i class="ion-ios7-person-outline"></i>
+							Profile
+						</a>
+					</li>
+					<li>
+						<a href="account-billing.html" class="active">
+							<i class="ion-card"></i>
+							Billing
+						</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">
+							<i class="ion-ios7-email-outline"></i>
+							Notifications
+						</a>
+					</li>
+					<li>
+						<a href="account-support.html">
+							<i class="ion-ios7-help-outline"></i>
+							Support
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="panel" class="billing">
+				<h3>
+					Billing & Payments
+				</h3>
+
+				<div class="plan">
+
+					<div class="current-plan">
+						<div class="field">
+							<label>Plan:</label> Team Subscription ($29.00/month)
+							<a href="pricing-alt.html" class="change-plan">
+								Change plan
+								<i class="ion-edit"></i>
+							</a>
+						</div>
+
+						<div class="field">
+							<label>Users invited:</label> 5 / 15
+						</div>
+						
+						<div class="field">
+							<label>Member since:</label> Mar 15, 2013
+						</div>
+
+						<div class="field status">
+							<label>Status:</label> <span class="value">Active</span>
+						</div>
+					</div>
+
+					<div class="current-cc">
+						<label>Current credit card:</label> 
+						<img src="images/visa.png" />
+						<strong>Visa</strong> ending in <strong>0328.</strong>
+						<a href="#" class="manage-cc">
+							Manage credit card
+							<i class="ion-edit"></i>
+						</a>
+						<span class="next">(next payment on <strong>Mar 02, 2014</strong>).</span>
+					</div>
+
+
+					<!-- <a class="btn btn-danger suspend-sub" href="#">Suspend my subscription</a> -->
+
+					<div class="invoices">
+						<h3>Invoices</h3>
+
+						<table class="table">
+							<tr>
+								<td>
+									Date
+								</td>
+								<td>
+									Amount
+								</td>
+								<td>
+									Due
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>
+									<a href="invoice.html">Nov 13, 2014 - Dec 13, 2014</a>
+								</td>
+								<td>
+									$29.00 USD
+								</td>
+								<td>
+									2014-11-13
+								</td>
+								<td>
+									<a href="#">download</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="invoice.html">Oct 13, 2014 - Nov 13, 2014</a>
+								</td>
+								<td>
+									$29.00 USD
+								</td>
+								<td>
+									2014-10-13
+								</td>
+								<td>
+									<a href="#">download</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="invoice.html">Sep 13, 2014 - Oct 13, 2014</a>
+								</td>
+								<td>
+									$29.00 USD
+								</td>
+								<td>
+									2014-09-13
+								</td>
+								<td>
+									<a href="#">download</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+	<div class="skin-switcher">
+		<div class="toggler">
+			<i class="brankic-brush"></i>
+		</div>
+		<ul class="menu">
+			<li>
+				<a class="active" data-skin="sidebar-default" href="#">
+					<span class="color default"></span> Default
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-clear" href="#">
+					<span class="color clear"></span> Clear
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-black" href="#">
+					<span class="color black"></span> Black
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-dark" href="#">
+					<span class="color dark"></span> Dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat" href="#">
+					<span class="color flat"></span> Flat
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat-dark" href="#">
+					<span class="color flat-dark"></span> Flat dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

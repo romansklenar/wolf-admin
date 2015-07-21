@@ -1,0 +1,36 @@
+<%= content_for :body_id, "calendar" %>
+
+<div class="menubar">
+    <div class="sidebar-toggler visible-xs">
+        <i class="ion-navicon"></i>
+    </div>
+
+	<div class="page-title">
+		Calendar 
+	</div>
+</div>
+
+<div class="content-wrapper">
+	<!-- div that fullcalendar plugin uses  -->
+	<div id='fullcalendar'></div>
+
+	<div id="new-event-popup" class="hidden-xs">
+        <div class="pointer">
+            <div class="arrow"></div>
+            <div class="arrow_border"></div>
+        </div>
+        <i class="fa fa-times"></i>
+        <h5>New event popup example</h5>
+        <form>
+            <div class="field">
+                <label>Date:</label>
+                <span class="date">Thu, 18 April</span>
+            </div>
+            <div class="field">
+                <label>Event:</label>
+                <input type="text" class="event-input form-control" />
+            </div>
+            <input type="submit" value="Create event" class="btn btn-primary">
+		</form>
+    </div>
+</div>
