@@ -19,8 +19,8 @@
 //= require ../../../vendor/assets/javascripts/jquery.flot/jquery.flot.time
 //= require ../../../vendor/assets/javascripts/jquery.flot/jquery.flot.categories
 //= require ../../../vendor/assets/javascripts/jquery.flot/jquery.flot.tooltip
-//= require ../../../vendor/assets/javascripts/messenger/messenger.min
-//= require ../../../vendor/assets/javascripts/messenger/messenger-theme-flat
+//= require messenger/messenger
+//= require messenger/messenger-theme-flat
 //= require ../../../vendor/assets/javascripts/moment.min
 //= require_directory ../../../vendor/assets/javascripts/.
 
