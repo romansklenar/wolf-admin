@@ -19,6 +19,7 @@
 //= require bootstrap-datepicker
 //= require bootstrap-daterangepicker
 //= require select2
+//= require jquery-minicolors
 //= require jquery-flot
 //= require messenger
 //= require moment

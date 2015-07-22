@@ -30,6 +30,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-ionicons', '~> 2.0.1'
   gem 'rails-assets-select2', '~> 3.4.5'
   gem 'rails-assets-messenger', '~> 1.4.2'
+  gem 'rails-assets-jquery-minicolors', '~> 2.1.12'
   gem 'rails-assets-jquery-flot', '~> 0.8.3'
   gem 'rails-assets-flot.tooltip', '~> 0.8.3'
   gem 'rails-assets-animate-css', '~> 3.3.0'
