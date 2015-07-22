@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require_self
+ *= require font-awesome
  *= require bootstrap
  *= require bootstrap-switch
  *= require bootstrap-datepicker/bootstrap-datepicker
