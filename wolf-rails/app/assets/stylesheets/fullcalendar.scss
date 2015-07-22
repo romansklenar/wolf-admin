@@ -1,0 +1,19 @@
+@import "fullcalendar/fullcalendar";
+
+
+.fc-grid th {
+  text-align: right;
+  border-width: 0px 0px 1px 0px !important;
+  padding-right: 15px;
+  color: #a9b6c5;
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+
+.fc-grid .fc-day-number {
+  float: right;
+  padding: 5px 10px 0px 0px;
+  color: #a9aeb3;
+  font-size: 13px;
+}

@@ -28,6 +28,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-flot.tooltip', '~> 0.8.3'
   gem 'rails-assets-tether-shepherd', '~> 0.5.1'
   gem 'rails-assets-animate-css', '~> 3.3.0'
+  gem 'rails-assets-fullcalendar', '~> 1.6.1'
   gem 'rails-assets-offline', '~> 0.7.13'
   gem 'rails-assets-moment', '~> 2.5.1'
   gem 'rails-assets-summernote', '~> 0.6.10'

@@ -22,6 +22,7 @@
 //= require jquery-minicolors
 //= require jquery-flot
 //= require jquery-datatables
+//= require fullcalendar
 //= require messenger
 //= require moment
 //= require offline
