@@ -25,6 +25,7 @@
 //= require moment
 //= require offline
 //= require summernote
+//= require tether-shepherd
 //= require_directory ../../../vendor/assets/javascripts/.
 
 //= require theme
