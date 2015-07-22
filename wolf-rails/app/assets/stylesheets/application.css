@@ -21,6 +21,7 @@
  *= require messenger
  *= require animate-css
  *= require jquery-minicolors
+ *= require offline
  *= require_tree ../../../vendor/assets/stylesheets/.
  *= require theme
  */

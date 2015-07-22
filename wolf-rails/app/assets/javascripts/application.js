@@ -23,6 +23,7 @@
 //= require jquery-flot
 //= require messenger
 //= require moment
+//= require offline
 //= require_directory ../../../vendor/assets/javascripts/.
 
 //= require theme
