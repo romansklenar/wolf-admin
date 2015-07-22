@@ -26,6 +26,7 @@
 //= require messenger
 //= require moment
 //= require highlightjs
+//= require zoomerang
 //= require offline
 //= require summernote
 //= require tether-shepherd
