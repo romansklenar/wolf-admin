@@ -14,7 +14,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-jquery', '>= 1.10.0' # due to jquery 1.10 version required by jquery-rails < 4.0
+  gem 'rails-assets-jquery', '~> 1.10.0' # due to jquery 1.10 version required by jquery-rails < 4.0
+  gem 'rails-assets-jquery-ui', '~> 1.10.0'
   gem 'rails-assets-jquery-ujs', '~> 1.0.4'
   gem 'rails-assets-jquery-minicolors', '~> 2.1.12'
   gem 'rails-assets-jquery-flot', '~> 0.8.3'
