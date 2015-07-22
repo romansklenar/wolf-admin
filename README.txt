@@ -116,8 +116,6 @@ Plugins:
 - jQuery Raty		[http://wbotelhos.com/raty]
 - Moment.js 		[http://momentjs.com]
 - Zoomerang			[http://yyx990803.github.io/zoomerang]
-- Morris.js 		[oesmith.github.com/morris.js]
-- Raphael.js (Morris dependency)		[http://raphaeljs.com]
 
 - jQuery v2.1.0		[http://jquery.com]
 - jQuery UI v1.10.4		[http://jqueryui.com]
