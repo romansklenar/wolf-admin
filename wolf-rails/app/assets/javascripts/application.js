@@ -23,6 +23,7 @@
 //= require jquery-minicolors
 //= require jquery-flot
 //= require jquery-datatables
+//= require jquery-validate/jquery.validate
 //= require fullcalendar
 //= require messenger
 //= require moment
