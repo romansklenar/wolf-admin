@@ -15,7 +15,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-bootstrap', '~> 3.1.1'
+  gem 'rails-assets-bootstrap', '~> 3.3.5'
   gem 'rails-assets-font-awesome', '~> 4.3.0'
   gem 'rails-assets-ionicons', '~> 2.0.1'
   gem 'rails-assets-select2', '~> 3.4.5'
