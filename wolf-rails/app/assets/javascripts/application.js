@@ -21,6 +21,7 @@
 //= require bootstrap-daterangepicker
 //= require select2
 //= require jquery-cookie
+//= require jquery-maskedinput
 //= require jquery-minicolors
 //= require jquery-flot
 //= require jquery-datatables
