@@ -24,6 +24,7 @@
 //= require messenger
 //= require moment
 //= require offline
+//= require summernote
 //= require_directory ../../../vendor/assets/javascripts/.
 
 //= require theme
