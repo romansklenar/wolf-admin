@@ -27,6 +27,7 @@
 //= require moment
 //= require highlightjs
 //= require zoomerang
+//= require imagesloaded
 //= require offline
 //= require summernote
 //= require tether-shepherd

@@ -33,6 +33,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-moment', '~> 2.5.1'
   gem 'rails-assets-highlightjs', '~> 8.6'
   gem 'rails-assets-zoomerang', '~> 0.1.8'
+  gem 'rails-assets-imagesloaded', '~> 3.1.1'
   gem 'rails-assets-summernote', '~> 0.6.10'
   gem 'rails-assets-bootstrap-switch', '~> 3.1.0'
   gem 'rails-assets-bootstrap-datepicker', '~> 1.4.0'
