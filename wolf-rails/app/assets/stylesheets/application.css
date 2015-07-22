@@ -23,6 +23,7 @@
  *= require animate-css
  *= require jquery-minicolors
  *= require jquery-datatables
+ *= require highlightjs
  *= require offline
  *= require summernote
  *= require tether-shepherd

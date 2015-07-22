@@ -25,6 +25,7 @@
 //= require fullcalendar
 //= require messenger
 //= require moment
+//= require highlightjs
 //= require offline
 //= require summernote
 //= require tether-shepherd
