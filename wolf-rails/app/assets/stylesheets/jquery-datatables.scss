@@ -1,7 +1,8 @@
+// @import "datatables/jquery.dataTables";
+@import "datatables-plugins/integration/bootstrap/3/dataTables.bootstrap";
 
-/*
- * Table
- */
+
+// Table
 table.dataTable {
 	margin: 0 auto;
 	clear: both;
@@ -48,9 +49,7 @@ table.dataTable tr.even td.sorting_2 { background-color: #FAFBFD; }
 table.dataTable tr.even td.sorting_3 { background-color: #FAFBFD; }
 
 
-/*
- * Table wrapper
- */
+// Table wrapper
 .dataTables_wrapper {
 	position: relative;
 	clear: both;
@@ -58,9 +57,7 @@ table.dataTable tr.even td.sorting_3 { background-color: #FAFBFD; }
 }
 
 
-/*
- * Page length menu
- */
+// Page length menu
 .dataTables_length {
 	float: left;
 	margin-bottom: 10px;
@@ -73,9 +70,7 @@ table.dataTable tr.even td.sorting_3 { background-color: #FAFBFD; }
 }
 
 
-/*
- * Filter
- */
+// Filter
 .dataTables_filter {
 	float: right;
 	text-align: right;
@@ -98,18 +93,14 @@ table.dataTable tr.even td.sorting_3 { background-color: #FAFBFD; }
 }
 
 
-/*
- * Table information
- */
+// Table information
 .dataTables_info {
 	clear: both;
 	float: left;
 }
 
 
-/*
- * Pagination
- */
+// Pagination
 .dataTables_paginate {
 	float: right;
 	text-align: right;
@@ -153,15 +144,8 @@ table.dataTable tr.even td.sorting_3 { background-color: #FAFBFD; }
 	margin-left: 25px;
 }
 
-.paginate_enabled_previous { background: url('datatables/back_enabled.png') no-repeat top left; }
-.paginate_enabled_previous:hover { background: url('datatables/back_enabled_hover.png') no-repeat top left; }
-.paginate_disabled_previous { background: url('datatables/back_disabled.png') no-repeat top left; }
 
-.paginate_enabled_next { background: url('datatables/forward_enabled.png') no-repeat top right; }
-.paginate_enabled_next:hover { background: url('datatables/forward_enabled_hover.png') no-repeat top right; }
-.paginate_disabled_next { background: url('datatables/forward_disabled.png') no-repeat top right; }
-
-/* Full number pagination */
+// Full number pagination
 .paging_full_numbers {
 	height: 22px;
 	line-height: 22px;
@@ -172,7 +156,6 @@ table.dataTable tr.even td.sorting_3 { background-color: #FAFBFD; }
 .paging_full_numbers a:hover {
 	text-decoration: none;
 }
-
 .paging_full_numbers a.paginate_button,
 .paging_full_numbers a.paginate_active {
 	border: 1px solid #ddd;
@@ -181,22 +164,18 @@ table.dataTable tr.even td.sorting_3 { background-color: #FAFBFD; }
 	color: #428bca !important;
 	border-left: 0px;
 }
-
 .paging_full_numbers a.paginate_button {
 	background-color: #fff;
 }
-
 .paging_full_numbers a.paginate_button:hover {
 	background-color: #eee;
 	text-decoration: none !important;
 }
-
 .paging_full_numbers a.paginate_active {
 	background-color: #428bca;
 	border-color: #428bca;
 	color: #fff !important;
 }
-
 .paging_full_numbers a.paginate_button_disabled {
 	color: #888 !important;
 	cursor: default;
@@ -204,20 +183,19 @@ table.dataTable tr.even td.sorting_3 { background-color: #FAFBFD; }
 .paging_full_numbers a.paginate_button_disabled:hover {
 	background-color: #fff;
 }
-
 .paging_full_numbers a.paginate_button.first {
 	border-radius: 4px 0px 0px 4px;
 	border-left: 1px solid #ddd;
 }
-
 .paging_full_numbers a.paginate_button.last {
 	border-radius: 0px 4px 4px 0px;
 }
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	display: inline !important;
+}
 
 
-/*
- * Processing indicator
- */
+// Processing indicator
 .dataTables_processing {
 	position: absolute;
 	top: 50%;
@@ -235,15 +213,12 @@ table.dataTable tr.even td.sorting_3 { background-color: #FAFBFD; }
 }
 
 
-/*
- * Sorting
- */
-.sorting { background: url('datatables/sort_both.png') no-repeat center right; }
-.sorting_asc { background: url('datatables/sort_asc.png') no-repeat center right; }
-.sorting_desc { background: url('datatables/sort_desc.png') no-repeat center right; }
-
-.sorting_asc_disabled { background: url('datatables/sort_asc_disabled.png') no-repeat center right; }
-.sorting_desc_disabled { background: url('datatables/sort_desc_disabled.png') no-repeat center right; }
+// Sorting
+table.dataTable thead th.sorting:after,
+table.dataTable thead th.sorting_asc:after,
+table.dataTable thead th.sorting_desc:after {
+	content: none;
+}
  
 table.dataTable thead th:active,
 table.dataTable thead td:active {
@@ -251,9 +226,7 @@ table.dataTable thead td:active {
 }
 
 
-/*
- * Scrolling
- */
+// Scrolling
 .dataTables_scroll {
 	clear: both;
 }
@@ -262,4 +235,3 @@ table.dataTable thead td:active {
 	*margin-top: -1px;
 	-webkit-overflow-scrolling: touch;
 }
-

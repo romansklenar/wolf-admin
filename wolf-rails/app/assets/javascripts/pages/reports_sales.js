@@ -24,7 +24,8 @@
 			"sPaginationType": "full_numbers",
 			"iDisplayLength": 20,
 			"aLengthMenu": [[20, 50, 100, -1], [20, 50, 100, "All"]],
-			bDestroy: true
+			bDestroy: true,
+			"sDom": "<'row'<'col-sm-12'tr>><'row'<'col-sm-12'p>>"
 		});
 
 		

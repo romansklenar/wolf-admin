@@ -21,6 +21,7 @@
 //= require select2
 //= require jquery-minicolors
 //= require jquery-flot
+//= require jquery-datatables
 //= require messenger
 //= require moment
 //= require offline
