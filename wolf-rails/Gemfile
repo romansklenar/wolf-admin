@@ -6,15 +6,18 @@ gem 'thin'
 gem 'pg'
 
 gem 'sass-rails', '~> 4.0.3'
-gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'compass-rails'
-gem 'jquery-rails'
+gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery', '>= 1.10.0' # due to jquery 1.10 version required by jquery-rails < 4.0
+  gem 'rails-assets-jquery-ujs', '~> 1.0.4'
+  gem 'rails-assets-jquery-minicolors', '~> 2.1.12'
+  gem 'rails-assets-jquery-flot', '~> 0.8.3'
   gem 'rails-assets-bootstrap', '~> 3.3.5'
   gem 'rails-assets-font-awesome', '~> 4.3.0'
   gem 'rails-assets-ionicons', '~> 2.0.1'
@@ -22,8 +25,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-messenger', '~> 1.4.2'
   gem 'rails-assets-datatables', '~> 1.10.7'
   gem 'rails-assets-datatables-plugins', '~> 1.10.7'
-  gem 'rails-assets-jquery-minicolors', '~> 2.1.12'
-  gem 'rails-assets-jquery-flot', '~> 0.8.3'
   gem 'rails-assets-flot.tooltip', '~> 0.8.3'
   gem 'rails-assets-tether-shepherd', '~> 0.5.1'
   gem 'rails-assets-animate-css', '~> 3.3.0'
