@@ -31,12 +31,9 @@ If you prefer to use normal css, there's the expanded-theme.css which has all th
 
 Fonts folder:
 contains all the font files used in the theme:
-	- Brankic icon set
-	- Entypo icon set
 	- Flexslider icon set
 	- Font awesome set
 	- Glyphicons set
-	- Icomoon set
 	- Ionicons set
 
 
@@ -48,23 +45,11 @@ Images folder: images used in the theme.
 
 ************
 
-JS folder:	
+JS folder:
 
 /bootstrap: the original bootstrap js files, to change versions replace them here with the new ones.
 
 /vendor: all the js libraries and plugins used.
-
-
-************
-
-Icons folder:
-
-Includes the downloaded files from http://icomoon.io/app for the Brankic, Entypo and Icomoon free icon fonts set:
-Brankic: http://www.brankic1979.com/icons/
-Icomoon: http://icomoon.io/#icons
-Entypo: http://www.entypo.com/
-
-You don't need any of this, as the css font files are already in the vendor folder, but you can use the demo.html in each folder to see all of the icons included and how to reference them in css classes.
 
 
 ************
@@ -74,10 +59,6 @@ Credits:
 - unsplash.com for bg pictures.
 - uifaces.com/authorized for the user display pics.
 - fontawesome.io
-- entypo.com
-- brankic1979.com/icons
-- ionicons.com
-- elegantthemes.com for the Flat Circle Icons found at graphicburger.com/90-beautiful-flat-icons 
 
 
 Image Shots:
@@ -110,16 +91,15 @@ Plugins:
 - Messenger		[https://github.com/HubSpot/messenger]
 - jQuery Validate		[github.com/jzaefferer/jquery-validation]
 - Highlight.js		[highlightjs.org]
-- Imagesloaded		[https://github.com/desandro/imagesloaded]
 - jQuery Cookie 	[https://github.com/carhartl/jquery-cookie]
 - jQuery Masked input		[https://github.com/digitalBush/jquery.maskedinput]
 - jQuery Raty		[http://wbotelhos.com/raty]
 - Moment.js 		[http://momentjs.com]
 - Zoomerang			[http://yyx990803.github.io/zoomerang]
 
-- jQuery v2.1.0		[http://jquery.com]
+- jQuery v1.10.4		[http://jquery.com]
 - jQuery UI v1.10.4		[http://jqueryui.com]
-- Bootstrap v3.1.1 		[http://getbootstrap.com]
+- Bootstrap v3.3.5 		[http://getbootstrap.com]
 
 
 ************
@@ -133,7 +113,6 @@ v1.1
 - Added a js helper to get date timestamps with moment.js to use on flot charts
 
 
-*** 
+***
 
 For any help, doubts, suggestions, ideas for new features/pages to keep improving this theme or just want to say hi you can contact me at e.adrian90 at gmail.com
-
