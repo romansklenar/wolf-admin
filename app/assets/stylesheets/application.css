@@ -27,6 +27,5 @@
  *= require offline
  *= require summernote
  *= require tether-shepherd
- *= require_tree ../../../vendor/assets/stylesheets/.
  *= require theme
  */
