@@ -32,15 +32,15 @@ Contains all the font files used in the theme:
 
 
 ## Image Shots
-https://dribbble.com/shots/1455878-ADCltd
-https://dribbble.com/shots/1480456-Billable
-https://dribbble.com/shots/1491212-Raindrop-new-Landing
-https://dribbble.com/shots/1479077-Dribbbox
-https://dribbble.com/shots/1451134-Checkout
-https://dribbble.com/shots/1450972-Survey-dashboard-wip
-https://dribbble.com/shots/1452942-Origami-Facebook
-https://dribbble.com/shots/1417727-Payments-Dashboard
-https://dribbble.com/shots/1348013-Dashboard-Redesign
+- https://dribbble.com/shots/1455878-ADCltd
+- https://dribbble.com/shots/1480456-Billable
+- https://dribbble.com/shots/1491212-Raindrop-new-Landing
+- https://dribbble.com/shots/1479077-Dribbbox
+- https://dribbble.com/shots/1451134-Checkout
+- https://dribbble.com/shots/1450972-Survey-dashboard-wip
+- https://dribbble.com/shots/1452942-Origami-Facebook
+- https://dribbble.com/shots/1417727-Payments-Dashboard
+- https://dribbble.com/shots/1348013-Dashboard-Redesign
 
 
 ## Plugins
