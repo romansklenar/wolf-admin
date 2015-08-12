@@ -10,8 +10,6 @@ gem 'coffee-rails'
 gem 'compass-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', '~> 1.10.0' # due to jquery 1.10 version required by jquery-rails < 4.0
@@ -50,10 +48,4 @@ group :development do
   gem 'quiet_assets'
   gem 'better_errors'
   gem 'binding_of_caller'
-end
-
-group :production do
-  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
-  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
-  gem 'rails_12factor'
 end
