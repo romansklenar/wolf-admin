@@ -102,10 +102,10 @@
         </div>
 
         <div class="action">
-          <a href="#" class="btn btn-primary" data-step="1">
+          <%= link_to "#", class: "btn btn-primary", data: { step: "1" } do %>
             Billing info
             <i class="fa fa-chevron-right"></i>
-          </a>
+          <% end %>
         </div>
       </div>
     </div>
@@ -173,14 +173,14 @@
           </div>
 
           <div class="action clearfix">
-            <a href="#" data-step="0" class="btn btn-default pull-left">
+            <%= link_to "#" data: { step: "0" }, class: "btn btn-default pull-left" do %>
               <i class="fa fa-chevron-left"></i>
               Plans
-            </a>
-          <a href="#" class="btn btn-success pull-right">
+            <% end %>
+          <%= link_to "#", class: "btn btn-success pull-right" do %>
             Start my subscription
             <i class="fa fa-chevron-right"></i>
-          </a>
+          <% end %>
         </div>
       </form>
     </div>

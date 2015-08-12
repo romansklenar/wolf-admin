@@ -3,13 +3,13 @@
   <div id="update">
     <div class="container">
       <header>
-        <a href="#" onclick="history.go(-1);return false;">
+        <%= link_to "#", onclick: "history.go(-1);return false;" do %>
           ← Return to admin
-        </a>
-        <a href="#" class="pull-right">
+        <% end %>
+        <%= link_to "#", class: "pull-right" do %>
           <i class="fa fa-rss"></i>
           Subscribe to notifications
-        </a>
+        <% end %>
       </header>
       <div class="row header">
         <h3>Wolf System Status</h3>
@@ -26,7 +26,7 @@
               All sistems operational
             </div>
             <div class="help">
-              Need help? <a href="#">Contact us</a>.
+              Need help? <%= link_to "Contact us", "#" %>.
             </div>
           </div>
         </div>
@@ -114,9 +114,9 @@
             </div>
           </div>
           <div class="full-history">
-            <a href="#">
+            <%= link_to "#" do %>
               ← See full incident history
-            </a>
+            <% end %>
           </div>
         </div>
       </div>

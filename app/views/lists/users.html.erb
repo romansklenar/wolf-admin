@@ -13,9 +13,9 @@
     <input type="text" name="q" placeholder="Search customers, clients..." />
     <input type="submit" />
   </form>
-  <a href="<%= new_customer_forms_path %>" class="new-user btn btn-success pull-right">
+  <%= link_to new_customer_forms_path, class: "new-user btn btn-success pull-right" do %>
     <span>New user</span>
-  </a>
+  <% end %>
 </div>
 
 <div class="content-wrapper">
@@ -23,10 +23,10 @@
     <div class="col-md-12 filters">
       <div class="links">
         <label>Filter users:</label>
-        <a href="#">All users (243)</a>
-        <a href="#" class="active">Active (3)</a>
-        <a href="#">Suspended (8)</a>
-        <a href="#">Prospects</a>
+        <%= link_to "All users (243)", "#" %>
+        <%= link_to "Active (3)", "#", class: "active" %>
+        <%= link_to "Suspended (8)", "#" %>
+        <%= link_to "Prospects", "#" %>
       </div>
 
       <div class="show-options">
@@ -38,15 +38,15 @@
               </span>
             </a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-            <li><a href="#">Name</a></li>
-            <li><a href="#">Signed up</a></li>
-            <li><a href="#">Last seen</a></li>
-            <li><a href="#">Browser</a></li>
-            <li><a href="#">Country</a></li>
+            <li><%= link_to "Name", "#" %></li>
+            <li><%= link_to "Signed up", "#" %></li>
+            <li><%= link_to "Last seen", "#" %></li>
+            <li><%= link_to "Browser", "#" %></li>
+            <li><%= link_to "Country", "#" %></li>
             </ul>
         </div>
-        <a href="#" data-grid=".users-list" class="grid-view active"><i class="fa fa-th-list"></i></a>
-        <a href="#" data-grid=".users-grid" class="grid-view"><i class="fa fa-th"></i></a>
+        <%= link_to "<i class="fa fa-th-list"></i>", "#", data: { grid: ".users-list" }, class: "grid-view active" %>
+        <%= link_to "<i class="fa fa-th"></i>", "#", data: { grid: ".users-grid" }, class: "grid-view" %>
       </div>
     </div>
   </div>
@@ -64,24 +64,24 @@
                 <i class="fa fa-chevron-down"></i>
               </a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-              <li><a href="#">Add tags</a></li>
-              <li><a href="#">Delete users</a></li>
-              <li><a href="#">Edit customers</a></li>
-              <li><a href="#">Manage permissions</a></li>
+              <li><%= link_to "Add tags", "#" %></li>
+              <li><%= link_to "Delete users", "#" %></li>
+              <li><%= link_to "Edit customers", "#" %></li>
+              <li><%= link_to "Manage permissions", "#" %></li>
               </ul>
           </div>
         </div>
         <div class="col-sm-3 header hidden-xs">
-          <label><a href="#">Name</a></label>
+          <label><%= link_to "Name", "#" %></label>
         </div>
         <div class="col-sm-3 header hidden-xs">
-          <label><a href="#">Email</a></label>
+          <label><%= link_to "Email", "#" %></label>
         </div>
         <div class="col-sm-2 header hidden-xs">
-          <label><a href="#">Total spent</a></label>
+          <label><%= link_to "Total spent", "#" %></label>
         </div>
         <div class="col-sm-2 header hidden-xs">
-          <label class="text-right"><a href="#">Signed up</a></label>
+          <label class="text-right"><%= link_to "Signed up", "#" %></label>
         </div>
       </div>
       <div class="row user">
@@ -90,7 +90,7 @@
           <%= image_tag "avatars/2.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">John Smith Stewart</a>
+          <%= link_to "John Smith Stewart", profile_pages_path, class: "name" %>
         </div>
         <div class="col-sm-3">
           <div class="email">john.39@gmail.com</div>
@@ -112,7 +112,7 @@
           <%= image_tag "avatars/3.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">Richard Moore Stevens</a>
+          <%= link_to "Richard Moore Stevens", profile_pages_path, class: "name" %>
         </div>
         <div class="col-sm-3">
           <div class="email">richard@hotmail.com</div>
@@ -134,10 +134,10 @@
           <%= image_tag "avatars/4.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">
+          <%= link_to profile_pages_path, class: "name" do %>
             Karen Jessica Lawrence
             <span class="label label-info">New user</span>
-          </a>
+          <% end %>
         </div>
         <div class="col-sm-3">
           <div class="email">karen@gmail.com</div>
@@ -159,7 +159,7 @@
           <%= image_tag "avatars/1.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">John Smith Stewart</a>
+          <%= link_to "John Smith Stewart", profile_pages_path, class: "name" %>
         </div>
         <div class="col-sm-3">
           <div class="email">john.smith@gmail.com</div>
@@ -181,10 +181,10 @@
           <%= image_tag "avatars/5.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">
+          <%= link_to profile_pages_path, class: "name" do %>
             Richard Moore
             <span class="label label-warning">Order pending</span>
-          </a>
+          <% end %>
         </div>
         <div class="col-sm-3">
           <div class="email">rick98@gmail.com</div>
@@ -206,7 +206,7 @@
           <%= image_tag "avatars/6.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">Karen Jessica Lawrence</a>
+          <%= link_to "Karen Jessica Lawrence", profile_pages_path, class: "name" %>
         </div>
         <div class="col-sm-3">
           <div class="email">lawrence@gmail.com</div>
@@ -228,7 +228,7 @@
           <%= image_tag "avatars/7.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">Eric McKellen</a>
+          <%= link_to "Eric McKellen", profile_pages_path, class: "name" %>
         </div>
         <div class="col-sm-3">
           <div class="email">eric@gmail.com</div>
@@ -250,7 +250,7 @@
           <%= image_tag "avatars/8.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">George Lucas Francois</a>
+          <%= link_to "George Lucas Francois", profile_pages_path, class: "name" %>
         </div>
         <div class="col-sm-3">
           <div class="email">george@gmail.com</div>
@@ -272,7 +272,7 @@
           <%= image_tag "avatars/9.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">Maria Harrison</a>
+          <%= link_to "Maria Harrison", profile_pages_path, class: "name" %>
         </div>
         <div class="col-sm-3">
           <div class="email">maria.01@gmail.com</div>
@@ -294,10 +294,10 @@
           <%= image_tag "avatars/10.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">
+          <%= link_to profile_pages_path, class: "name" do %>
             Butch Robertson
             <span class="label label-info">New user</span>
-          </a>
+          <% end %>
         </div>
         <div class="col-sm-3">
           <div class="email">butch@gmail.com</div>
@@ -319,7 +319,7 @@
           <%= image_tag "avatars/11.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">Richard Dawkins</a>
+          <%= link_to "Richard Dawkins", profile_pages_path, class: "name" %>
         </div>
         <div class="col-sm-3">
           <div class="email">dawkins@gmail.com</div>
@@ -341,7 +341,7 @@
           <%= image_tag "avatars/12.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">Andrea Kotrevzka</a>
+          <%= link_to "Andrea Kotrevzka", profile_pages_path, class: "name" %>
         </div>
         <div class="col-sm-3">
           <div class="email">andrea@gmail.com</div>
@@ -363,7 +363,7 @@
           <%= image_tag "avatars/13.jpg" %>
         </div>
         <div class="col-sm-3">
-          <a href="<%= profile_pages_path %>" class="name">Robert Diaz</a>
+          <%= link_to "Robert Diaz", profile_pages_path, class: "name" %>
         </div>
         <div class="col-sm-3">
           <div class="email">robert.diaz@gmail.com</div>
@@ -383,8 +383,8 @@
       <div class="row pager-wrapper">
         <div class="col-sm-12">
           <ul class="pager">
-              <li><a href="#">Previous</a></li>
-              <li><a href="#">Next</a></li>
+              <li><%= link_to "Previous", "#" %></li>
+              <li><%= link_to "Next", "#" %></li>
           </ul>
         </div>
       </div>
@@ -393,86 +393,86 @@
 
   <div class="row users-grid">
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/2.jpg" %>
-      </a>
+      <% end %>
       <div class="name">John Smith Stewart</div>
       <div class="email">john.39@gmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/3.jpg" %>
-      </a>
+      <% end %>
       <div class="name">Richard Moore Stevens</div>
       <div class="email">richard@hotmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/4.jpg" %>
-      </a>
+      <% end %>
       <div class="name">Karen Jessica Lawrence</div>
       <div class="email">karen@gmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/1.jpg" %>
-      </a>
+      <% end %>
       <div class="name">John Smith Stewart</div>
       <div class="email">john.smith@gmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/5.jpg" %>
-      </a>
+      <% end %>
       <div class="name">Richard Moore Stevens</div>
       <div class="email">rick98@gmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/6.jpg" %>
-      </a>
+      <% end %>
       <div class="name">Karen Jessica Lawrence</div>
       <div class="email">lawrence@gmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/7.jpg" %>
-      </a>
+      <% end %>
       <div class="name">Eric McKellen</div>
       <div class="email">eric@gmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/8.jpg" %>
-      </a>
+      <% end %>
       <div class="name">George Lucas Francois</div>
       <div class="email">george@gmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/9.jpg" %>
-      </a>
+      <% end %>
       <div class="name">Maria Harrison</div>
       <div class="email">maria.01@gmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/10.jpg" %>
-      </a>
+      <% end %>
       <div class="name">Richard Dawkins</div>
       <div class="email">dawkins@gmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/11.jpg" %>
-      </a>
+      <% end %>
       <div class="name">Andrea Kotrevzka</div>
       <div class="email">andrea@gmail.com</div>
     </div>
     <div class="user col-sm-3 col-xs-6">
-      <a href="#">
+      <%= link_to "#" do %>
         <%= image_tag "avatars/12.jpg" %>
-      </a>
+      <% end %>
       <div class="name">Robert Diaz</div>
       <div class="email">robert.diaz@gmail.com</div>
     </div>
@@ -480,8 +480,8 @@
     <div class="pager-wrapper">
       <div class="col-sm-12">
         <ul class="pager">
-            <li><a href="#">Previous</a></li>
-            <li><a href="#">Next</a></li>
+            <li><%= link_to "Previous", "#" %></li>
+            <li><%= link_to "Next", "#" %></li>
         </ul>
       </div>
     </div>

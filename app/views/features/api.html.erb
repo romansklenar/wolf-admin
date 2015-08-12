@@ -1,36 +1,36 @@
 <body id="docs" data-spy="scroll" data-target="#guide">
   <div id="guide">
     <h1 class="logo">
-      <a href="<%= root_url %>">Wolf</a>
+      <%= link_to "Wolf", root_url %>
     </h1>
     <ul class="menu nav">
       <li>
-          <a href="#intro">Introduction</a>
+          <%= link_to "Introduction", "#intro" %>
       </li>
       <li>
-          <a href="#auth">Authentication</a>
+          <%= link_to "Authentication", "#auth" %>
       </li>
       <li>
-        <a href="#games">Games</a>
+        <%= link_to "Games", "#games" %>
         <ul class="nav">
-          <li><a href="#js-individual-compiled">Retrieve a Game</a></li>
-          <li><a href="#js-data-attrs">Create a Game</a></li>
-          <li><a href="#js-programmatic-api">Delete a Game</a></li>
+          <li><%= link_to "Retrieve a Game", "#js-individual-compiled" %></li>
+          <li><%= link_to "Create a Game", "#js-data-attrs" %></li>
+          <li><%= link_to "Delete a Game", "#js-programmatic-api" %></li>
           </ul>
       </li>
       <li>
-          <a href="#users">Users</a>
+          <%= link_to "Users", "#users" %>
           <ul class="nav">
-          <li><a href="#users">Retrieve a User</a></li>
-          <li><a href="#users">Create a User</a></li>
-          <li><a href="#users">Delete a User</a></li>
+          <li><%= link_to "Retrieve a User", "#users" %></li>
+          <li><%= link_to "Create a User", "#users" %></li>
+          <li><%= link_to "Delete a User", "#users" %></li>
           </ul>
       </li>
       <li>
-          <a href="#orders">Orders</a>
+          <%= link_to "Orders", "#orders" %>
       </li>
       <li>
-          <a href="#errors">Errors</a>
+          <%= link_to "Errors", "#errors" %>
       </li>
     </ul>
   </div>
@@ -47,12 +47,12 @@
           <div class="method-description">
             <h3>Introduction</h3>
             <p>
-              This is a documentation page demo for <a href="http://en.wikipedia.org/wiki/Application_programming_interface">an API</a>, you can use it for your own purposes if you want to showcase your API or some other kind of documentation for your app.
+              This is a documentation page demo for <%= link_to "an API", "http://en.wikipedia.org/wiki/Application_programming_interface" %>, you can use it for your own purposes if you want to showcase your API or some other kind of documentation for your app.
               The info shown here is merely for the demo so it is not real.
             </p>
             <p>
               You can edit the code with anything you like and use only the languages that you want, the code syntax highlighting is made using
-              <a href="http://highlightjs.org" target="_blank">highlightjs.org</a> and supports a good
+              <%= link_to "highlightjs.org", "http://highlightjs.org", target: "_blank" %> and supports a good
               variety of languages. Comes with some color schemes by default but you can easily customize the scheme of each language directly from the CSS.
             </p>
           </div>

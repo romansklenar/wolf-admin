@@ -9,20 +9,20 @@
     My Projects
     <small class="hidden-xs">(Widget list concept)</small>
   </div>
-  <a href="<%= new_product_forms_path %>" class="new-user btn btn-success pull-right">
+  <%= link_to new_product_forms_path, class: "new-user btn btn-success pull-right" do %>
     <span>Add project</span>
-  </a>
+  <% end %>
 </div>
 
 <div class="content-wrapper clearfix">
   <div class="row project-list">
     <div class="project new">
-      <a href="#">
+      <%= link_to "#" do %>
         <i class="ion-ios-plus-outline"></i>
         <span class="info">
           Create a New Project
         </span>
-      </a>
+      <% end %>
     </div>
     <div class="project">
       <div class="info">
@@ -38,13 +38,13 @@
         <%= image_tag "avatars/14.jpg" %>
         <%= image_tag "avatars/15.jpg" %>
         
-        <a href="#" class="add-more">
+        <%= link_to "#", class: "add-more" do %>
           <i class="fa fa-plus"></i>
-        </a>
+        <% end %>
         <ul class="menu">
-          <li><a href="#">Invite a new user</a></li>
-          <li><a href="#">Change name</a></li>
-          <li><a href="#">Delete project</a></li>
+          <li><%= link_to "Invite a new user", "#" %></li>
+          <li><%= link_to "Change name", "#" %></li>
+          <li><%= link_to "Delete project", "#" %></li>
         </ul>
       </div>
     </div>
@@ -61,13 +61,13 @@
         <%= image_tag "avatars/4.jpg" %>
         <%= image_tag "avatars/10.jpg" %>
 
-        <a href="#" class="add-more">
+        <%= link_to "#", class: "add-more" do %>
           <i class="fa fa-plus"></i>
-        </a>
+        <% end %>
         <ul class="menu">
-          <li><a href="#">Invite a new user</a></li>
-          <li><a href="#">Change name</a></li>
-          <li><a href="#">Delete project</a></li>
+          <li><%= link_to "Invite a new user", "#" %></li>
+          <li><%= link_to "Change name", "#" %></li>
+          <li><%= link_to "Delete project", "#" %></li>
         </ul>
       </div>
     </div>
@@ -85,13 +85,13 @@
         <%= image_tag "avatars/9.jpg" %>
         <%= image_tag "avatars/16.jpg" %>
 
-        <a href="#" class="add-more">
+        <%= link_to "#", class: "add-more" do %>
           <i class="fa fa-plus"></i>
-        </a>
+        <% end %>
         <ul class="menu">
-          <li><a href="#">Invite a new user</a></li>
-          <li><a href="#">Change name</a></li>
-          <li><a href="#">Delete project</a></li>
+          <li><%= link_to "Invite a new user", "#" %></li>
+          <li><%= link_to "Change name", "#" %></li>
+          <li><%= link_to "Delete project", "#" %></li>
         </ul>
       </div>
     </div>
@@ -109,13 +109,13 @@
         <%= image_tag "avatars/12.jpg" %>
         <%= image_tag "avatars/17.jpg" %>
 
-        <a href="#" class="add-more">
+        <%= link_to "#", class: "add-more" do %>
           <i class="fa fa-plus"></i>
-        </a>
+        <% end %>
         <ul class="menu">
-          <li><a href="#">Invite a new user</a></li>
-          <li><a href="#">Change name</a></li>
-          <li><a href="#">Delete project</a></li>
+          <li><%= link_to "Invite a new user", "#" %></li>
+          <li><%= link_to "Change name", "#" %></li>
+          <li><%= link_to "Delete project", "#" %></li>
         </ul>
       </div>
     </div>
@@ -131,13 +131,13 @@
         <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" />
         <img src="https://s3.amazonaws.com/uifaces/faces/twitter/krystalfister/128.jpg" />
 
-        <a href="#" class="add-more">
+        <%= link_to "#", class: "add-more" do %>
           <i class="fa fa-plus"></i>
-        </a>
+        <% end %>
         <ul class="menu">
-          <li><a href="#">Invite a new user</a></li>
-          <li><a href="#">Change name</a></li>
-          <li><a href="#">Delete project</a></li>
+          <li><%= link_to "Invite a new user", "#" %></li>
+          <li><%= link_to "Change name", "#" %></li>
+          <li><%= link_to "Delete project", "#" %></li>
         </ul>
       </div>
     </div>
@@ -154,13 +154,13 @@
         <%= image_tag "avatars/5.jpg" %>
         <%= image_tag "avatars/13.jpg" %>
 
-        <a href="#" class="add-more">
+        <%= link_to "#", class: "add-more" do %>
           <i class="fa fa-plus"></i>
-        </a>
+        <% end %>
         <ul class="menu">
-          <li><a href="#">Invite a new user</a></li>
-          <li><a href="#">Change name</a></li>
-          <li><a href="#">Delete project</a></li>
+          <li><%= link_to "Invite a new user", "#" %></li>
+          <li><%= link_to "Change name", "#" %></li>
+          <li><%= link_to "Delete project", "#" %></li>
         </ul>
       </div>
     </div>

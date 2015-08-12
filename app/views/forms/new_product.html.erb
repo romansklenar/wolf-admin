@@ -46,7 +46,7 @@
             <label for="post_images_attributes_0_alt">Alt:</label>
             <input class="form-control" name="post[images_attributes][0][alt]" size="30" style="width: 50%;" type="text" />
           </div>
-          <a href="#" class="remove-image">Remove image</a>
+          <%= link_to "Remove image", "#", class: "remove-image" %>
         </div>
       </div>
       </div>
@@ -144,7 +144,7 @@
 
       <div class="form-group form-actions">
       <div class="col-sm-offset-2 col-sm-10 col-md-offset-2 col-md-10">
-        <a href="<%= new_product_forms_path %>" class="btn btn-default">Cancel</a>
+        <%= link_to "Cancel", new_product_forms_path, class: "btn btn-default" %>
           <button type="submit" class="btn btn-success">Save product</button>
       </div>
       </div>

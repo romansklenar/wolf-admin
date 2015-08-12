@@ -8,28 +8,28 @@
   <h3>My account</h3>
   <ul class="menu">
     <li>
-      <a href="<%= settings_account_index_path %>">
+      <%= link_to settings_account_index_path do %>
         <i class="ion-ios-person-outline"></i>
         Profile
-      </a>
+      <% end %>
     </li>
     <li>
-      <a href="<%= billing_account_index_path %>">
+      <%= link_to billing_account_index_path do %>
         <i class="ion-card"></i>
         Billing
-      </a>
+      <% end %>
     </li>
     <li>
-      <a href="<%= notifications_account_index_path %>">
+      <%= link_to notifications_account_index_path do %>
         <i class="ion-ios-email-outline"></i>
         Notifications
-      </a>
+      <% end %>
     </li>
     <li>
-      <a href="<%= support_account_index_path %>" class="active">
+      <%= link_to support_account_index_path, class: "active" do %>
         <i class="ion-ios-help-outline"></i>
         Support
-      </a>
+      <% end %>
     </li>
   </ul>
 </div>
@@ -45,12 +45,12 @@
 
     <div class="row topic">
       <div class="col-md-1 col-sm-2">
-        <a href="#">
+        <%= link_to "#" do %>
           <i class="ion-person-stalker"></i>
-        </a>
+        <% end %>
       </div>
       <div class="col-sm-9">
-        <a href="#">Your contacts</a>
+        <%= link_to "Your contacts", "#" %>
         <p>
           Learn how to create, manage and update your contacts data.
         </p>
@@ -58,12 +58,12 @@
     </div>
     <div class="row topic">
       <div class="col-md-1 col-sm-2">
-        <a href="#">
+        <%= link_to "#" do %>
           <i class="ion-pie-graph"></i>
-        </a>
+        <% end %>
       </div>
       <div class="col-sm-9">
-        <a href="#">Graphs & Reports</a>
+        <%= link_to "Graphs & Reports", "#" %>
         <p>
           Visualize your data in a meaningful way with our reports. Learn
           how to get the most out of your information.
@@ -72,12 +72,12 @@
     </div>
     <div class="row topic">
       <div class="col-md-1 col-sm-2">
-        <a href="#">
+        <%= link_to "#" do %>
           <i class="ion-archive"></i>
-        </a>
+        <% end %>
       </div>
       <div class="col-sm-9">
-        <a href="#">Orders</a>
+        <%= link_to "Orders", "#" %>
         <p>
           Manage your orders and bill your customers.
         </p>
@@ -85,12 +85,12 @@
     </div>
     <div class="row topic">
       <div class="col-md-1 col-sm-2">
-        <a href="#">
+        <%= link_to "#" do %>
           <i class="ion-calendar"></i>
-        </a>
+        <% end %>
       </div>
       <div class="col-sm-9">
-        <a href="#">Calendar</a>
+        <%= link_to "Calendar", "#" %>
         <p>
           Learn how to delegate tasks and organize your activities.
         </p>
@@ -98,12 +98,12 @@
     </div>
     <div class="row topic">
       <div class="col-md-1 col-sm-2">
-        <a href="#">
+        <%= link_to "#" do %>
           <i class="ion-camera"></i>
-        </a>
+        <% end %>
       </div>
       <div class="col-sm-9">
-        <a href="#">Galleries</a>
+        <%= link_to "Galleries", "#" %>
         <p>
           Learn how to create beautiful galleries by uploading your pictures.
         </p>

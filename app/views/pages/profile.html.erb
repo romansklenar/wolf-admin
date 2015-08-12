@@ -9,7 +9,7 @@
     John Stewart Profile
     <small class="hidden-xs" style="font-weight:600;">All tabs have content</small>
   </div>
-  <a href="#" class="pull-right btn btn-primary">Edit user</a>
+  <%= link_to "Edit user", "#", class: "pull-right btn btn-primary" %>
 </div>
 
 <div class="content-wrapper clearfix">
@@ -19,8 +19,8 @@
       <div class="name">Karen Matthews</div>
       <div class="position">Client</div>
       <div class="social">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
+        <%= link_to "<i class="fa fa-facebook"></i>", "#" %>
+        <%= link_to "<i class="fa fa-twitter"></i>", "#" %>
       </div>
     </div>
     <div class="main-details clearfix">
@@ -63,13 +63,13 @@
     <div class="tabs">
       <ul>
         <li>
-          <a href="#" class="active">Activity Notes</a>
+          <%= link_to "Activity Notes", "#", class: "active" %>
         </li>
         <li>
-          <a href="#">Orders</a>
+          <%= link_to "Orders", "#" %>
         </li>
         <li>
-          <a href="#">Work</a>
+          <%= link_to "Work", "#" %>
         </li>
       </ul>
     </div>
@@ -85,15 +85,15 @@
                 <span>Submit note</span>
               </button>
               <div class="attach">
-                <a href="#" data-toggle="tooltip" title="Add location">
+                <%= link_to "#", data: { toggle: "tooltip" }, title: "Add location" %>
                   <i class="ion-location"></i>
-                </a>
-                <a href="#" data-toggle="tooltip" title="Add files">
+                <% end %>
+                <%= link_to "#", data: { toggle: "tooltip" }, title: "Add files" %>
                   <i class="ion-paperclip"></i>
-                </a>
-                <a href="#" data-toggle="tooltip" title="Add a photo">
+                <% end %>
+                <%= link_to "#", data: { toggle: "tooltip" }, title: "Add a photo" %>
                   <i class="ion-camera"></i>
-                </a>
+                <% end %>
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@
         </div>
 
         <div class="load-more">
-          <a href="#" class="btn btn-default">Load more comments</a>
+          <%= link_to "Load more comments", "#", class: "btn btn-default" %>
         </div>
       </div>
       <div class="tab orders">
@@ -234,7 +234,7 @@
           <tbody>
             <tr>
               <td>
-                <a href="#">#1445</a>
+                <%= link_to "#1445", "#" %>
               </td>
               <td>
                 Mar 11, 11:50am
@@ -247,7 +247,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#">#1897</a>
+                <%= link_to "#1897", "#" %>
               </td>
               <td>Mar 10, 06:50am</td>
               <td><span class="label label-warning">Pending</span></td>
@@ -255,7 +255,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#">#1089</a>
+                <%= link_to "#1089", "#" %>
               </td>
               <td>Mar 08, 01:43pm</td>
               <td><span class="label label-default">Paid</span></td>
@@ -263,7 +263,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#">#1883</a>
+                <%= link_to "#1883", "#" %>
               </td>
               <td>Mar 07, 07:30pm</td>
               <td><span class="label label-default">Paid</span></td>
@@ -271,7 +271,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#">#2288</a>
+                <%= link_to "#2288", "#" %>
               </td>
               <td>Mar 04, 04:30pm</td>
               <td><span class="label label-default">Paid</span></td>
@@ -279,7 +279,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#">#3978</a>
+                <%= link_to "#3978", "#" %>
               </td>
               <td>Mar 11, 11:50am</td>
               <td><span class="label label-default">Paid</span></td>
@@ -287,7 +287,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#">#6876</a>
+                <%= link_to "#6876", "#" %>
               </td>
               <td>Mar 04, 04:30pm</td>
               <td><span class="label label-default">Paid</span></td>
@@ -295,7 +295,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#">#3445</a>
+                <%= link_to "#3445", "#" %>
               </td>
               <td>Mar 11, 11:50am</td>
               <td><span class="label label-default">Paid</span></td>
@@ -303,7 +303,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#">#3445</a>
+                <%= link_to "#3445", "#" %>
               </td>
               <td>Mar 11, 11:50am</td>
               <td><span class="label label-default">Paid</span></td>
@@ -311,7 +311,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#">#3445</a>
+                <%= link_to "#3445", "#" %>
               </td>
               <td>Mar 11, 11:50am</td>
               <td><span class="label label-default">Paid</span></td>

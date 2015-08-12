@@ -12,8 +12,8 @@
     </small>
   </div>
   <div class="options pull-right">
-    <a href="#"><i class="fa fa-print"></i> Print</a>
-    <a href="#"><i class="fa fa-download"></i> Download CSV</a>
+    <%= link_to "<i class="fa fa-print"></i> Print", "#" %>
+    <%= link_to "<i class="fa fa-download"></i> Download CSV", "#" %>
   </div>
 </div>
 
@@ -138,9 +138,9 @@
         Bulk actions <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Edit tags</a></li>
-        <li><a href="#">Delete products</a></li>
-        <li><a href="#">Export to CSV</a></li>
+        <li><%= link_to "Edit tags", "#" %></li>
+        <li><%= link_to "Delete products", "#" %></li>
+        <li><%= link_to "Export to CSV", "#" %></li>
         </ul>
     </div>
 

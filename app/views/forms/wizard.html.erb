@@ -155,9 +155,9 @@
           <h3>
             Your account has been configured successfully!
           </h3>
-          <a href="<%= wizard_forms_path %>" class="button">
+          <%= link_to wizard_forms_path, class: "button" do %>
             <span>Go to my account</span>
-          </a>
+          <% end %>
         </div>
       </div>
     </form>

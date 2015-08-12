@@ -9,8 +9,8 @@
     Invoice <strong>#097294</strong>
   </div>
   <div class="options pull-right">
-    <a href="#"><i class="fa fa-print"></i> Print</a>
-    <a href="#"><i class="fa fa-download"></i> Download</a>
+    <%= link_to "<i class="fa fa-print"></i> Print", "#" %>
+    <%= link_to "<i class="fa fa-download"></i> Download", "#" %>
   </div>
 </div>
 
@@ -49,9 +49,9 @@
             New York City <br>
             55839 <br>
             USA <br>
-            <a href="#">
+            <%= link_to "#" do %>
               john.mcclane@gmail.com
-            </a>
+            <% end %>
           </p>
         </div>
         <div class="col-sm-6 text-right">
@@ -64,9 +64,9 @@
             San Francisco <br>
             99383 <br>
             USA <br>
-            <a href="#">
+            <%= link_to "#" do %>
               react.themes@gmail.com
-            </a>
+            <% end %>
           </p>
         </div>
       </div>
@@ -136,10 +136,10 @@
       </div>
 
       <div class="print">
-        <a href="#">
+        <%= link_to "#" do %>
           <i class="fa fa-print"></i>
           Print this receipt
-        </a>
+        <% end %>
       </div>
     </div>
   </div>

@@ -23,20 +23,20 @@
   <section class="modals">
     <h4>Modals</h4>
 
-    <a href="#" class="tour-first-step" data-toggle="modal" data-target="#welcome-modal">First time welcome Modal</a>
-    <a href="#" data-toggle="modal" data-target="#prompt-modal">Prompt Modal</a>
-    <a href="#" data-toggle="modal" data-target="#confirm-modal">Confirm Modal</a>
-    <a href="#" data-toggle="modal" data-target="#form-modal">Form Modal</a>
-    <a href="#" data-toggle="modal" data-target="#form-validation-modal">Form with Validation Modal</a>
+    <%= link_to "First time welcome Modal", "#", class: "tour-first-step", data: { toggle: "modal", target: "#welcome-modal" } %>
+    <%= link_to "Prompt Modal", "#", data: { toggle: "modal", target: "#prompt-modal" } %>
+    <%= link_to "Confirm Modal", "#", data: { toggle: "modal", target: "#confirm-modal" } %>
+    <%= link_to "Form Modal", "#", data: { toggle: "modal", target: "#form-modal" } %>
+    <%= link_to "Form with Validation Modal", "#", data: { toggle: "modal", target: "#form-validation-modal" } %>
   </section>
 
   <section class="notifications">
     <h4>Notifications</h4>
 
-    <a href="#" class="normal-notification">New Notification</a>
-    <a href="#" class="error-notification">Error Message</a>
-    <a href="#" class="button-notification tour-second-step">Message with button</a>
-    <a href="#" class="run-notification">Error with try again option</a>
+    <%= link_to "New Notification", "#", class: "normal-notification" %>
+    <%= link_to "Error Message", "#", class: "error-notification" %>
+    <%= link_to "Message with button", "#", class: "button-notification tour-second-step" %>
+    <%= link_to "Error with try again option", "#", class: "run-notification" %>
   </section>
 
   <section class="offline">
@@ -63,7 +63,7 @@
       </small>
     </h4>
 
-    <a href="#" class="start-tour">Start the tour</a>
+    <%= link_to "Start the tour", "#", class: "start-tour" %>
   </section>
 </div>
 
@@ -89,37 +89,37 @@
             <div class="row">
               <div class="col-md-4 animated fadeInDown">
                 <i class="ion-wrench"></i>
-                <a href="#">Configure your account</a>
+                <%= link_to "Configure your account", "#" %>
               </div>
               <div class="col-md-4 animated fadeInDown two">
                 <i class="ion-person-stalker"></i>
-                <a href="#">Invite your teammates</a>
+                <%= link_to "Invite your teammates", "#" %>
               </div>
               <div class="col-md-4 animated fadeInDown three">
                 <i class="ion-email"></i>
-                <a href="#">Setup your notifications</a>
+                <%= link_to "Setup your notifications", "#" %>
               </div>
             </div>
             <div class="row">
               <div class="col-md-4 animated fadeInDown four">
                 <i class="ion-help-circled"></i>
-                <a href="#">Watch our tutorials</a>
+                <%= link_to "Watch our tutorials", "#" %>
               </div>
               <div class="col-md-4 animated fadeInDown five">
                 <i class="ion-upload"></i>
-                <a href="#">Import your contacts</a>
+                <%= link_to "Import your contacts", "#" %>
               </div>
               <div class="col-md-4 animated fadeInDown six">
                 <i class="ion-code-working"></i>
-                <a href="#">Get your API Keys</a>
+                <%= link_to "Get your API Keys", "#" %>
               </div>
             </div>
           </div>
 
-          <a href="#" data-dismiss="modal" class="go-dashboard">
+          <%= link_to "#" data: { dismiss: "modal" }, class: "go-dashboard" do %>
             Just go straight to my dashboard
             <i class="fa fa-angle-double-right"></i>
-          </a>
+          <% end %>
           </div>
       </div>
       </div>

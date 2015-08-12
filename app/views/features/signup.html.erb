@@ -1,19 +1,19 @@
 <body id="signup">
   <div class="bg clear">
     <div class="signup-switcher">
-      <a href="#" class="active" data-class="clear">
+      <%= link_to "#", class: "active", data: { class: "clear" } do %>
         <i class="fa fa-check"></i>
         Clear
-      </a>
-      <a href="#" data-class="">
+      <% end %>
+      <%= link_to "#", data: { class: "" } %>
         <i class="fa fa-check"></i>
         Dark
-      </a>
+      <% end %>
     </div>
 
-    <a href="<%= root_url %>" class="logo">
+    <%= link_to root_url, class: "logo" do %>
       <i class="fa fa-users"></i>
-    </a>
+    <% end %>
 
     <h3>Create Your Account Now</h3>
 
@@ -44,7 +44,7 @@
           Your 30-day trial will start now. After your trial ends, your credit card will be charged for the monthly <strong>Business plan for $59.00 USD on April 12, 2014.</strong>
         </div>
         <div class="signup">
-          <a href="<%= root_url %>" class="btn btn-success btn-lg">Create my account</a>
+          <%= link_to "Create my account", root_url, class: "btn btn-success btn-lg" %>
         </div>
       </form>
     </div>
@@ -52,7 +52,7 @@
     <div class="bottom-wrapper">
       <div class="message">
         <span>Already have an account?</span>
-        <a href="<%= signin_features_path %>">Sign in here</a>.
+        <%= link_to "Sign in here", signin_features_path %>.
       </div>
     </div>
   </div>

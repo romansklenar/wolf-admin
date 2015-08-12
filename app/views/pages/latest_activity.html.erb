@@ -17,9 +17,9 @@
       Filter by user <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu">
-      <li><a href="#">Jessie</a></li>
-      <li><a href="#">Robb Stark</a></li>
-      <li><a href="#">Anna Sophia</a></li>
+      <li><%= link_to "Jessie", "#" %></li>
+      <li><%= link_to "Robb Stark", "#" %></li>
+      <li><%= link_to "Anna Sophia", "#" %></li>
       </ul>
   </div>
   <h3>
@@ -36,7 +36,7 @@
       <div class="col-sm-11 message">
         <%= image_tag "avatars/10.jpg", class: "avatar" %>
         <div class="content">
-          <strong>John Smith</strong> commented on your thread <a href="#">What's up guys</a>.
+          <strong>John Smith</strong> commented on your thread <%= link_to "What's up guys", "#" %>.
         </div>
       </div>
     </div>
@@ -90,7 +90,7 @@
       <div class="col-sm-11 message">
         <%= image_tag "avatars/5.jpg", class: "avatar" %>
         <div class="content">
-          <strong>Robb Stark</strong> added a new note on project <a href="#">Web design</a>.
+          <strong>Robb Stark</strong> added a new note on project <%= link_to "Web design", "#" %>.
 
           <p>
             I want everything we do to be beautiful. I don’t give a damn whether the client understands that that’s worth anything, or that the client thinks it’s worth anything, or whether it is worth anything. It’s worth it to me. It’s the way I want to live my life. I want to make beautiful things, even if nobody cares.
@@ -109,13 +109,13 @@
       <div class="col-sm-11 message">
         <%= image_tag "avatars/16.jpg", class: "avatar" %>
         <div class="content">
-          <strong>Ana Sophia</strong> uploaded a text file <a href="#">site_documentation.txt</a> from Google Drive.
+          <strong>Ana Sophia</strong> uploaded a text file <%= link_to "site_documentation.txt", "#" %> from Google Drive.
 
           <div class="big-file clearfix">
             <%= image_tag "google-drive.png" %>
-            <a href="#" class="name">
+            <%= link_to "#", class: "name" do %>
               New Website Project Documentation for the team
-            </a>
+            <% end %>
             <div class="size">
               20/01/2014. 135 KB.
             </div>
@@ -134,7 +134,7 @@
       <div class="col-sm-11 message">
         <%= image_tag "avatars/17.jpg", class: "avatar" %>
         <div class="content">
-          <strong>George Smith</strong> made 2 comments on project <a href="#">PSD to HTML</a>.
+          <strong>George Smith</strong> made 2 comments on project <%= link_to "PSD to HTML", "#" %>.
           <p class="border-bottom">
             <span class="date">2 hours ago</span>
             You have to roll up your sleeves and be a stonecutter before you can become a sculptor – command of craft always precedes art: apprentice, journeyman, master.
@@ -157,7 +157,7 @@
       <div class="col-sm-11 message">
         <%= image_tag "avatars/8.jpg", class: "avatar" %>
         <div class="content">
-          <strong>Brandon Johnson</strong> added a new comment on project <a href="#">This is great</a>.
+          <strong>Brandon Johnson</strong> added a new comment on project <%= link_to "This is great", "#" %>.
           <p>
             Some people say design is about solving problems. Obviously designers solve problems but so do dentists. Design is about cultural invention.
           </p>
@@ -175,7 +175,7 @@
       <div class="col-sm-11 message">
         <%= image_tag "avatars/9.jpg", class: "avatar" %>
         <div class="content">
-          <strong>Ana Sophia</strong> completed <a href="#">4 tasks</a>.
+          <strong>Ana Sophia</strong> completed <%= link_to "4 tasks", "#" %>.
         </div>
       </div>
     </div>
@@ -190,7 +190,7 @@
       <div class="col-sm-11 message">
         <%= image_tag "avatars/17.jpg", class: "avatar" %>
         <div class="content">
-          <strong>George Smith</strong> uploaded <a href="#">8 files</a>.
+          <strong>George Smith</strong> uploaded <%= link_to "8 files", "#" %>.
         </div>
       </div>
     </div>
@@ -209,7 +209,7 @@
       <div class="col-sm-11 message">
         <%= image_tag "avatars/10.jpg", class: "avatar" %>
         <div class="content">
-          <strong>John Smith</strong> commented on your thread <a href="#">What's up guys</a>.
+          <strong>John Smith</strong> commented on your thread <%= link_to "What's up guys", "#" %>.
         </div>
       </div>
     </div>
@@ -263,7 +263,7 @@
       <div class="col-sm-11 message">
         <%= image_tag "avatars/16.jpg", class: "avatar" %>
         <div class="content">
-          <strong>Anna Sophia</strong> added a new note on project <a href="#">Web design</a>.
+          <strong>Anna Sophia</strong> added a new note on project <%= link_to "Web design", "#" %>.
 
           <p>
             I want everything we do to be beautiful. I don’t give a damn whether the client understands that that’s worth anything, or that the client thinks it’s worth anything, or whether it is worth anything. It’s worth it to me.

@@ -1,27 +1,27 @@
 <div id="sidebar-default" class="main-sidebar fix-scroll">
   <div class="current-user">
-    <a href="#" class="name">
+    <%= link_to "#", class: "name" do %>
     <%= image_tag "avatars/1.jpg", class: "avatar" %>
     <span>
       John Smith
       <i class="fa fa-chevron-down"></i>
     </span>
-    </a>
+    <% end %>
     <ul class="menu">
     <li>
-      <a href="<%= settings_account_index_path %>">Account settings</a>
+      <%= link_to "Account settings", settings_account_index_path %>
     </li>
     <li>
-      <a href="<%= billing_account_index_path %>">Billing</a>
+      <%= link_to "Billing", billing_account_index_path %>
     </li>
     <li>
-      <a href="<%= notifications_account_index_path %>">Notifications</a>
+      <%= link_to "Notifications", notifications_account_index_path %>
     </li>
     <li>
-      <a href="<%= support_account_index_path %>">Help / Support</a>
+      <%= link_to "Help / Support", support_account_index_path %>
     </li>
     <li>
-      <a href="<%= signin_features_path %>">Sign out</a>
+      <%= link_to "Sign out", signin_features_path %>
     </li>
     </ul>
   </div>
@@ -29,41 +29,41 @@
   <h3>General</h3>
   <ul>
     <li class="option">
-    <a href="<%= root_url %>" class="active">
+    <%= link_to root_url, class: "active" do %>
       <i class="ion-earth"></i>
       <span>Dashboard</span>
-    </a>
+    <% end %>
     </li>
     <li class="option">
-    <a href="#" data-toggle="sidebar">
+    <%= link_to "#", data: { toggle: "sidebar" } do %>
       <i class="ion-person-stalker"></i> <span>Lists & Tables</span>
       <i class="fa fa-chevron-down"></i>
-    </a>
+    <% end %>
     <ul class="submenu">
-      <li><a href="<%= users_lists_path %>">Customers list</a></li>
-      <li><a href="<%= datatables_lists_path %>">Orders (Datatables)</a></li>
-      <li><a href="<%= products_lists_path %>">Products (Filters)</a></li>
+      <li><%= link_to "Customers list", users_lists_path %></li>
+      <li><%= link_to "Orders (Datatables)", datatables_lists_path %></li>
+      <li><%= link_to "Products (Filters)", products_lists_path %></li>
     </ul>
     </li>
     <li class="option">
-    <a href="#" data-toggle="sidebar">
+    <%= link_to "#", data: { toggle: "sidebar" } do %>
       <i class="ion-stats-bars"></i> <span>Reports</span>
       <i class="fa fa-chevron-down"></i>
-    </a>
+    <% end %>
     <ul class="submenu">
-      <li><a href="<%= orders_reports_path %>">Reports orders</a></li>
-      <li><a href="<%= sales_reports_path %>">Report sales</a></li>
+      <li><%= link_to "Reports orders", orders_reports_path %></li>
+      <li><%= link_to "Report sales", sales_reports_path %></li>
     </ul>
     </li>
     <li class="option">
-    <a href="#" data-toggle="sidebar">
+    <%= link_to "#", data: { toggle: "sidebar" } do %>
       <i class="ion-pricetags"></i> <span>Forms</span>
       <i class="fa fa-chevron-down"></i>
-    </a>
+    <% end %>
     <ul class="submenu">
-      <li><a href="<%= new_customer_forms_path %>">New Customer (validation)</a></li>
-      <li><a href="<%= new_product_forms_path %>">New Product (add-ons)</a></li>
-      <li><a href="<%= wizard_forms_path %>">Wizard</a></li>
+      <li><%= link_to "New Customer (validation)", new_customer_forms_path %></li>
+      <li><%= link_to "New Product (add-ons)", new_product_forms_path %></li>
+      <li><%= link_to "Wizard", wizard_forms_path %></li>
     </ul>
     </li>
   </ul>
@@ -72,44 +72,44 @@
   <h3>Application</h3>
   <ul>
     <li class="option">
-    <a href="#" data-toggle="sidebar">
+    <%= link_to "#", data: { toggle: "sidebar" } do %>
       <i class="ion-earth"></i> <span>App Pages</span>
       <i class="fa fa-chevron-down"></i>
-    </a>
+    <% end %>
     <ul class="submenu">
-      <li><a href="<%= inbox_pages_path %>">Inbox Messages</a></li>
-      <li><a href="<%= profile_pages_path %>">User profile</a></li>
-      <li><a href="<%= latest_activity_pages_path %>">Latest activity</a></li>
-      <li><a href="<%= projects_pages_path %>">Projects</a></li>
-      <li><a href="<%= steps_pages_path %>">Steps to launch</a></li>
-      <li><a href="<%= calendar_pages_path %>">Calendar</a></li>
+      <li><%= link_to "Inbox Messages", inbox_pages_path %></li>
+      <li><%= link_to "User profile", profile_pages_path %></li>
+      <li><%= link_to "Latest activity", latest_activity_pages_path %></li>
+      <li><%= link_to "Projects", projects_pages_path %></li>
+      <li><%= link_to "Steps to launch", steps_pages_path %></li>
+      <li><%= link_to "Calendar", calendar_pages_path %></li>
     </ul>
     </li>
     <li class="option">
-    <a href="#" data-toggle="sidebar">
+    <%= link_to "#", data: { toggle: "sidebar" } do %>
       <i class="ion-card"></i> <span>Pricing</span>
       <i class="fa fa-chevron-down"></i>
-    </a>
+    <% end %>
     <ul class="submenu">
-      <li><a href="<%= plans_pricing_index_path %>">Pricing (Plans)</a></li>
-      <li><a href="<%= charts_pricing_index_path %>">Pricing charts</a></li>
-      <li><a href="<%= form_pricing_index_path %>">Billing form</a></li>
-      <li><a href="<%= invoice_pricing_index_path %>">Invoice</a></li>
+      <li><%= link_to "Pricing (Plans)", plans_pricing_index_path %></li>
+      <li><%= link_to "Pricing charts", charts_pricing_index_path %></li>
+      <li><%= link_to "Billing form", form_pricing_index_path %></li>
+      <li><%= link_to "Invoice", invoice_pricing_index_path %></li>
     </ul>
     </li>
     <li class="option">
-    <a href="#" data-toggle="sidebar">
+    <%= link_to "#", data: { toggle: "sidebar" } do %>
       <i class="ion-flash"></i> <span>Features</span>
       <i class="fa fa-chevron-down"></i>
-    </a>
+    <% end %>
     <ul class="submenu">
-      <li><a href="<%= email_templates_features_path %>">Email templates</a></li>
-      <li><a href="<%= gallery_features_path %>">Gallery</a></li>
-      <li><a href="<%= ui_features_path %>" data-no-turbolink>UI Extras</a></li>
-      <li><a href="<%= api_features_path %>">API Documentation</a></li>
-      <li><a href="<%= signup_features_path %>">Sign up</a></li>
-      <li><a href="<%= signin_features_path %>">Sign in</a></li>
-      <li><a href="<%= status_features_path %>">App Status</a></li>
+      <li><%= link_to "Email templates", email_templates_features_path %></li>
+      <li><%= link_to "Gallery", gallery_features_path %></li>
+      <li><%= link_to "UI Extras", ui_features_path, data: { 'no-turbolink' => nil } %></li>
+      <li><%= link_to "API Documentation", api_features_path %></li>
+      <li><%= link_to "Sign up", signup_features_path %></li>
+      <li><%= link_to "Sign in", signin_features_path %></li>
+      <li><%= link_to "App Status", status_features_path %></li>
     </ul>
     </li>
   </ul>
@@ -118,54 +118,54 @@
   <h3>Admin</h3>
   <ul>
     <li class="option">
-    <a href="#" data-toggle="sidebar">
+    <%= link_to "#", data: { toggle: "sidebar" } do %>
       <i class="ion-person"></i> <span>My account</span>
       <i class="fa fa-chevron-down"></i>
-    </a>
+    <% end %>
     <ul class="submenu">
-      <li><a href="<%= settings_account_index_path %>">Settings</a></li>
-      <li><a href="<%= billing_account_index_path %>">Billing</a></li>
-      <li><a href="<%= notifications_account_index_path %>">Notifications</a></li>
-      <li><a href="<%= support_account_index_path %>">Support</a></li>
+      <li><%= link_to "Settings", settings_account_index_path %></li>
+      <li><%= link_to "Billing", billing_account_index_path %></li>
+      <li><%= link_to "Notifications", notifications_account_index_path %></li>
+      <li><%= link_to "Support", support_account_index_path %></li>
     </ul>
     </li>
     <li class="option">
-    <a href="#" data-toggle="sidebar">
+    <%= link_to "#", data: { toggle: "sidebar" } do %>
       <i class="ion-usb"></i> <span>Level Navigation</span>
       <i class="fa fa-chevron-down"></i>
-    </a>
+    <% end %>
     <ul class="submenu">
       <li>
-      <a href="invoice.html" data-toggle="sidebar">
+      <%= link_to "invoice.html", data: { toggle: "sidebar" } do %>
         Submenu
         <i class="fa fa-chevron-down"></i>
-      </a>
+      <% end %>
       <ul class="submenu">
-        <li><a href="#">Last menu</a></li>
-        <li><a href="#">Last menu</a></li>
+        <li><%= link_to "Last menu", "#" %></li>
+        <li><%= link_to "Last menu", "#" %></li>
       </ul>
       </li>
-      <li><a href="#">Menu link</a></li>
-      <li><a href="#">Extra link</a></li>
+      <li><%= link_to "Menu link", "#" %></li>
+      <li><%= link_to "Extra link", "#" %></li>
     </ul>
     </li>
   </ul>
   </div>
   <div class="bottom-menu hidden-sm">
   <ul>
-    <li><a href="#"><i class="ion-help"></i></a></li>
+    <li><%= link_to "<i class="ion-help"></i>", "#" %></li>
     <li>
-    <a href="#">
+    <%= link_to "#" do %>
       <i class="ion-archive"></i>
       <span class="flag"></span>
-    </a>
+    <% end %>
     <ul class="menu">
-      <li><a href="#">5 unread messages</a></li>
-      <li><a href="#">12 tasks completed</a></li>
-      <!-- <li><a href="#">3 features added</a></li> -->
+      <li><%= link_to "5 unread messages", "#" %></li>
+      <li><%= link_to "12 tasks completed", "#" %></li>
+      <!-- <li><%= link_to "3 features added", "#" %></li> -->
     </ul>
     </li>
-    <li><a href="<%= signin_features_path %>"><i class="ion-log-out"></i></a></li>
+    <li><%= link_to "<i class="ion-log-out"></i>", signin_features_path %></li>
   </ul>
   </div>
 </div>

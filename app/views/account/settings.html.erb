@@ -8,28 +8,28 @@
   <h3>My account</h3>
   <ul class="menu">
     <li>
-      <a href="<%= settings_account_index_path %>" class="active">
+      <%= link_to settings_account_index_path, class: "active" do %>
         <i class="ion-ios-person-outline"></i>
         Profile
-      </a>
+      <% end %>
     </li>
     <li>
-      <a href="<%= billing_account_index_path %>">
+      <%= link_to billing_account_index_path do %>
         <i class="ion-card"></i>
         Billing
-      </a>
+      <% end %>
     </li>
     <li>
-      <a href="<%= notifications_account_index_path %>">
+      <%= link_to notifications_account_index_path do %>
         <i class="ion-ios-email-outline"></i>
         Notifications
-      </a>
+      <% end %>
     </li>
     <li>
-      <a href="<%= support_account_index_path %>">
+      <%= link_to support_account_index_path do %>
         <i class="ion-ios-help-outline"></i>
         Support
-      </a>
+      <% end %>
     </li>
   </ul>
 </div>

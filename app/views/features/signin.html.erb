@@ -1,19 +1,19 @@
 <body id="signin">
   <div class="bg clear">
     <div class="signup-switcher">
-      <a href="#" class="active" data-class="clear">
+      <%= link_to "#", class: "active" data: { class: "clear" } do %>
         <i class="fa fa-check"></i>
         Clear
-      </a>
-      <a href="#" data-class="">
+      <% end %>
+      <%= link_to "#", data: { class: "" } %>
         <i class="fa fa-check"></i>
         Dark
-      </a>
+      <% end %>
     </div>
 
-    <a href="<%= root_url %>" class="logo">
+    <%= link_to root_url, class: "logo" do %>
       <i class="fa fa-users"></i>
-    </a>
+    <% end %>
 
     <h3>Welcome back!</h3>
 
@@ -34,7 +34,7 @@
           </label>
         </div>
         <div class="actions">
-          <a href="<%= root_url %>" class="btn btn-primary btn-lg">Sign in to your account</a>
+          <%= link_to "Sign in to your account", root_url, class: "btn btn-primary btn-lg" %>
         </div>
       </form>
     </div>
@@ -42,7 +42,7 @@
     <div class="bottom-wrapper">
       <div class="message">
         <span>Don't have an account?</span>
-        <a href="<%= signup_features_path %>">Sign up here</a>.
+        <%= link_to "Sign up here", signup_features_path %>.
       </div>
     </div>
   </div>
