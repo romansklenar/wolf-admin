@@ -9,7 +9,7 @@
     Customers
   </div>
   <form class="search hidden-xs">
-    <i class="fa fa-search"></i>
+    <%= fa_icon('search') %>
     <input type="text" name="q" placeholder="Search customers, clients..." />
     <input type="submit" />
   </form>
@@ -34,7 +34,7 @@
             <a class="button" data-toggle="dropdown" href="#">
               <span>
                 Sort by
-                <i class="fa fa-unsorted"></i>
+                <%= fa_icon('unsorted') %>
               </span>
             </a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
@@ -45,8 +45,8 @@
             <li><%= link_to "Country", "#" %></li>
             </ul>
         </div>
-        <%= link_to "<i class="fa fa-th-list"></i>", "#", data: { grid: ".users-list" }, class: "grid-view active" %>
-        <%= link_to "<i class="fa fa-th"></i>", "#", data: { grid: ".users-grid" }, class: "grid-view" %>
+        <%= link_to fa_icon('th-list'), "#", data: { grid: ".users-list" }, class: "grid-view active" %>
+        <%= link_to fa_icon('th'), "#", data: { grid: ".users-grid" }, class: "grid-view" %>
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@
                 Bulk actions
                 <span class="total-checked"></span>
 
-                <i class="fa fa-chevron-down"></i>
+                <%= fa_icon('chevron-down') %>
               </a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
               <li><%= link_to "Add tags", "#" %></li>

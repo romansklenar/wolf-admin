@@ -12,8 +12,8 @@
     </small>
   </div>
   <div class="options pull-right">
-    <%= link_to "<i class="fa fa-print"></i> Print", "#" %>
-    <%= link_to "<i class="fa fa-download"></i> Download CSV", "#" %>
+    <%= link_to "#{fa_icon('print')} Print", "#" %>
+    <%= link_to "#{fa_icon('download')} Download CSV", "#" %>
   </div>
 </div>
 
@@ -38,7 +38,7 @@
             days
           </div>
           <div class="field calendar" style="display:none;">
-            <i class="fa fa-calendar"></i>
+            <%= fa_icon('calendar') %>
             <input type="text" class="form-control datepicker" />
           </div>
         </div>
@@ -73,7 +73,7 @@
             <option data-field="calendar">is after</option>
           </select>
           <div class="field calendar">
-            <i class="fa fa-calendar"></i>
+            <%= fa_icon('calendar') %>
             <input type="text" class="form-control datepicker" />
           </div>
         </div>

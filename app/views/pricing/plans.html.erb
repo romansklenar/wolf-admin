@@ -32,7 +32,7 @@
               2 people, 1 workspace, 1 GB storage
             </div>
             <div class="select">
-              <i class="fa fa-check"></i>
+              <%= fa_icon('check') %>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
               5 people, 1 workspace, 5 GB storage
             </div>
             <div class="select">
-              <i class="fa fa-check"></i>
+              <%= fa_icon('check') %>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
               10 people, 1 workspace, 10 GB storage
             </div>
             <div class="select">
-              <i class="fa fa-check"></i>
+              <%= fa_icon('check') %>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@
               15 people, 1 workspace, 30 GB storage
             </div>
             <div class="select">
-              <i class="fa fa-check"></i>
+              <%= fa_icon('check') %>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@
               Unlimited people, workspaces and storage
             </div>
             <div class="select">
-              <i class="fa fa-check"></i>
+              <%= fa_icon('check') %>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@
         <div class="action">
           <%= link_to "#", class: "btn btn-primary", data: { step: "1" } do %>
             Billing info
-            <i class="fa fa-chevron-right"></i>
+            <%= fa_icon('chevron-right') %>
           <% end %>
         </div>
       </div>
@@ -113,7 +113,7 @@
     <div class="step-panel billing">
       <div class="secure clearfix">
         <span class="lock pull-left">
-          <i class="fa fa-lock"></i>
+          <%= fa_icon('lock') %>
           Secure Billing Form
         </span>
         <div class="accepted-cards pull-right">
@@ -174,12 +174,12 @@
 
           <div class="action clearfix">
             <%= link_to "#" data: { step: "0" }, class: "btn btn-default pull-left" do %>
-              <i class="fa fa-chevron-left"></i>
+              <%= fa_icon('chevron-left') %>
               Plans
             <% end %>
           <%= link_to "#", class: "btn btn-success pull-right" do %>
             Start my subscription
-            <i class="fa fa-chevron-right"></i>
+            <%= fa_icon('chevron-right') %>
           <% end %>
         </div>
       </form>

@@ -4,7 +4,7 @@
     <%= image_tag "avatars/1.jpg", class: "avatar" %>
     <span>
       John Smith
-      <i class="fa fa-chevron-down"></i>
+      <%= fa_icon('chevron-down') %>
     </span>
     <% end %>
     <ul class="menu">
@@ -37,7 +37,7 @@
     <li class="option">
     <%= link_to "#", data: { toggle: "sidebar" } do %>
       <%= ion_icon('person-stalker') %> <span>Lists & Tables</span>
-      <i class="fa fa-chevron-down"></i>
+      <%= fa_icon('chevron-down') %>
     <% end %>
     <ul class="submenu">
       <li><%= link_to "Customers list", users_lists_path %></li>
@@ -48,7 +48,7 @@
     <li class="option">
     <%= link_to "#", data: { toggle: "sidebar" } do %>
       <%= ion_icon('stats-bars') %> <span>Reports</span>
-      <i class="fa fa-chevron-down"></i>
+      <%= fa_icon('chevron-down') %>
     <% end %>
     <ul class="submenu">
       <li><%= link_to "Reports orders", orders_reports_path %></li>
@@ -58,7 +58,7 @@
     <li class="option">
     <%= link_to "#", data: { toggle: "sidebar" } do %>
       <%= ion_icon('pricetags') %> <span>Forms</span>
-      <i class="fa fa-chevron-down"></i>
+      <%= fa_icon('chevron-down') %>
     <% end %>
     <ul class="submenu">
       <li><%= link_to "New Customer (validation)", new_customer_forms_path %></li>
@@ -74,7 +74,7 @@
     <li class="option">
     <%= link_to "#", data: { toggle: "sidebar" } do %>
       <%= ion_icon('earth') %> <span>App Pages</span>
-      <i class="fa fa-chevron-down"></i>
+      <%= fa_icon('chevron-down') %>
     <% end %>
     <ul class="submenu">
       <li><%= link_to "Inbox Messages", inbox_pages_path %></li>
@@ -88,7 +88,7 @@
     <li class="option">
     <%= link_to "#", data: { toggle: "sidebar" } do %>
       <%= ion_icon('card') %> <span>Pricing</span>
-      <i class="fa fa-chevron-down"></i>
+      <%= fa_icon('chevron-down') %>
     <% end %>
     <ul class="submenu">
       <li><%= link_to "Pricing (Plans)", plans_pricing_index_path %></li>
@@ -100,7 +100,7 @@
     <li class="option">
     <%= link_to "#", data: { toggle: "sidebar" } do %>
       <%= ion_icon('flash') %> <span>Features</span>
-      <i class="fa fa-chevron-down"></i>
+      <%= fa_icon('chevron-down') %>
     <% end %>
     <ul class="submenu">
       <li><%= link_to "Email templates", email_templates_features_path %></li>
@@ -120,7 +120,7 @@
     <li class="option">
     <%= link_to "#", data: { toggle: "sidebar" } do %>
       <%= ion_icon('person') %> <span>My account</span>
-      <i class="fa fa-chevron-down"></i>
+      <%= fa_icon('chevron-down') %>
     <% end %>
     <ul class="submenu">
       <li><%= link_to "Settings", settings_account_index_path %></li>
@@ -132,13 +132,13 @@
     <li class="option">
     <%= link_to "#", data: { toggle: "sidebar" } do %>
       <%= ion_icon('usb') %> <span>Level Navigation</span>
-      <i class="fa fa-chevron-down"></i>
+      <%= fa_icon('chevron-down') %>
     <% end %>
     <ul class="submenu">
       <li>
       <%= link_to "invoice.html", data: { toggle: "sidebar" } do %>
         Submenu
-        <i class="fa fa-chevron-down"></i>
+        <%= fa_icon('chevron-down') %>
       <% end %>
       <ul class="submenu">
         <li><%= link_to "Last menu", "#" %></li>

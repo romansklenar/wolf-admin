@@ -9,13 +9,13 @@
     Reports / Sales this Year by Month
   </div>
   <div class="options pull-right hidden-xs">
-    <%= link_to "<i class="fa fa-print"></i> Print", "#" %>
-    <%= link_to "<i class="fa fa-download"></i> Download", "#" %>
+    <%= link_to "#{fa_icon('print')} Print", "#" %>
+    <%= link_to "#{fa_icon('download')} Download", "#" %>
   </div>
   <div class="date-range pull-right">
     <div class="input-group input-group-sm">
         <span class="input-group-addon">
-          <i class="fa fa-calendar-o"></i>
+          <%= fa_icon('calendar-o') %>
         </span>
         <input type="text" name="daterange" class="form-control" placeholder="05/01/2014 - 05/31/2014" />
     </div>

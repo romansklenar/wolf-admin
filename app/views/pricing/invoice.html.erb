@@ -9,8 +9,8 @@
     Invoice <strong>#097294</strong>
   </div>
   <div class="options pull-right">
-    <%= link_to "<i class="fa fa-print"></i> Print", "#" %>
-    <%= link_to "<i class="fa fa-download"></i> Download", "#" %>
+    <%= link_to "#{fa_icon('print')} Print", "#" %>
+    <%= link_to "#{fa_icon('download')} Download", "#" %>
   </div>
 </div>
 
@@ -137,7 +137,7 @@
 
       <div class="print">
         <%= link_to "#" do %>
-          <i class="fa fa-print"></i>
+          <%= fa_icon('print') %>
           Print this receipt
         <% end %>
       </div>

@@ -118,7 +118,7 @@
 
           <%= link_to "#" data: { dismiss: "modal" }, class: "go-dashboard" do %>
             Just go straight to my dashboard
-            <i class="fa fa-angle-double-right"></i>
+            <%= fa_icon('angle-double-right') %>
           <% end %>
           </div>
       </div>
@@ -199,7 +199,7 @@
               <div class="form-group">
               <label>Date when it's due:</label>
               <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                  <span class="input-group-addon"><%= fa_icon('calendar') %></span>
                   <input type="text" class="form-control datepicker" placeholder="03/05/2014" />
               </div>
               </div>
