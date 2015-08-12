@@ -137,7 +137,7 @@ GEM
     rails-assets-jquery-maskedinput (1.4.1)
       rails-assets-jquery (>= 1.8.3)
     rails-assets-jquery-minicolors (2.1.12)
-    rails-assets-jquery-raty (2.5.2)
+    rails-assets-jquery-raty (2.7.0)
     rails-assets-jquery-ui (1.10.4)
       rails-assets-jquery (>= 1.6)
     rails-assets-jquery-ujs (1.0.4)
@@ -235,7 +235,7 @@ DEPENDENCIES
   rails-assets-jquery-flot (~> 0.8.3)!
   rails-assets-jquery-maskedinput (~> 1.4.1)!
   rails-assets-jquery-minicolors (~> 2.1.12)!
-  rails-assets-jquery-raty (~> 2.5.2)!
+  rails-assets-jquery-raty (~> 2.7.0)!
   rails-assets-jquery-ui (~> 1.10.0)!
   rails-assets-jquery-ujs (~> 1.0.4)!
   rails-assets-jquery-validate (~> 1.11.1)!
