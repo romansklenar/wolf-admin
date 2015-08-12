@@ -1,62 +1,62 @@
 <body id="signin">
-	<div class="bg clear">
-		<div class="signup-switcher">
-			<a href="#" class="active" data-class="clear">
-				<i class="fa fa-check"></i>
-				Clear
-			</a>
-			<a href="#" data-class="">
-				<i class="fa fa-check"></i>
-				Dark
-			</a>
-		</div>
+  <div class="bg clear">
+    <div class="signup-switcher">
+      <a href="#" class="active" data-class="clear">
+        <i class="fa fa-check"></i>
+        Clear
+      </a>
+      <a href="#" data-class="">
+        <i class="fa fa-check"></i>
+        Dark
+      </a>
+    </div>
 
-		<a href="<%= root_url %>" class="logo">
-			<i class="fa fa-users"></i>
-		</a>
+    <a href="<%= root_url %>" class="logo">
+      <i class="fa fa-users"></i>
+    </a>
 
-		<h3>Welcome back!</h3>
+    <h3>Welcome back!</h3>
 
-		<div class="content">
-			<form>
-				<div class="fields">
-					<strong>Email address</strong>
-					<input class="form-control" type="text" placeholder="Your email" />
-				</div>
-				<div class="fields">
-					<strong>Password</strong>
-					<input class="form-control" type="password" placeholder="Password" />
-				</div>
-				<div class="info">
-					<label>
-						<input type="checkbox" name="remember" checked />
-						Remember me
-					</label>
-				</div>
-				<div class="actions">
-					<a href="<%= root_url %>" class="btn btn-primary btn-lg">Sign in to your account</a>
-				</div>
-			</form>
-		</div>
+    <div class="content">
+      <form>
+        <div class="fields">
+          <strong>Email address</strong>
+          <input class="form-control" type="text" placeholder="Your email" />
+        </div>
+        <div class="fields">
+          <strong>Password</strong>
+          <input class="form-control" type="password" placeholder="Password" />
+        </div>
+        <div class="info">
+          <label>
+            <input type="checkbox" name="remember" checked />
+            Remember me
+          </label>
+        </div>
+        <div class="actions">
+          <a href="<%= root_url %>" class="btn btn-primary btn-lg">Sign in to your account</a>
+        </div>
+      </form>
+    </div>
 
-		<div class="bottom-wrapper">
-			<div class="message">
-				<span>Don't have an account?</span>
-				<a href="<%= signup_features_path %>">Sign up here</a>.
-			</div>
-		</div>
-	</div>
+    <div class="bottom-wrapper">
+      <div class="message">
+        <span>Don't have an account?</span>
+        <a href="<%= signup_features_path %>">Sign up here</a>.
+      </div>
+    </div>
+  </div>
 
-	<script type="text/javascript">
-		$(function () {
-			var $switcher = $(".signup-switcher a");
-			$switcher.click(function (e) {
-				e.preventDefault();
-				$switcher.removeClass("active");
-				$(this).addClass("active");
-				$(".bg").attr("class", "bg " + $(this).data("class"));
-			});
-		});
-	</script>
+  <script type="text/javascript">
+    $(function () {
+      var $switcher = $(".signup-switcher a");
+      $switcher.click(function (e) {
+        e.preventDefault();
+        $switcher.removeClass("active");
+        $(this).addClass("active");
+        $(".bg").attr("class", "bg " + $(this).data("class"));
+      });
+    });
+  </script>
 
 </body>
