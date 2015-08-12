@@ -1,29 +1,29 @@
 (function () {
-	var page_scripts = function () {
-		if (!$("#projects").length) return;
+  var page_scripts = function () {
+    if (!$("#projects").length) return;
 
-		var $projects = $(".project");
+    var $projects = $(".project");
 
-		$projects.each(function (index, el) {
-			var $btn = $(el).find(".add-more");
-			var $menu = $btn.siblings(".menu");
-			var timeout;
+    $projects.each(function (index, el) {
+      var $btn = $(el).find(".add-more");
+      var $menu = $btn.siblings(".menu");
+      var timeout;
 
-			$btn.click(function (e) { e.preventDefault(); });
+      $btn.click(function (e) { e.preventDefault(); });
 
-			$(el).on("mouseenter", ".add-more, .menu", function () {
-				clearTimeout(timeout);
-				timeout = null;
-				$menu.addClass("active");
-			});
+      $(el).on("mouseenter", ".add-more, .menu", function () {
+        clearTimeout(timeout);
+        timeout = null;
+        $menu.addClass("active");
+      });
 
-			$(el).on("mouseleave", ".add-more, .menu", function () {
-				timeout = setTimeout(function () {
-					$menu.removeClass("active");
-				}, 400);
-			});
-		});
-	};
+      $(el).on("mouseleave", ".add-more, .menu", function () {
+        timeout = setTimeout(function () {
+          $menu.removeClass("active");
+        }, 400);
+      });
+    });
+  };
 
-	$(document).on("ready page:load", page_scripts);
+  $(document).on("ready page:load", page_scripts);
 })();
