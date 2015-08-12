@@ -2,32 +2,32 @@
 
 <div id="sidebar">
   <div class="sidebar-toggler visible-xs">
-    <i class="ion-navicon"></i>
+    <%= ion_icon('navicon') %>
   </div>
   
   <h3>My account</h3>
   <ul class="menu">
     <li>
       <%= link_to settings_account_index_path do %>
-        <i class="ion-ios-person-outline"></i>
+        <%= ion_icon('ios-person-outline') %>
         Profile
       <% end %>
     </li>
     <li>
       <%= link_to billing_account_index_path, class: "active" do %>
-        <i class="ion-card"></i>
+        <%= ion_icon('card') %>
         Billing
       <% end %>
     </li>
     <li>
       <%= link_to notifications_account_index_path do %>
-        <i class="ion-ios-email-outline"></i>
+        <%= ion_icon('ios-email-outline') %>
         Notifications
       <% end %>
     </li>
     <li>
       <%= link_to support_account_index_path do %>
-        <i class="ion-ios-help-outline"></i>
+        <%= ion_icon('ios-help-outline') %>
         Support
       <% end %>
     </li>
@@ -45,7 +45,7 @@
         <label>Plan:</label> Team Subscription ($29.00/month)
         <%= link_to plans_pricing_index_path, class: "change-plan" do %>
           Change plan
-          <i class="ion-edit"></i>
+          <%= ion_icon('edit') %>
         <% end %>
       </div>
 
@@ -68,7 +68,7 @@
       <strong>Visa</strong> ending in <strong>0328.</strong>
       <%= link_to "#", class: "manage-cc" do %>
         Manage credit card
-        <i class="ion-edit"></i>
+        <%= ion_icon('edit') %>
       <% end %>
       <span class="next">(next payment on <strong>Mar 02, 2014</strong>).</span>
     </div>
