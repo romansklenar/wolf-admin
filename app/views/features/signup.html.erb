@@ -1,19 +1,11 @@
 <body id="signup">
   <div class="bg clear">
     <div class="signup-switcher">
-      <%= link_to "#", class: "active", data: { class: "clear" } do %>
-        <%= fa_icon('check') %>
-        Clear
-      <% end %>
-      <%= link_to "#", data: { class: "" } %>
-        <%= fa_icon('check') %>
-        Dark
-      <% end %>
+      <%= link_to fa_icon('check', text: "Clear"), "#", class: "active", data: { class: "clear" } %>
+      <%= link_to fa_icon('check', text: "Dark"), "#", data: { class: "" } %>
     </div>
 
-    <%= link_to root_url, class: "logo" do %>
-      <%= fa_icon('users') %>
-    <% end %>
+    <%= link_to fa_icon('users'), root_url, class: "logo" %>
 
     <h3>Create Your Account Now</h3>
 
