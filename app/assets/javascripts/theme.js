@@ -3,10 +3,6 @@
 // ============================================================================== */
 
 var ready = function() {
-
-  // build custom selects
-  UI.smart_selects();
-
   Number.prototype.formatMoney = function(c, d, t){
     var n = this,
       c = isNaN(c = Math.abs(c)) ? 2 : c,
@@ -21,39 +17,6 @@ var ready = function() {
 
 $(document).on("ready page:load", ready);
 
-var UI = {
-  smart_selects: function () {
-    var $selects = $("[data-smart-select]");
-    $.each($selects, function (index, el) {
-      var $select = $(el);
-
-      // It has been already initialized
-      if ($select.parent().hasClass("fake-select-wrap")) {
-        $select.siblings(".fake-select").html($select.find("option:selected").text());
-        return;
-      }
-
-      var $wrapper = $("<div class='fake-select-wrap' />");
-      var $fake_select = $("<div class='fake-select'></div>");
-      $select.wrap($wrapper);
-      $select.after($fake_select);
-
-      // set selected value as default
-      $fake_select.html($select.find("option:selected").text());
-
-      // change handler
-      $select.change(function () {
-        $fake_select.html($(this).find("option:selected").text());
-      });
-
-      $select.focus(function () {
-        $fake_select.addClass("focus");
-      }).focusout(function () {
-        $fake_select.removeClass("focus");
-      });
-    });
-  }
-}
 
 window.utils = {
   isFirefox: function () {

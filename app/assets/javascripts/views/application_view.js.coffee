@@ -21,6 +21,7 @@ class Views.ApplicationView
     Widgets.Progressbar.enable()
     Widgets.Analytics.enable()
     Widgets.SkinSwitcher.enable()
+    Widgets.SmartSelects.enable()
     Widgets.Retina.enable() if window.devicePixelRatio >= 1.2
     
     # force re-render -- having an issue with that on Chrome/OSX
@@ -34,7 +35,7 @@ class Views.ApplicationView
     # do not perform default action when button is clicked
     $('a[href=#]').on 'click', (event)->
       event.preventDefault()
-      false
+      return false
 
   cleanup: =>
     # insert here code which should set app to initial state or call plugins destructors
