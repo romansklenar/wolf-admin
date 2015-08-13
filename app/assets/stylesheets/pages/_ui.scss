@@ -76,9 +76,6 @@
   #welcome-modal {
     .animated {
       @include animationDuration(.35s);
-      
-      -webkit-animation-timing-function: cubic-bezier(.4,1.49,.37,1.07);
-      -moz-animation-timing-function: cubic-bezier(.4,1.49,.37,1.07);
       animation-timing-function: cubic-bezier(.4,1.49,.37,1.07);
 
       &.two {

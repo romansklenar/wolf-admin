@@ -1,14 +1,12 @@
 body {
   font-family: $sourceSans;
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   background: #fff;
 
   &.open-sidebar {
     #wrapper {
       #content {
-        -webkit-perspective: 0px;
-        -ms-perspective: 0px;
-        -moz-perspective: 0px;
+        perspective: 0px;
         
         @include transform(translate3d(230px, 0, 0));
       }
@@ -18,7 +16,7 @@ body {
 
 #wrapper {
   position: relative;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   margin: 0 auto;
 }
 
@@ -2439,8 +2437,7 @@ body {
   .current-user {
     position: relative;
     background: linear-gradient(#3D4A5D, #3F4C5C), #686e78;
-    -webkit-box-shadow: inset rgba(255,255,255,0.16) 0 1px 0;
-    -moz-box-shadow: inset rgba(255,255,255,0.16) 0 1px 0;
+    box-shadow: inset rgba(255,255,255,0.16) 0 1px 0;
     color: #fff;
     padding: 0 20px;
     height: 63px;
@@ -2617,13 +2614,7 @@ body {
             background: #202E3F;
             text-shadow: rgba(0,0,0,0.25) 0 -1px 0;
             background-color: #545E6F;
-            background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5B6479), color-stop(100%, #4C5566)),#686e78;
-            background: -webkit-linear-gradient(#5B6479,#4C5566),#686e78;
-            background: -moz-linear-gradient(#5B6479,#4C5566),#686e78;
-            background: -o-linear-gradient(#5B6479,#4C5566),#686e78;
             background: linear-gradient(#5B6479,#4C5566),#686e78;
-            -webkit-box-shadow: rgba(0,0,0,0.25) 0 1px 0,inset rgba(255,255,255,0.16) 0 1px 0;
-            -moz-box-shadow: rgba(0,0,0,0.25) 0 1px 0,inset rgba(255,255,255,0.16) 0 1px 0;
             box-shadow: rgba(0,0,0,0.25) 0 1px 0,inset rgba(255,255,255,0.16) 0 1px 0;
 
             i.fa-chevron-down {
@@ -2978,9 +2969,6 @@ body {
     }
 
     &.transparent {
-      background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.85) 100%);
-      background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.85) 100%);
-      background: -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.85) 100%);
       background: linear-gradient(top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.85) 100%);
     }
 

@@ -15,29 +15,17 @@ input[type="submit"] {
 // Custom buttons
 // ============================================================================== */
 .button {
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   border: 0;
   outline: none;
   padding: 1px;
   display: inline-block;
   text-decoration: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
-  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
-  -ms-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
-  -o-box-shadow: 0 1px 0 rgba(0,0,0,0.075);
   box-shadow: 0 1px 0 rgba(0,0,0,0.075);
   height: 33px;
 
   background: #adb2bb;
-  background: -webkit-linear-gradient(#ccd0d6, #adb2bb);
-  background: -moz-linear-gradient(#ccd0d6, #adb2bb);
-  background: -ms-linear-gradient(#ccd0d6, #adb2bb);
-  background: -o-linear-gradient(#ccd0d6, #adb2bb);
   background: linear-gradient(#ccd0d6, #adb2bb);
 
   @include transition(all .1s linear);
@@ -52,12 +40,7 @@ input[type="submit"] {
       span {
         box-shadow: none;
         background: #E7EBF0;
-      background: #E7EBF0;
-      background: -webkit-linear-gradient(#E7EBF0, #E7EBF0);
-      background: -moz-linear-gradient(#E7EBF0, #E7EBF0);
-      background: -ms-linear-gradient(#E7EBF0, #E7EBF0);
-      background: -o-linear-gradient(#E7EBF0, #E7EBF0);
-      background: linear-gradient(#E7EBF0, #E7EBF0);
+        background: linear-gradient(#E7EBF0, #E7EBF0);
       }
   }
 
@@ -68,10 +51,6 @@ input[type="submit"] {
   &:active,
   &.active {
     background: #b5bac2;
-    background: -webkit-linear-gradient(#b5bac2, #b5bac2);
-    background: -moz-linear-gradient(#b5bac2, #b5bac2);
-    background: -ms-linear-gradient(#b5bac2, #b5bac2);
-    background: -o-linear-gradient(#b5bac2, #b5bac2);
     background: linear-gradient(#b5bac2, #b5bac2);
 
     @include transform(scale3d(0.95, 0.95, 0.95));
@@ -80,15 +59,7 @@ input[type="submit"] {
     span {
       color: #444;
       background: #eff1f4;
-      background: -webkit-linear-gradient(#e6e8eb, #eff1f4);
-      background: -moz-linear-gradient(#e6e8eb, #eff1f4);
-      background: -ms-linear-gradient(#e6e8eb, #eff1f4);
-      background: -o-linear-gradient(#e6e8eb, #eff1f4);
       background: linear-gradient(#e6e8eb, #eff1f4);
-      -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
-      -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
-      -ms-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
-      -o-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
       box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
     }
   }
@@ -108,15 +79,7 @@ input[type="submit"] {
     text-shadow: 0 1px 0 #fff;
     background: #f6f9fc;
     background: #eff1f4;
-    background: -webkit-linear-gradient(#f7f8fa, #eff1f4);
-    background: -moz-linear-gradient(#f7f8fa, #eff1f4);
-    background: -ms-linear-gradient(#f7f8fa, #eff1f4);
-    background: -o-linear-gradient(#f7f8fa, #eff1f4);
     background: linear-gradient(#f7f8fa, #eff1f4);
-    -webkit-box-shadow: inset 0 1px 0 white;
-    -moz-box-shadow: inset 0 1px 0 white;
-    -ms-box-shadow: inset 0 1px 0 white;
-    -o-box-shadow: inset 0 1px 0 white;
     box-shadow: inset 0 1px 0 white;
 
     @include transition(all .1s linear);
@@ -172,10 +135,6 @@ input[type="submit"] {
 
   .modal-content {
     background: #f5f8fc;
-    background: -webkit-linear-gradient(#fff,#f5f8fc);
-    background: -moz-linear-gradient(#fff,#f5f8fc);
-    background: -ms-linear-gradient(#fff,#f5f8fc);
-    background: -o-linear-gradient(#fff,#f5f8fc);
     background: linear-gradient(#fff,#f5f8fc);
 
     font-family: $helvetica;
@@ -245,9 +204,7 @@ input[type="email"],
 input[type="password"] {
 
   &.form-control {
-    /*box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);*/
+    /*box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);*/
     /*height: 39px;*/
     box-shadow: none;
 
@@ -267,9 +224,7 @@ input[type="password"] {
 
 textarea {
   &.form-control {
-    /*box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);*/
+    /*box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);*/
     box-shadow: none;
 
     @include placeholder {
@@ -303,8 +258,6 @@ textarea {
   > select {
     position: absolute !important;
     z-index: 3;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -321,11 +274,7 @@ textarea {
 
   > .fake-select {
     position: relative;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 4px;
     width: 100%;
@@ -356,8 +305,7 @@ textarea {
       font-family: 'FontAwesome';
       font-size: 13px;
       content: "\f078";
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      font-smoothing: antialiased;
       font-weight: 400;
       color: #757575;
       display: block;

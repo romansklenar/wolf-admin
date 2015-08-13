@@ -76,9 +76,7 @@
 
         @include transform(translate3d(0, 0, 0));
 
-        -webkit-perspective: 0px;
-        -ms-perspective: 0px;
-        -moz-perspective: 0px;
+        perspective: 0px;
 
         @media (max-width: $maxSmall) {
           margin: 30px 10px 0;
@@ -95,11 +93,9 @@
 
           @include transform(scale3d(0.95, 0.95, 0.95));
           @include transition(all .3s ease-in-out);
-          -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d;
           
-          -webkit-backface-visibility: hidden;
-              backface-visibility: hidden;
+          transform-style: preserve-3d;
+          backface-visibility: hidden;
 
           &.active {
             opacity: 1;
@@ -462,7 +458,7 @@
           bottom: 0;
           width: 100%;
           height: 100%;
-          background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0.37) 71%, rgba(0, 0, 0, 0.51) 100%);
+          background: linear-gradient(top, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0.37) 71%, rgba(0, 0, 0, 0.51) 100%);
         }
 
         img {
