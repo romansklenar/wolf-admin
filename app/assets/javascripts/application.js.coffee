@@ -12,4 +12,36 @@
 #
 #= require libs
 #= require theme
-#= require_directory ./pages/.
+#
+#= require_tree ./pages
+#= require_tree ./widgets
+#= require_tree ./views
+
+
+setupApplication = ->
+  try
+    viewClass = $('body').data('view-class')
+    window.applicationView = eval("new #{viewClass}()")
+  catch e
+    console.debug("Dynamic loading of class #{viewClass} failed with following message: #{e}")
+  finally
+    window.applicationView = new Views.ApplicationView() unless window.applicationView
+    window.applicationView.render()
+
+
+$ ->
+  $(document).on 'ready page:load', ->
+    setupApplication()
+
+  $(document).on 'ajax:complete', ->
+    window.applicationView.ajaxComplete()
+
+  $(document).on 'page:change', ->
+    window.applicationView.pageChange()
+
+ $(document).on 'page:before-change', ->
+    window.applicationView.pageBeforeChange()
+
+  $(document).on 'page:restore', ->
+    window.applicationView.pageRestore()
+    setupApplication()

@@ -1,5 +1,5 @@
 <%= render layout: 'layouts/base' do %>
-<body id="<%= yield :body_id %>">
+<body id="<%= yield :body_id %>" data-view-class="<%= javascript_view_class %>">
   <div id="wrapper">
     <%= render partial: 'shared/sidebar_menu' %>
 
