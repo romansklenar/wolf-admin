@@ -20,6 +20,7 @@ class Views.ApplicationView
     Widgets.Sidebar.enable()
     Widgets.Progressbar.enable()
     Widgets.Analytics.enable()
+    Widgets.SkinSwitcher.enable()
     
     # enable bootstrap tooltips
     $('[data-toggle="tooltip"]').tooltip()

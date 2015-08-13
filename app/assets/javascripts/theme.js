@@ -4,9 +4,6 @@
 
 var ready = function() {
 
-  // skins switcher
-  Skins.initialize();
-
   // build custom selects
   UI.smart_selects();
 
@@ -37,11 +34,6 @@ var ready = function() {
 };
 
 $(document).on("ready page:load", ready);
-
-$(document).on("page:change", function () {
-  window.prevPageYOffset = window.pageYOffset;
-  window.prevPageXOffset = window.pageXOffset;
-});
 
 $(document).on("page:load", function () {
   if ($(".fix-scroll").length > 0) {
@@ -82,49 +74,6 @@ var UI = {
         $fake_select.removeClass("focus");
       });
     });
-  }
-}
-
-var Skins = {
-  initialize: function () {
-    var $toggler = $(".skin-switcher .toggler"),
-      $menu = $(".skin-switcher .menu"),
-      $sidebar = $(".main-sidebar");
-
-    if (!$toggler.length) {
-      return;
-    }
-
-    if ($.cookie('current_skin')) {
-      $sidebar.attr("id", $.cookie('current_skin'));
-
-      $menu.find("a").removeClass("active");
-      $menu.find("a[data-skin="+ $.cookie('current_skin') +"]").addClass("active");
-    }
-
-    $toggler.click(function (e) {
-      e.stopPropagation();
-      $menu.toggleClass("active");
-    });
-
-    $("body").click(function () {
-      $menu.removeClass("active");
-    });
-
-    $menu.click(function (e) {
-      e.stopPropagation();
-    });
-
-    $menu.find("a").click(function (e) {
-      e.preventDefault();
-      var skin_id = $(this).data("skin");
-      $menu.find("a").removeClass("active");
-      $(this).addClass("active");
-      $sidebar.attr("id", skin_id);
-
-      $.removeCookie('current_skin', { path: '/' });
-      $.cookie('current_skin', skin_id, { path: '/' });
-    })
   }
 }
 
