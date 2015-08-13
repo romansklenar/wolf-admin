@@ -24,14 +24,6 @@ module WolfRails
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    config.assets.paths << "#{Rails.root}/vendor/assets/fonts"
-
-    config.assets.initialize_on_precompile = false
-    
-    config.action_dispatch.default_headers = {
-        'X-Frame-Options' => 'ALLOWALL'
-    }
-
     # Use custom exception handler
     config.exceptions_app = self.routes
   end
