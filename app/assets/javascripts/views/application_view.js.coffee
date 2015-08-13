@@ -23,6 +23,11 @@ class Views.ApplicationView
     Widgets.SkinSwitcher.enable()
     Widgets.Retina.enable() if window.devicePixelRatio >= 1.2
     
+    # force re-render -- having an issue with that on Chrome/OSX
+    if $('.fix-scroll').length > 0
+      $('.fix-scroll').hide().show()
+      window.scrollTo(window.prevPageXOffset, window.prevPageYOffset)
+    
     # enable bootstrap tooltips
     $('[data-toggle="tooltip"]').tooltip()
 

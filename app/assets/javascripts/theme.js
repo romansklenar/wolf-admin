@@ -21,14 +21,6 @@ var ready = function() {
 
 $(document).on("ready page:load", ready);
 
-$(document).on("page:load", function () {
-  if ($(".fix-scroll").length > 0) {
-    $('.fix-scroll').hide().show() // force re-render -- having an issue with that on Chrome/OSX
-      //window.scrollTo(window.prevPageXOffset, window.prevPageYOffset);
-  }
-});
-
-
 var UI = {
   smart_selects: function () {
     var $selects = $("[data-smart-select]");
