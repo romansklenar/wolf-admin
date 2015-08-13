@@ -15,10 +15,17 @@ module IconHelper
     icon_tag(options.delete(:text), options)
   end
 
-  def icon_tag(text = nil, html_options = {})
-    html = content_tag(:i, nil, html_options)
-    html << " #{text}" unless text.blank?
-    html.html_safe
+  def icon_tag(text = nil, options = {})
+    reverse = options.delete(:reverse).presence
+    icon = content_tag(:i, nil, options)
+    
+    if text.blank?
+      icon
+    else
+      elements = [icon, text]
+      elements.reverse! if reverse
+      elements.join(" ").html_safe
+    end
   end
 
 end
