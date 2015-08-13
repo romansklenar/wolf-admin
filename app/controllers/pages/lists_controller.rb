@@ -1,4 +1,4 @@
-class ListsController < ApplicationController
+class Pages::ListsController < Pages::BaseController
 
   def users
   end

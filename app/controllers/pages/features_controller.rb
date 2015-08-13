@@ -1,4 +1,4 @@
-class FeaturesController < ApplicationController
+class Pages::FeaturesController < Pages::BaseController
 
   def email_templates
   end

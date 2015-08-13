@@ -1,4 +1,4 @@
-class PricingController < ApplicationController
+class Pages::PricingController < Pages::BaseController
 
   def plans
   end

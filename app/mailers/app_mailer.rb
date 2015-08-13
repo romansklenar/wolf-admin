@@ -1,6 +1,7 @@
 class AppMailer < ActionMailer::Base
   default from: "<from_address>"
-      
+  default template_path: "pages/app_mailer"
+
   def welcome_email
     mail to: "<to_address>", subject: "Welcome!"
   end

@@ -1,4 +1,4 @@
-class AccountController < ApplicationController
+class Pages::AccountController < Pages::BaseController
 
   def settings
   end

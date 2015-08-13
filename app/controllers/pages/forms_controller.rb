@@ -1,4 +1,4 @@
-class FormsController < ApplicationController
+class Pages::FormsController < Pages::BaseController
 
   def new_customer
   end
