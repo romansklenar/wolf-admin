@@ -1,0 +1,9 @@
+<%= content_for :title, t(".title").html_safe %>
+
+<h1 class="page-header"><%= yield :title %></h1>
+
+<p><%= t(".description") %></p>
+
+
+<%= link_to t("buttons.home"), root_path, class: "btn btn-primary" %>
+<%= link_to t("buttons.back"), :back, class: "btn btn-primary" %>

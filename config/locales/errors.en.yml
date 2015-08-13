@@ -1,0 +1,15 @@
+en:
+  errors:
+    error_404:
+      title: "The page you were looking for doesn't exist <small>#404</small>"
+      description: "You tried to access <strong>%{path}</strong>, which is not a valid page. You may have mistyped the address or the page may have moved."
+      advice: "Want to go back to our %{link} and try it again?"
+      home: home page
+    error_422:
+      title: "The change you wanted was rejected <small>#422</small>"
+      description: "Maybe you tried to change something you didn't have access to."
+    error_500:
+      title: "We're sorry, but something went wrong <small>#500</small>"
+      description: "We've been notified about this issue and we'll take a look at it shortly."
+      advice: "Want to go back to our %{link} and try it again?"
+      home: home page

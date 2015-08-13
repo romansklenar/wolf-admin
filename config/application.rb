@@ -31,5 +31,8 @@ module WolfRails
     config.action_dispatch.default_headers = {
         'X-Frame-Options' => 'ALLOWALL'
     }
+
+    # Use custom exception handler
+    config.exceptions_app = self.routes
   end
 end
