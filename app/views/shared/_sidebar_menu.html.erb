@@ -8,11 +8,11 @@
     <% end %>
     
     <ul class="menu">
-      <li><%= nav_link "Account settings", settings_account_index_path %></li>
-      <li><%= nav_link "Billing", billing_account_index_path %></li>
-      <li><%= nav_link "Notifications", notifications_account_index_path %></li>
-      <li><%= nav_link "Help / Support", support_account_index_path %></li>
-      <li><%= nav_link "Sign out", signin_features_path %></li>
+      <li><%= nav_link "Account settings", settings_pages_account_index_path %></li>
+      <li><%= nav_link "Billing", billing_pages_account_index_path %></li>
+      <li><%= nav_link "Notifications", notifications_pages_account_index_path %></li>
+      <li><%= nav_link "Help / Support", support_pages_account_index_path %></li>
+      <li><%= nav_link "Sign out", signin_pages_features_path %></li>
     </ul>
   </div>
   
@@ -25,24 +25,24 @@
     <li class="option">
       <%= nav_link ion_icon('person-stalker', text: content_tag(:span, 'Lists & Tables')) + fa_icon('chevron-down'), "#", condition: controller?('lists'), data: { toggle: "sidebar" } %>
       <ul class="submenu">
-        <li><%= nav_link "Customers list", users_lists_path %></li>
-        <li><%= nav_link "Orders (Datatables)", datatables_lists_path %></li>
-        <li><%= nav_link "Products (Filters)", products_lists_path %></li>
+        <li><%= nav_link "Customers list", users_pages_lists_path %></li>
+        <li><%= nav_link "Orders (Datatables)", datatables_pages_lists_path %></li>
+        <li><%= nav_link "Products (Filters)", products_pages_lists_path %></li>
       </ul>
     </li>
     <li class="option">
       <%= nav_link ion_icon('stats-bars', text: content_tag(:span, 'Reports')) + fa_icon('chevron-down'), "#", condition: controller?('reports'), data: { toggle: "sidebar" } %>
       <ul class="submenu">
-        <li><%= nav_link "Reports orders", orders_reports_path %></li>
-        <li><%= nav_link "Report sales", sales_reports_path %></li>
+        <li><%= nav_link "Reports orders", orders_pages_reports_path %></li>
+        <li><%= nav_link "Report sales", sales_pages_reports_path %></li>
       </ul>
     </li>
     <li class="option">
       <%= nav_link ion_icon('pricetags', text: content_tag(:span, 'Forms')) + fa_icon('chevron-down'), "#", condition: controller?('forms'), data: { toggle: "sidebar" } %>
       <ul class="submenu">
-        <li><%= nav_link "New Customer (validation)", new_customer_forms_path %></li>
-        <li><%= nav_link "New Product (add-ons)", new_product_forms_path %></li>
-        <li><%= nav_link "Wizard", wizard_forms_path %></li>
+        <li><%= nav_link "New Customer (validation)", new_customer_pages_forms_path %></li>
+        <li><%= nav_link "New Product (add-ons)", new_product_pages_forms_path %></li>
+        <li><%= nav_link "Wizard", wizard_pages_forms_path %></li>
       </ul>
     </li>
   </ul>
@@ -54,33 +54,33 @@
     <li class="option">
       <%= nav_link ion_icon('earth', text: content_tag(:span, 'App Views')) + fa_icon('chevron-down'), "#", condition: controller?('views'), data: { toggle: "sidebar" } %>
       <ul class="submenu">
-        <li><%= nav_link "Inbox Messages", inbox_views_path %></li>
-        <li><%= nav_link "User profile", profile_views_path %></li>
-        <li><%= nav_link "Latest activity", latest_activity_views_path %></li>
-        <li><%= nav_link "Projects", projects_views_path %></li>
-        <li><%= nav_link "Steps to launch", steps_views_path %></li>
-        <li><%= nav_link "Calendar", calendar_views_path %></li>
+        <li><%= nav_link "Inbox Messages", inbox_pages_views_path %></li>
+        <li><%= nav_link "User profile", profile_pages_views_path %></li>
+        <li><%= nav_link "Latest activity", latest_activity_pages_views_path %></li>
+        <li><%= nav_link "Projects", projects_pages_views_path %></li>
+        <li><%= nav_link "Steps to launch", steps_pages_views_path %></li>
+        <li><%= nav_link "Calendar", calendar_pages_views_path %></li>
       </ul>
     </li>
     <li class="option">
       <%= nav_link ion_icon('card', text: content_tag(:span, 'Pricing')) + fa_icon('chevron-down'), "#", condition: controller?('pricing'), data: { toggle: "sidebar" } %>
       <ul class="submenu">
-        <li><%= nav_link "Pricing (Plans)", plans_pricing_index_path %></li>
-        <li><%= nav_link "Pricing charts", charts_pricing_index_path %></li>
-        <li><%= nav_link "Billing form", form_pricing_index_path %></li>
-        <li><%= nav_link "Invoice", invoice_pricing_index_path %></li>
+        <li><%= nav_link "Pricing (Plans)", plans_pages_pricing_index_path %></li>
+        <li><%= nav_link "Pricing charts", charts_pages_pricing_index_path %></li>
+        <li><%= nav_link "Billing form", form_pages_pricing_index_path %></li>
+        <li><%= nav_link "Invoice", invoice_pages_pricing_index_path %></li>
       </ul>
     </li>
     <li class="option">
       <%= nav_link ion_icon('flash', text: content_tag(:span, 'Features')) + fa_icon('chevron-down'), "#", condition: controller?('features'), data: { toggle: "sidebar" } %>
       <ul class="submenu">
-        <li><%= nav_link "Email templates", email_templates_features_path %></li>
-        <li><%= nav_link "Gallery", gallery_features_path %></li>
-        <li><%= nav_link "UI Extras", ui_features_path, data: { 'no-turbolink' => nil } %></li>
-        <li><%= nav_link "API Documentation", api_features_path %></li>
-        <li><%= nav_link "Sign up", signup_features_path %></li>
-        <li><%= nav_link "Sign in", signin_features_path %></li>
-        <li><%= nav_link "App Status", status_features_path %></li>
+        <li><%= nav_link "Email templates", email_templates_pages_features_path %></li>
+        <li><%= nav_link "Gallery", gallery_pages_features_path %></li>
+        <li><%= nav_link "UI Extras", ui_pages_features_path, data: { 'no-turbolink' => nil } %></li>
+        <li><%= nav_link "API Documentation", api_pages_features_path %></li>
+        <li><%= nav_link "Sign up", signup_pages_features_path %></li>
+        <li><%= nav_link "Sign in", signin_pages_features_path %></li>
+        <li><%= nav_link "App Status", status_pages_features_path %></li>
       </ul>
     </li>
   </ul>
@@ -92,10 +92,10 @@
     <li class="option">
       <%= nav_link ion_icon('person', text: content_tag(:span, 'My account')) + fa_icon('chevron-down'), "#", condition: controller?('account'), data: { toggle: "sidebar" } %>
       <ul class="submenu">
-        <li><%= nav_link "Settings", settings_account_index_path %></li>
-        <li><%= nav_link "Billing", billing_account_index_path %></li>
-        <li><%= nav_link "Notifications", notifications_account_index_path %></li>
-        <li><%= nav_link "Support", support_account_index_path %></li>
+        <li><%= nav_link "Settings", settings_pages_account_index_path %></li>
+        <li><%= nav_link "Billing", billing_pages_account_index_path %></li>
+        <li><%= nav_link "Notifications", notifications_pages_account_index_path %></li>
+        <li><%= nav_link "Support", support_pages_account_index_path %></li>
       </ul>
     </li>
     <li class="option">
@@ -125,7 +125,7 @@
         <!-- <li><%= link_to "3 features added", "#" %></li> -->
       </ul>
     </li>
-    <li><%= link_to ion_icon('log-out'), signin_features_path %></li>
+    <li><%= link_to ion_icon('log-out'), signin_pages_features_path %></li>
   </ul>
   </div>
 </div>
