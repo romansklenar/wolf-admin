@@ -1,0 +1,8 @@
+<% flash.each do |type, msg| %>
+  <% if msg.is_a?(String) && !msg.blank? %>
+    <div class="alert alert-dismissable alert-<%= type == 'notice' ? 'success' : 'danger' %>">
+      <a class="close" data-dismiss="alert">×</a>
+      <%= content_tag :div, raw(msg), id: "flash_#{type}" %>
+    </div>
+  <% end %>
+<% end %>

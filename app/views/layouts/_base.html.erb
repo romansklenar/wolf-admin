@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= title_tag ['Wolf - Bootstrap Admin Theme', strip_tags(yield(:title))].reject(&:empty?).join(' | ') %>
+  <%= description_meta_tag yield(:description) %>
+  <%= keywords_meta_tag yield(:keywords) %>
+  <%= csrf_meta_tags %>
+  <%= meta_tag 'content-type', 'text/html; charset=utf-8' %>
+  <%= meta_tag 'robots', 'noindex, nofollow, noarchive' unless Rails.env.production? %>
+  <%= meta_tag 'viewport', 'width=device-width, initial-scale=1.0' %>
+  <%= meta_tag 'X-UA-Compatible', 'IE=edge' %>
+  <%= favicon_link_tag 'favicon.png', rel: 'apple-touch-icon', type: 'image/png' %>
+  <%= favicon_link_tag 'favicon.png', rel: 'shortcut icon', type: 'image/x-icon' %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<%= yield %>
+</html>
