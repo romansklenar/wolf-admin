@@ -17,6 +17,7 @@ class Views.ApplicationView
 
   render: =>
     # enable app wide widgets
+    Widgets.Sidebar.enable()
     Widgets.Progressbar.enable()
     Widgets.Analytics.enable()
     

@@ -7,9 +7,6 @@ var ready = function() {
   // skins switcher
   Skins.initialize();
 
-  // sidebar menus
-  Sidebar.initialize();
-
   // build custom selects
   UI.smart_selects();
 
@@ -130,95 +127,6 @@ var Skins = {
     })
   }
 }
-
-var Sidebar = {
-  initialize: function () {
-    var $sidebar_menu = $(".main-sidebar");
-
-    // my account dropdown menu
-    var $account_menu = $sidebar_menu.find(".current-user .menu");
-    $(".current-user .name").click(function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      $account_menu.toggleClass("active");
-    });
-
-    $account_menu.click(function (e) { e.stopPropagation() });
-    $("body").click(function () { $account_menu.removeClass("active") });
-
-
-    // sidebar menu dropdown levels
-    var $dropdown_triggers = $sidebar_menu.find("[data-toggle~='sidebar']");
-
-    $dropdown_triggers.click(function (e) {
-      e.preventDefault();
-
-      if (!utils.isTablet()) {
-        // reset other dropdown menus
-        if (!$(this).closest(".submenu").length) {
-          $dropdown_triggers.not(this).removeClass("toggled").siblings(".submenu").slideUp(300, check_height);
-        }
-
-        var $trigger = $(this);
-        var $dropdown = $(this).siblings(".submenu");
-
-        $trigger.toggleClass("toggled");
-
-        if ($trigger.hasClass("toggled")) {
-          $dropdown.slideDown(300, check_height);
-        } else {
-          $dropdown.slideUp(300, check_height);
-        }
-      }
-    });
-
-
-    // setup active dropdown menu option
-    var path_name = window.location.pathname;
-    // reset all links states
-    $sidebar_menu.find(".menu-section a").removeClass("active");
-
-    var $active_link = $sidebar_menu.find("a[href='" + path_name + "']");
-    if ($active_link.length) {
-      $active_link.addClass("active");
-
-      // it's a link from a submenu
-      if ($active_link.parents(".submenu").length) {
-        var $parent = $active_link.closest(".option").find("[data-toggle~='sidebar']");
-        $parent.addClass("active toggled");
-        $active_link.parents(".submenu").addClass("active");
-      }
-    } else {
-      $sidebar_menu.find(".menu-section .option > a:eq(0)").addClass("active");
-    }
-
-
-    // fix sidebar height depending on browser dimensions
-    var check_height = function () {
-      var height = $("body").height();
-      $(".main-sidebar").css("bottom", "auto");
-      var sidebar_height = $(".main-sidebar").height();
-
-      if (height > sidebar_height) {
-        $(".main-sidebar").css("bottom", 0);
-      } else {
-        $(".main-sidebar").css("bottom", "auto");
-      }
-    };
-
-
-    // mobile sidebar toggler
-    var $mobile_toggler = $("#content .sidebar-toggler");
-    $mobile_toggler.click(function (e) {
-      e.stopPropagation();
-      $("body").toggleClass("open-sidebar");
-    });
-
-    $("#content").click(function () {
-      $("body").removeClass("open-sidebar");
-    })
-  }
-};
 
 window.utils = {
   isFirefox: function () {
