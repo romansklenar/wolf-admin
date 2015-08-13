@@ -1,0 +1,13 @@
+<div id="sidebar">
+  <div class="sidebar-toggler visible-xs">
+    <%= ion_icon('navicon') %>
+  </div>
+  
+  <h3>My account</h3>
+  <ul class="menu">
+    <li><%= nav_link ion_icon('ios-person-outline', text: 'Profile'), settings_account_index_path %></li>
+    <li><%= nav_link ion_icon('card', text: 'Billing'), billing_account_index_path %></li>
+    <li><%= nav_link ion_icon('ios-email-outline', text: 'Notifications'), notifications_account_index_path %></li>
+    <li><%= nav_link ion_icon('ios-help-outline', text: 'Support'), support_account_index_path %></li>
+  </ul>
+</div>

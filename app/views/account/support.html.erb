@@ -1,38 +1,6 @@
 <%= content_for :body_id, "account" %>
 
-<div id="sidebar">
-  <div class="sidebar-toggler visible-xs">
-    <%= ion_icon('navicon') %>
-  </div>
-  
-  <h3>My account</h3>
-  <ul class="menu">
-    <li>
-      <%= link_to settings_account_index_path do %>
-        <%= ion_icon('ios-person-outline') %>
-        Profile
-      <% end %>
-    </li>
-    <li>
-      <%= link_to billing_account_index_path do %>
-        <%= ion_icon('card') %>
-        Billing
-      <% end %>
-    </li>
-    <li>
-      <%= link_to notifications_account_index_path do %>
-        <%= ion_icon('ios-email-outline') %>
-        Notifications
-      <% end %>
-    </li>
-    <li>
-      <%= link_to support_account_index_path, class: "active" do %>
-        <%= ion_icon('ios-help-outline') %>
-        Support
-      <% end %>
-    </li>
-  </ul>
-</div>
+<%= render partial: 'sidebar_submenu' %>
 
 <div id="panel" class="support">
   <h3>
