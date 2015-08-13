@@ -17,6 +17,7 @@ class Views.ApplicationView
 
   render: =>
     # enable app wide widgets
+    Widgets.Progressbar.enable()
     Widgets.Analytics.enable()
     
     # enable bootstrap tooltips
