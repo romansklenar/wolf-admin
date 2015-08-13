@@ -15,7 +15,7 @@ input[type="submit"] {
 // Custom buttons
 // ============================================================================== */
 .button {
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   border: 0;
   outline: none;
   padding: 1px;
@@ -305,7 +305,8 @@ textarea {
       font-family: 'FontAwesome';
       font-size: 13px;
       content: "\f078";
-      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       font-weight: 400;
       color: #757575;
       display: block;

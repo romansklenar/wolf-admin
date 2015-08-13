@@ -1,6 +1,6 @@
 body {
   font-family: $sourceSans;
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   background: #fff;
 
   &.open-sidebar {
