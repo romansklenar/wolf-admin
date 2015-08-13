@@ -25,7 +25,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :pages, only: :index do
+  resources :views, only: :index do
     collection do
       get 'inbox'
       get 'profile'

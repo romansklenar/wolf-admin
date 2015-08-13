@@ -52,14 +52,14 @@
   <h3>Application</h3>
   <ul>
     <li class="option">
-      <%= nav_link ion_icon('earth', text: content_tag(:span, 'App Pages')) + fa_icon('chevron-down'), "#", condition: controller?('pages'), data: { toggle: "sidebar" } %>
+      <%= nav_link ion_icon('earth', text: content_tag(:span, 'App Views')) + fa_icon('chevron-down'), "#", condition: controller?('views'), data: { toggle: "sidebar" } %>
       <ul class="submenu">
-        <li><%= nav_link "Inbox Messages", inbox_pages_path %></li>
-        <li><%= nav_link "User profile", profile_pages_path %></li>
-        <li><%= nav_link "Latest activity", latest_activity_pages_path %></li>
-        <li><%= nav_link "Projects", projects_pages_path %></li>
-        <li><%= nav_link "Steps to launch", steps_pages_path %></li>
-        <li><%= nav_link "Calendar", calendar_pages_path %></li>
+        <li><%= nav_link "Inbox Messages", inbox_views_path %></li>
+        <li><%= nav_link "User profile", profile_views_path %></li>
+        <li><%= nav_link "Latest activity", latest_activity_views_path %></li>
+        <li><%= nav_link "Projects", projects_views_path %></li>
+        <li><%= nav_link "Steps to launch", steps_views_path %></li>
+        <li><%= nav_link "Calendar", calendar_views_path %></li>
       </ul>
     </li>
     <li class="option">

@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
+class ViewsController < ApplicationController
 
   def inbox
   end
