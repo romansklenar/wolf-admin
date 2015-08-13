@@ -15,7 +15,7 @@
       var out_fade_class = (in_fade_class === "fadeInRightStep") ? "fadeOutLeftStep" : "fadeOutRightStep";
 
       var $out_step = $steps.eq(active_step);
-      $out_step.on(utils.animation_ends(), function () {
+      $out_step.on("animationend webkitAnimationEnd oAnimationEnd", function () {
         $out_step.removeClass("fadeInRightStep fadeInLeftStep fadeOutRightStep fadeOutLeftStep");
       }).addClass(out_fade_class);
 

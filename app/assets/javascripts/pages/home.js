@@ -1,4 +1,8 @@
 (function () {
+  var get_timestamp = function (less_days) {
+    return moment().subtract('days', less_days).toDate().getTime();
+  }
+  
   var page_scripts = function () {
     if (!$("#dashboard").length) return;
 
@@ -13,9 +17,9 @@
     var chart_border_color = "#efefef";
     var chart_color = "#b0b3e3";
 
-    var d = [[utils.get_timestamp(15), 1290], [utils.get_timestamp(14), 1050], [utils.get_timestamp(13), 1100], [utils.get_timestamp(12), 1300], [utils.get_timestamp(11), 1050], [utils.get_timestamp(10), 1521], [utils.get_timestamp(9), 950], [utils.get_timestamp(8), 1130], [utils.get_timestamp(7), 1100], [utils.get_timestamp(6), 1472], [utils.get_timestamp(5), 1410], [utils.get_timestamp(4), 1684], [utils.get_timestamp(3), 1410], [utils.get_timestamp(2), 1322], [utils.get_timestamp(1), 1050], [utils.get_timestamp(0), 1238]];
+    var d = [[get_timestamp(15), 1290], [get_timestamp(14), 1050], [get_timestamp(13), 1100], [get_timestamp(12), 1300], [get_timestamp(11), 1050], [get_timestamp(10), 1521], [get_timestamp(9), 950], [get_timestamp(8), 1130], [get_timestamp(7), 1100], [get_timestamp(6), 1472], [get_timestamp(5), 1410], [get_timestamp(4), 1684], [get_timestamp(3), 1410], [get_timestamp(2), 1322], [get_timestamp(1), 1050], [get_timestamp(0), 1238]];
 
-    var d2 = [[utils.get_timestamp(14), 1500], [utils.get_timestamp(13), 1600], [utils.get_timestamp(12), 1630], [utils.get_timestamp(11), 1310], [utils.get_timestamp(10), 1530], [utils.get_timestamp(9), 2050], [utils.get_timestamp(8), 2310], [utils.get_timestamp(7), 2050], [utils.get_timestamp(6), 2125], [utils.get_timestamp(5), 1400], [utils.get_timestamp(4), 1600], [utils.get_timestamp(3), 1930], [utils.get_timestamp(2), 2000], [utils.get_timestamp(1), 2320]];
+    var d2 = [[get_timestamp(14), 1500], [get_timestamp(13), 1600], [get_timestamp(12), 1630], [get_timestamp(11), 1310], [get_timestamp(10), 1530], [get_timestamp(9), 2050], [get_timestamp(8), 2310], [get_timestamp(7), 2050], [get_timestamp(6), 2125], [get_timestamp(5), 1400], [get_timestamp(4), 1600], [get_timestamp(3), 1930], [get_timestamp(2), 2000], [get_timestamp(1), 2320]];
   
     var options = {
       xaxis : {
@@ -87,7 +91,7 @@
 
     // Bar chart (visitors)
 
-    var dBar = [[utils.get_timestamp(30), 930], [utils.get_timestamp(29), 1200], [utils.get_timestamp(28), 980], [utils.get_timestamp(27), 950], [utils.get_timestamp(26), 1000], [utils.get_timestamp(25), 1050], [utils.get_timestamp(24), 1150], [utils.get_timestamp(23), 2300], [utils.get_timestamp(22), 1200], [utils.get_timestamp(21), 1300], [utils.get_timestamp(20), 1700], [utils.get_timestamp(19), 1450], [utils.get_timestamp(18), 1500], [utils.get_timestamp(17), 546], [utils.get_timestamp(16), 614], [utils.get_timestamp(15), 954], [utils.get_timestamp(14), 1700], [utils.get_timestamp(13), 1800], [utils.get_timestamp(12), 1900], [utils.get_timestamp(11), 2000], [utils.get_timestamp(10), 2100], [utils.get_timestamp(9), 2200], [utils.get_timestamp(8), 2300], [utils.get_timestamp(7), 2400], [utils.get_timestamp(6), 2550], [utils.get_timestamp(5), 2600], [utils.get_timestamp(4), 1800], [utils.get_timestamp(3), 2200], [utils.get_timestamp(2), 2350], [utils.get_timestamp(1), 2800], [utils.get_timestamp(0), 3245]];
+    var dBar = [[get_timestamp(30), 930], [get_timestamp(29), 1200], [get_timestamp(28), 980], [get_timestamp(27), 950], [get_timestamp(26), 1000], [get_timestamp(25), 1050], [get_timestamp(24), 1150], [get_timestamp(23), 2300], [get_timestamp(22), 1200], [get_timestamp(21), 1300], [get_timestamp(20), 1700], [get_timestamp(19), 1450], [get_timestamp(18), 1500], [get_timestamp(17), 546], [get_timestamp(16), 614], [get_timestamp(15), 954], [get_timestamp(14), 1700], [get_timestamp(13), 1800], [get_timestamp(12), 1900], [get_timestamp(11), 2000], [get_timestamp(10), 2100], [get_timestamp(9), 2200], [get_timestamp(8), 2300], [get_timestamp(7), 2400], [get_timestamp(6), 2550], [get_timestamp(5), 2600], [get_timestamp(4), 1800], [get_timestamp(3), 2200], [get_timestamp(2), 2350], [get_timestamp(1), 2800], [get_timestamp(0), 3245]];
 
     var options2 = {
       yaxes: {

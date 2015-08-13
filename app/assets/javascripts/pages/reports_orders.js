@@ -1,4 +1,8 @@
 (function () {
+  var get_timestamp = function (less_days) {
+    return moment().subtract('days', less_days).toDate().getTime();
+  }
+  
   var page_scripts = function () {
     if (!$("#reports").length) return;
     
@@ -7,7 +11,7 @@
 
     /* sales chart */
   
-    var d = [[utils.get_timestamp(18), 1245], [utils.get_timestamp(17), 1290], [utils.get_timestamp(16), 1230], [utils.get_timestamp(15), 1290], [utils.get_timestamp(14), 1250], [utils.get_timestamp(13), 1100], [utils.get_timestamp(12), 1300], [utils.get_timestamp(11), 1250], [utils.get_timestamp(10), 1501], [utils.get_timestamp(9), 1400], [utils.get_timestamp(8), 1350], [utils.get_timestamp(7), 1390], [utils.get_timestamp(6), 1252], [utils.get_timestamp(5), 1410], [utils.get_timestamp(4), 1484], [utils.get_timestamp(3), 1410], [utils.get_timestamp(2), 1322], [utils.get_timestamp(1), 1320], [utils.get_timestamp(0), 1438]];
+    var d = [[get_timestamp(18), 1245], [get_timestamp(17), 1290], [get_timestamp(16), 1230], [get_timestamp(15), 1290], [get_timestamp(14), 1250], [get_timestamp(13), 1100], [get_timestamp(12), 1300], [get_timestamp(11), 1250], [get_timestamp(10), 1501], [get_timestamp(9), 1400], [get_timestamp(8), 1350], [get_timestamp(7), 1390], [get_timestamp(6), 1252], [get_timestamp(5), 1410], [get_timestamp(4), 1484], [get_timestamp(3), 1410], [get_timestamp(2), 1322], [get_timestamp(1), 1320], [get_timestamp(0), 1438]];
   
     var options = {
       xaxis : {

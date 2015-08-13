@@ -16,19 +16,3 @@ var ready = function() {
 };
 
 $(document).on("ready page:load", ready);
-
-
-window.utils = {
-  isFirefox: function () {
-    return navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-  },
-  animation_ends: function () {
-    return "animationend webkitAnimationEnd oAnimationEnd";
-  },
-  isTablet: function () {
-    return ($(".main-sidebar").width() < 100);
-  },
-  get_timestamp: function (less_days) {
-    return moment().subtract('days', less_days).toDate().getTime();
-  }
-};
