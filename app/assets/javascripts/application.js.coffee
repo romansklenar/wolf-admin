@@ -11,7 +11,6 @@
 # about supported directives.
 #
 #= require libs
-#= require theme
 #
 #= require_tree ./pages
 #= require_tree ./widgets
