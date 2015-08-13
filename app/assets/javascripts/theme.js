@@ -7,20 +7,6 @@ var ready = function() {
   // build custom selects
   UI.smart_selects();
 
-  // tooltips
-  $("[data-toggle='tooltip']").tooltip();
-
-  // retina display
-  if(window.devicePixelRatio >= 1.2){
-    $("[data-2x]").each(function(){
-      if(this.tagName == "IMG"){
-        $(this).attr("src",$(this).attr("data-2x"));
-      } else {
-        $(this).css({"background-image":"url("+$(this).attr("data-2x")+")"});
-      }
-    });
-  }
-
   Number.prototype.formatMoney = function(c, d, t){
     var n = this,
       c = isNaN(c = Math.abs(c)) ? 2 : c,

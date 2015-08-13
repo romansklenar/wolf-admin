@@ -21,6 +21,7 @@ class Views.ApplicationView
     Widgets.Progressbar.enable()
     Widgets.Analytics.enable()
     Widgets.SkinSwitcher.enable()
+    Widgets.Retina.enable() if window.devicePixelRatio >= 1.2
     
     # enable bootstrap tooltips
     $('[data-toggle="tooltip"]').tooltip()
