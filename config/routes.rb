@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :lists do
+  resources :lists, only: :index do
     collection do
       get 'users'
       get 'datatables'
@@ -10,14 +10,14 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :reports do
+  resources :reports, only: :index do
     collection do
       get 'orders'
       get 'sales'
     end
   end
 
-  resources :forms do
+  resources :forms, only: :index do
     collection do
       get 'new_customer'
       get 'new_product'
@@ -25,7 +25,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :pages do
+  resources :pages, only: :index do
     collection do
       get 'inbox'
       get 'profile'
@@ -36,7 +36,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :pricing do
+  resources :pricing, only: :index do
     collection do
       get 'plans'
       get 'charts'
@@ -45,7 +45,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :features do
+  resources :features, only: :index do
     collection do
       get 'email_templates'
       get 'gallery'
@@ -57,7 +57,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :account do
+  resources :account, only: :index do
     collection do
       get 'settings'
       get 'billing'
