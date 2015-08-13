@@ -22,7 +22,7 @@
         <%= image_tag "emails/welcome.png" %>
       </div>
       <div class="name">
-        Welcome Email
+        <%= link_to "Welcome Email", '/rails/mailers/app_mailer/welcome_email', target: '_blank' %>
       </div>
     </div>
     <div class="email">
@@ -31,7 +31,7 @@
         <%= image_tag "emails/notification.png" %>
       </div>
       <div class="name">
-        Email Notification
+        <%= link_to "Email Notification", '/rails/mailers/app_mailer/notification_email', target: '_blank' %>
       </div>
     </div>
     <div class="email">
@@ -40,7 +40,7 @@
         <%= image_tag "emails/invoice.jpg" %>
       </div>
       <div class="name">
-        Invoice Email
+        <%= link_to "Invoice Email", '/rails/mailers/app_mailer/invoice_email', target: '_blank' %>
       </div>
     </div>
     <div class="email">
@@ -49,7 +49,7 @@
         <%= image_tag "emails/activation.png" %>
       </div>
       <div class="name">
-        Account Activation Email
+        <%= link_to "Account Activation Email", '/rails/mailers/app_mailer/activation_email', target: '_blank' %>
       </div>
     </div>
   </div>
