@@ -15,8 +15,10 @@ class Views.ApplicationView
   pageRestore: =>
     @cleanup()
 
-  # protected methods
   render: =>
+    # enable app wide widgets
+    Widgets.Analytics.enable()
+    
     # enable bootstrap tooltips
     $('[data-toggle="tooltip"]').tooltip()
 
