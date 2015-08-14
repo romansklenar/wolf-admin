@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
+  
+  
   # you can remove template routes when there is no use for them anymore
   draw :pages
 
