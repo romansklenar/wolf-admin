@@ -21,6 +21,7 @@
   <![endif]-->
 
   <%= render partial: 'shared/google_analytics' if Rails.env.production? %>
+  <%= render partial: 'shared/rollbar' if Rails.env.production? %>
 </head>
 <%= yield %>
 </html>
