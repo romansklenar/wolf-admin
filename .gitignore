@@ -17,3 +17,6 @@
 
 # Ignore Mac finder artifacts
 .DS_Store
+
+# Ignore local env settings file
+.env
