@@ -4,6 +4,7 @@ ruby '2.2.2'
 gem 'rails', '~> 4.2.0'
 gem 'thin'
 gem 'pg'
+gem 'devise'
 gem 'rollbar'
 gem 'newrelic_rpm'
 

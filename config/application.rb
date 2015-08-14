@@ -29,5 +29,9 @@ module WolfRails
     
     # Use custom exception handler
     config.exceptions_app = self.routes
+    
+    # Configure active mailer defaults
+    config.action_mailer.default_options = { from: "no-reply@#{Rails.application.secrets.domain_name}" }
+    config.action_mailer.default_url_options = { host: Rails.application.secrets.domain_name }
   end
 end
