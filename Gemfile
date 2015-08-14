@@ -5,6 +5,7 @@ gem 'rails', '~> 4.2.0'
 gem 'thin'
 gem 'pg'
 gem 'rollbar'
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'sass-rails'
