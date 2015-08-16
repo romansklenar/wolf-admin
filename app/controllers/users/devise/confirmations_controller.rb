@@ -1,4 +1,6 @@
 class Users::Devise::ConfirmationsController < Devise::ConfirmationsController
+  layout 'devise'
+  
   # GET /resource/confirmation/new
   # def new
   #   super

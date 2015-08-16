@@ -1,5 +1,7 @@
 class Users::Devise::SessionsController < Devise::SessionsController
-# before_filter :configure_sign_in_params, only: [:create]
+  layout 'devise'
+  
+  # before_filter :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in
   # def new

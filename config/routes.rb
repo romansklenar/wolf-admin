@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+    confirmations:      "users/devise/confirmations",
+    # omniauth_callbacks: "users/devise/omniauth_callbacks",
+    passwords:          "users/devise/passwords",
+    registrations:      "users/devise/registrations",
+    sessions:           "users/devise/sessions",
+    unlocks:            "users/devise/unlocks"
+  }
   
   
   # you can remove template routes when there is no use for them anymore

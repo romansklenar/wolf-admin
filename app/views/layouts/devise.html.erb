@@ -1,0 +1,5 @@
+<%= render layout: 'layouts/base' do %>
+<body id="<%= yield :body_id %>" class="bg" data-view-class="<%= javascript_view_class %>">
+  <%= yield %>
+</body>
+<% end %>

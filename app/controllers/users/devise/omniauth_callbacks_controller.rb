@@ -1,4 +1,6 @@
 class Users::Devise::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+  layout 'devise'
+  
   # You should configure your model like this:
   # devise :omniauthable, omniauth_providers: [:twitter]
 
