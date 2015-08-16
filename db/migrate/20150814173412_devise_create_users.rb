@@ -4,6 +4,8 @@ class DeviseCreateUsers < ActiveRecord::Migration
       ## Credentials
       t.string :type
       t.string :name
+      t.string :locale
+      t.string :time_zone
       
       ## Database authenticatable
       t.string :email,              null: false, default: ""
