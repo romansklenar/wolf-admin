@@ -1,16 +1,23 @@
-<h2>Resend unlock instructions</h2>
+<%= link_to fa_icon('envelope'), root_url, class: "logo" %>
+<h3>Resend unlock instructions</h3>
 
-<%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+<div class="content">
+  <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+    <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <div class="fields">
+      <%= f.label :email, "Email address" %>
+      <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Resend unlock instructions", class: "btn btn-primary btn-lg" %>
+    </div>
+  <% end %>
+</div>
+
+<div class="bottom-wrapper">
+  <div class="message">
+    <%= render "devise/shared/links" %>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Resend unlock instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

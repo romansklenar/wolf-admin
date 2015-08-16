@@ -1,16 +1,23 @@
-<h2>Resend confirmation instructions</h2>
+<%= link_to fa_icon('envelope'), root_url, class: "logo" %>
+<h3>Resend confirmation instructions</h3>
 
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+<div class="content">
+  <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+    <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %> 
+    <div class="fields">
+      <%= f.label :email, "Email address" %>
+      <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class: "form-control", placeholder: "Email" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Resend confirmation instructions", class: "btn btn-primary btn-lg" %>
+    </div>
+  <% end %>
+</div>
+
+<div class="bottom-wrapper">
+  <div class="message">
+    <%= render "devise/shared/links" %>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Resend confirmation instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

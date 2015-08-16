@@ -1,5 +1,7 @@
-<%= render layout: 'layouts/base' do %>
-<body id="<%= yield :body_id %>" class="bg" data-view-class="<%= javascript_view_class %>">
-  <%= yield %>
+<%= render layout: "layouts/base" do %>
+<body id="devise" class="<%= yield :body_class %>" data-view-class="<%= javascript_view_class %>">
+  <div class="bg clear">
+    <%= yield %>
+  </div>
 </body>
 <% end %>

@@ -11,7 +11,7 @@
       background: #F2F5F8;
 
       .logo {
-        .fa-users {
+        .fa {
           color: #8CAAC0;
         }
       }
@@ -91,7 +91,7 @@
     display: block;
     text-decoration: none;
 
-    .fa-users {
+    .fa {
       color: #FFFFD8;
       font-size: 43px;
 
@@ -136,6 +136,7 @@
       }
 
       input[type="text"],
+      input[type="email"],
       input[type="password"] {
         margin-bottom: 15px;
       }

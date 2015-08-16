@@ -1,4 +1,4 @@
-#signup {
+#devise {
   .bg {
     background-color: #9795bb;
     background-image: radial-gradient(circle farthest-side at right bottom,#9795bb,#59688D 80%,#426686);
@@ -10,10 +10,8 @@
       background-image: none;
       background-color: #F2F5F8;
 
-      .logo {
-        .fa {
-          color: #8CAAC0;
-        }
+      .logo .fa {
+        color: #8CAAC0;
       }
 
       h3 {
@@ -91,9 +89,9 @@
     display: block;
     text-decoration: none;
 
-    .fa-users {
+    .fa {
       color: #FFFFD8;
-      font-size: 40px;
+      font-size: 43px;
 
       @media (max-width: $maxSmall) {
         font-size: 34px;
@@ -102,7 +100,7 @@
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 24px;
     color: #fff;
     text-align: center;
     margin-top: 35px;
@@ -114,10 +112,10 @@
   }
 
   .content {
-    max-width: 620px;
+    max-width: 460px;
     margin: 0 auto;
     margin-top: 40px;
-    padding: 42px 56px;
+    padding: 42px 48px;
     background: #fff;
     box-shadow: 0 1px 40px 0 rgba(0,0,0,0.3);
     border-radius: 3px;
@@ -128,11 +126,11 @@
     }
 
     .fields {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
 
       strong {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
 
       input[type="text"],
@@ -146,10 +144,10 @@
       margin-top: -10px;
     }
 
-    .signup {
+    .actions {
       margin-top: 40px;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 
@@ -172,5 +170,11 @@
       }
     }
   }
+}
 
+
+#devise.sign_up {
+  .content {
+    max-width: 620px;
+  }
 }
