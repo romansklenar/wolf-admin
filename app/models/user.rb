@@ -17,4 +17,10 @@ class User < ActiveRecord::Base
   def role
     @role ||= roles.first.name.presence rescue nil
   end
+
+  def ability
+    @ability ||= Ability.new(self)
+  end
+
+  delegate :can?, :cannot?, to: :ability
 end
