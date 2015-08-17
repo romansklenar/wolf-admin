@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  ROLES = %w[administrator member]
+  
   rolify
 
   # Include default devise modules. Others available are:
@@ -6,6 +8,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  
+  validates :role, inclusion: { in: ROLES }, allow_blank: true
 
   attr_accessor :role
   after_save :assign_role, if: 'role.present?'

@@ -27,6 +27,10 @@ class Ability
     can [:read, :update], User, id: user.id
   end
 
+  # Adjusts permissions for member_ role
+  def member
+  end
+
   # Adjusts permissions for _administrator_ role
   def administrator
     can :manage, :all
