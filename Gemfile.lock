@@ -141,6 +141,7 @@ GEM
     rails-assets-fullcalendar (1.6.7)
       rails-assets-jquery (~> 1.10.2)
     rails-assets-highlightjs (8.7.0)
+    rails-assets-ink (1.0.5)
     rails-assets-ionicons (2.0.1)
     rails-assets-jquery (1.10.2)
     rails-assets-jquery-cookie (1.4.1)
@@ -250,6 +251,7 @@ DEPENDENCIES
   rails-assets-font-awesome (~> 4.3.0)!
   rails-assets-fullcalendar (~> 1.6.1)!
   rails-assets-highlightjs (~> 8.6)!
+  rails-assets-ink (~> 1.0.5)!
   rails-assets-ionicons (~> 2.0.1)!
   rails-assets-jquery (~> 1.10.0)!
   rails-assets-jquery-cookie (~> 1.4.1)!

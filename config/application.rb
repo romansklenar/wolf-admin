@@ -30,10 +30,6 @@ module WolfRails
     # Use custom exception handler
     config.exceptions_app = self.routes
     
-    # Configure active mailer defaults
-    config.action_mailer.default_options = { from: "no-reply@#{Rails.application.secrets.domain_name}" }
-    config.action_mailer.default_url_options = { host: Rails.application.secrets.domain_name }
-    
     # Fix rails generator because issue with Devise gem
     # https://github.com/plataformatec/responders/issues/94#issuecomment-59538373
     config.app_generators.scaffold_controller :scaffold_controller

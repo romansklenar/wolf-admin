@@ -26,6 +26,7 @@ group :assets do
     gem 'rails-assets-jquery-validate', '~> 1.11.1'
     gem 'rails-assets-jquery-maskedinput', '~> 1.4.1'
     gem 'rails-assets-jquery-raty', '~> 2.7.0'
+    gem 'rails-assets-ink', '~> 1.0.5'
     gem 'rails-assets-bootstrap', '~> 3.3.5'
     gem 'rails-assets-font-awesome', '~> 4.3.0'
     gem 'rails-assets-ionicons', '~> 2.0.1'

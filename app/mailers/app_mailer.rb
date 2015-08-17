@@ -1,6 +1,6 @@
 class AppMailer < ActionMailer::Base
   default from: "<from_address>"
-  default template_path: "pages/app_mailer"
+  default template_path: Proc.new { "pages/#{self.class.name.underscore}" }
 
   def welcome_email
     mail to: "<to_address>", subject: "Welcome!"
