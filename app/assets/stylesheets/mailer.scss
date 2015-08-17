@@ -4,6 +4,21 @@
 // A Responsive Email Framework from ZURB; see: http://zurb.com/ink/
 @import "ink";
 
+p {
+  text-align: left;
+  line-height: 19px;
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+p.info {
+  padding: 0 0 40px;
+}
+
+.heading {
+  padding: 30px 0;
+}
+
 .template-label {
   color: #ffffff;
   font-weight: bold;
@@ -16,7 +31,16 @@
 }
 
 .header {
-  background: #999999;
+  background: #405472;
+}
+
+.logo {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.23);
+  display: inline-block;
+  padding: 10px 0;
 }
 
 .footer .wrapper {
@@ -25,6 +49,18 @@
 
 .footer h5 {
   padding-bottom: 10px;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  background: #48A4CF;
+  border-radius: 4px;
+  border-width: 0;
+  padding: 13px 0 12px;
+  margin: 0;
 }
 
 table.columns .text-pad {
@@ -38,6 +74,17 @@ table.columns .left-text-pad {
 
 table.columns .right-text-pad {
   padding-right: 10px;
+}
+
+table[class="body"] {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  width: 100% !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 19px;
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,5 +1,13 @@
-<p>Welcome <%= @email %>!</p>
+<h4 class="heading">Welcome <strong><%= @resource.email %></strong>!</h4>
 
-<p>You can confirm your account email through the link below:</p>
+<p class="info">You can confirm your account email through the link below.</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+<center>
+<table class="button verify-button">
+  <tr align="left">
+    <td align="center">
+      <%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %>
+    </td>
+  </tr>
+</table>
+</center>
