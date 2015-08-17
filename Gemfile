@@ -7,6 +7,7 @@ gem 'pg'
 gem 'devise'
 gem 'rollbar'
 gem 'newrelic_rpm'
+gem 'roadie-rails'
 
 group :assets do
   gem 'sass-rails'
