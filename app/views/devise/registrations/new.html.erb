@@ -19,7 +19,7 @@
     
     <div class="fields">
       <%= f.label :locale, "Preferred language" %>
-      <%= f.select :locale, User::LOCALES, { prompt: true, selected: f.object.locale || browser_locale }, class: "form-control" %>
+      <%= f.select :locale, User::LOCALE_PAIRS.invert, { prompt: true, selected: f.object.locale || browser_locale }, class: "form-control" %>
     </div>
     
     <div class="fields">

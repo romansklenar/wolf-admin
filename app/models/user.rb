@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
-  ROLES = %w[administrator member]
-  LOCALES = %w[en]
-  TIME_ZONES = ActiveSupport::TimeZone::MAPPING.keys
-  
+  ROLE_PAIRS  = { 'administrator' => 'Administrator', 'member' => 'Member' }
+  LOCALE_PAIRS = { 'en' => 'English', 'cs' => 'Czech' }
+  TIME_ZONE_PAIRS = ActiveSupport::TimeZone::MAPPING
+
   rolify
 
   # Include default devise modules. Others available are:
@@ -11,9 +11,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
          
   validates :name, :locale, :time_zone, presence: true
-  validates :role, inclusion: { in: ROLES }, allow_blank: true
-  validates :locale, inclusion: { in: LOCALES }, if: 'locale.present?'
-  validates :time_zone, inclusion: { in: TIME_ZONES }, if: 'time_zone.present?'
+  validates :role, inclusion: { in: ROLE_PAIRS.keys }, allow_blank: true
+  validates :locale, inclusion: { in: LOCALE_PAIRS.keys }, if: 'locale.present?'
+  validates :time_zone, inclusion: { in: TIME_ZONE_PAIRS.keys }, if: 'time_zone.present?'
 
   attr_accessor :role
   after_save :assign_role, if: 'role.present?'

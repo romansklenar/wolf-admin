@@ -8,7 +8,7 @@ ActiveAdmin.register User do
 
   filter :name
   filter :email
-  filter :locale, as: :select, collection: -> { User::LOCALES }
+  filter :locale, as: :select, collection: -> { User::LOCALE_PAIRS.invert }
   filter :time_zone, as: :select, collection: -> { time_zone_options_for_select(params[:q].fetch(:time_zone_eq)) }
   filter :current_sign_in_at
   filter :sign_in_count
@@ -36,7 +36,7 @@ ActiveAdmin.register User do
       row :time_zone
       row :role
 
-      # Timestampable
+      # timestampable
       row :created_at
       row :updated_at
     end
@@ -60,9 +60,9 @@ ActiveAdmin.register User do
     f.inputs title: :user_details do
       f.input :name
       f.input :email
-      f.input :role, as: :select, collection: User::ROLES, prompt: true
-      f.input :locale, as: :select, collection: User::LOCALES, prompt: true
+      f.input :locale, as: :select, collection: User::LOCALE_PAIRS.invert, prompt: true
       f.input :time_zone, as: :select, collection: time_zone_options_for_select(f.object.time_zone), prompt: true
+      f.input :role, as: :select, collection: User::ROLE_PAIRS.invert, prompt: true
     end
     
     f.inputs title: :user_password do
