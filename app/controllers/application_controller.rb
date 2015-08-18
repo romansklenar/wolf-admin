@@ -20,12 +20,12 @@ class ApplicationController < ActionController::Base
   # redirect back to current page after successful sign in
   def after_sign_in_path_for(resource)
     return stored_location_for(resource) || case
-        when resource.has_role?(:administrator)
-          sign_in :administrator, resource
-          admin_root_path
-        else
-          root_path
-      end
+      when resource.has_role?(:administrator)
+        sign_in :administrator, resource
+        admin_root_path
+      else
+        root_path
+    end
   end
 
   protected
