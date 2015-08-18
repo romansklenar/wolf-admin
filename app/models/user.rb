@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
          
   validates :name, :locale, :time_zone, presence: true
-  validates :role, inclusion: { in: ROLE_PAIRS.keys }, allow_blank: true
+  validates :role, inclusion: { in: ROLE_PAIRS.keys }, allow_blank: true, if: 'role.present?'
   validates :locale, inclusion: { in: LOCALE_PAIRS.keys }, if: 'locale.present?'
   validates :time_zone, inclusion: { in: TIME_ZONE_PAIRS.keys }, if: 'time_zone.present?'
 
@@ -22,6 +22,10 @@ class User < ActiveRecord::Base
     add_role(role) if role.present?
   end
   
+  def role=(value)
+    @role = value.to_s.presence
+  end
+
   def role
     @role ||= roles.last.name.presence rescue nil
   end

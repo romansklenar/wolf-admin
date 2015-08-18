@@ -125,7 +125,7 @@
         <!-- <li><%= link_to "3 features added", "#" %></li> -->
       </ul>
     </li>
-    <li><%= link_to ion_icon('log-out'), signin_pages_features_path %></li>
+    <li><%= link_to ion_icon('log-out'), destroy_user_session_path, method: :delete, id: 'logout' %></li>
   </ul>
   </div>
 </div>
