@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
   ROLES = %w[administrator member]
+  LOCALES = %w[en]
+  TIME_ZONES = ActiveSupport::TimeZone::MAPPING.keys
   
   rolify
 
@@ -7,9 +9,11 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-
-  
+         
+  validates :name, :locale, :time_zone, presence: true
   validates :role, inclusion: { in: ROLES }, allow_blank: true
+  validates :locale, inclusion: { in: LOCALES }, if: 'locale.present?'
+  validates :time_zone, inclusion: { in: TIME_ZONES }, if: 'time_zone.present?'
 
   attr_accessor :role
   after_save :assign_role, if: 'role.present?'
@@ -19,7 +23,7 @@ class User < ActiveRecord::Base
   end
   
   def role
-    @role ||= roles.first.name.presence rescue nil
+    @role ||= roles.last.name.presence rescue nil
   end
 
   def ability

@@ -4,7 +4,7 @@
 <h3>Create Your Account Now</h3>
 
 <div class="content">
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= semantic_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
     
     <div class="fields">
@@ -13,8 +13,23 @@
     </div>
     
     <div class="fields">
-      <%= f.label :password, "New password" %><br />
-      <%= f.password_field :password, autofocus: true, autocomplete: "off", class: "form-control", placeholder: "Password" %>
+      <%= f.label :name, "Your name" %>
+      <%= f.text_field :name, class: "form-control", placeholder: "Name" %>
+    </div>
+    
+    <div class="fields">
+      <%= f.label :locale, "Preferred language" %>
+      <%= f.select :locale, User::LOCALES, { prompt: true }, class: "form-control" %>
+    </div>
+    
+    <div class="fields">
+      <%= f.label :time_zone, "Time zone" %>
+      <%= f.select :time_zone, time_zone_options_for_select(f.object.time_zone), { prompt: true }, class: "form-control" %>
+    </div>
+    
+    <div class="fields">
+      <%= f.label :password, "Password" %><br />
+      <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Password" %>
     </div>
 
     <div class="fields">

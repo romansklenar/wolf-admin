@@ -2,15 +2,25 @@ ActiveAdmin.register User do
   decorate_with UserDecorator
 
   menu priority: 100
-  actions :all, except: [:new]
+  # actions :all, except: [:new]
 
-  permit_params :name, :email, :password, :password_confirmation
+  permit_params :name, :email, :password, :password_confirmation, :locale, :time_zone, :role
+
+  filter :name
+  filter :email
+  filter :locale, as: :select, collection: -> { User::LOCALES }
+  filter :time_zone, as: :select, collection: -> { time_zone_options_for_select(params[:q].fetch(:time_zone_eq)) }
+  filter :current_sign_in_at
+  filter :sign_in_count
+  filter :created_at
 
   index do
     selectable_column
     id_column
     column :email
     column :name
+    column :locale
+    column :time_zone
     column :current_sign_in_at
     column :sign_in_count
     column :created_at
@@ -22,6 +32,9 @@ ActiveAdmin.register User do
       row :id
       row :name
       row :email
+      row :locale
+      row :time_zone
+      row :role
 
       # Timestampable
       row :created_at
@@ -43,19 +56,20 @@ ActiveAdmin.register User do
     end
   end
 
-  filter :name
-  filter :email
-  filter :current_sign_in_at
-  filter :sign_in_count
-  filter :created_at
-
   form do |f|
-    f.inputs "User Details" do
+    f.inputs title: :user_details do
       f.input :name
       f.input :email
+      f.input :role, as: :select, collection: User::ROLES, prompt: true
+      f.input :locale, as: :select, collection: User::LOCALES, prompt: true
+      f.input :time_zone, as: :select, collection: time_zone_options_for_select(f.object.time_zone), prompt: true
+    end
+    
+    f.inputs title: :user_password do
       f.input :password
       f.input :password_confirmation
-    end
+    end if f.object == current_administrator || f.object.new_record?
+    
     f.actions
   end
 
