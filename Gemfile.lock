@@ -210,6 +210,7 @@ GEM
     rails-assets-jquery-ujs (1.0.4)
       rails-assets-jquery (> 1.8)
     rails-assets-jquery-validate (1.11.1)
+    rails-assets-jstz-detect (1.0.5)
     rails-assets-messenger (1.4.2)
       rails-assets-jquery
     rails-assets-microplugin (0.0.3)
@@ -339,6 +340,7 @@ DEPENDENCIES
   rails-assets-jquery-ui (~> 1.10.0)!
   rails-assets-jquery-ujs (~> 1.0.4)!
   rails-assets-jquery-validate (~> 1.11.1)!
+  rails-assets-jstz-detect (~> 1.0.5)!
   rails-assets-messenger (~> 1.4.2)!
   rails-assets-moment (~> 2.5.1)!
   rails-assets-offline (~> 0.7.13)!

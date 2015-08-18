@@ -22,6 +22,7 @@ class Views.ApplicationView
     Widgets.Analytics.enable()
     Widgets.SkinSwitcher.enable()
     Widgets.SmartSelects.enable()
+    Widgets.TimeZoneDetect.enable()
     Widgets.Retina.enable() if window.devicePixelRatio >= 1.2
     
     # force re-render -- having an issue with that on Chrome/OSX

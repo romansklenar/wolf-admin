@@ -19,12 +19,12 @@
     
     <div class="fields">
       <%= f.label :locale, "Preferred language" %>
-      <%= f.select :locale, User::LOCALES, { prompt: true }, class: "form-control" %>
+      <%= f.select :locale, User::LOCALES, { prompt: true, selected: f.object.locale || browser_locale }, class: "form-control" %>
     </div>
     
     <div class="fields">
       <%= f.label :time_zone, "Time zone" %>
-      <%= f.select :time_zone, time_zone_options_for_select(f.object.time_zone), { prompt: true }, class: "form-control" %>
+      <%= f.select :time_zone, time_zone_options_for_select(f.object.time_zone || browser_time_zone), { prompt: true }, class: "form-control" %>
     </div>
     
     <div class="fields">

@@ -16,6 +16,7 @@
 #= require jquery-flot
 #= require jquery-datatables
 #= require jquery-validate/jquery.validate
+#= require jstz-detect/jstz
 #= require fullcalendar
 #= require messenger
 #= require moment
