@@ -1,0 +1,27 @@
+# formtastic.{titles,labels,hints,actions}.MODEL.ACTION.ATTRIBUTE – by model and action
+# formtastic.{titles,labels,hints,actions}.MODEL.ATTRIBUTE – by model
+# formtastic.{titles,labels,hints,actions}.ATTRIBUTE – global default
+
+en:
+  formtastic:
+    titles:
+      preferences: Preferences
+      details: Details
+      user_details: "User details"
+      user_password: "User password"
+      
+    labels:
+      autocomplete: Autocomplete
+          
+    placeholders:
+      user:
+        email: john.doe@example.com
+        name: John Doe
+        
+    actions:
+      create: Create # "Create %{model}"
+      update: Update # "Update %{model}"
+      reset:  Reset  # "Reset %{model}"
+      submit: Submit
+      cancel: Cancel
+      dummie: Launch!
