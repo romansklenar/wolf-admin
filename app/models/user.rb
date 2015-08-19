@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   include HasName
+  include HasImage
   
   ROLE_PAIRS  = { 'administrator' => 'Administrator', 'member' => 'Member' }
   LOCALE_PAIRS = { 'en' => 'English', 'cs' => 'Czech' }
@@ -47,8 +48,4 @@ class User < ActiveRecord::Base
   end
 
   delegate :can?, :cannot?, to: :ability
-  
-  def gravatar_url(size: 50)
-    "http://gravatar.com/avatar/#{Digest::MD5.hexdigest(email.downcase)}.png?d=mm&s=#{size if size}"
-  end
 end

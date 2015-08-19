@@ -5,6 +5,7 @@ class CreateIdentities < ActiveRecord::Migration
       t.string     :first_name
       t.string     :last_name
       t.string     :email
+      t.string     :avatar_url
       t.string     :provider, index: true
       t.string     :uid
       t.string     :secret

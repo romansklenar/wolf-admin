@@ -1,5 +1,6 @@
 class Identity < ActiveRecord::Base
   include HasName
+  include HasImage
   
   PROVIDERS = %w[facebook twitter google_oauth2]
 
@@ -24,6 +25,7 @@ class Identity < ActiveRecord::Base
       identity.first_name = info['first_name'].presence
       identity.last_name  = info['last_name'].presence
       identity.full_name  = info['full_name'].presence || info['name'].presence
+      identity.avatar_url = info['image'].presence
       identity.email      = info['email'].presence
       identity.token      = credentials['token'].presence || credentials['ticket'].presence
       identity.secret     = credentials['secret'].presence
