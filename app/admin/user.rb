@@ -37,22 +37,41 @@ ActiveAdmin.register User do
       row :time_zone
       row :role
 
-      # timestampable
+      # Timestamps
       row :created_at
       row :updated_at
     end
 
     panel I18n.t("active_admin.panels.login_details"), collapsed: true do
       attributes_table_for user.decorate do
-        # trackable
+        # Trackable
         row :current_sign_in_at
         row :current_sign_in_ip
         row :last_sign_in_at
         row :last_sign_in_ip
         row :sign_in_count
 
-        # rememberable
+        ## Recoverable
+        row :reset_password_token
+        row :reset_password_sent_at
+
+        ## Rememberable
         row :remember_created_at
+        
+        ## Recoverable
+        row :reset_password_token
+        row :reset_password_sent_at
+        
+        ## Confirmable
+        row :confirmation_token
+        row :confirmed_at
+        row :confirmation_sent_at
+        row :unconfirmed_email
+
+        ## Lockable
+        row :failed_attempts
+        row :unlock_token
+        row :locked_at
       end
     end
   end
