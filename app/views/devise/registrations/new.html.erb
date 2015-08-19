@@ -49,8 +49,8 @@
 
   <p class="text-center lead">Sign up using your social newtwork accounts<br>and follow the process.</p>
   <p class="text-center">
-    <% Identity::PROVIDERS.each do |provider| %>
-      <%= authenticate_link(provider, text: "Sign up") %>
+    <% Identity::PROVIDER_PAIRS.each do |provider, name| %>
+      <%= authenticate_link(provider, text: "Sign up via #{name}") %>
     <% end %>
   </p>
 </div>

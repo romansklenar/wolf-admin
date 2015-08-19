@@ -2,11 +2,11 @@ class Identity < ActiveRecord::Base
   include HasName
   include HasImage
   
-  PROVIDERS = %w[facebook twitter google_oauth2]
+  PROVIDER_PAIRS = { 'facebook' => 'Facebook', 'twitter' => 'Twitter', 'google_oauth2' => 'Google' }
 
   belongs_to :user
 
-  validates :provider, inclusion: { in: PROVIDERS }, presence: true
+  validates :provider, inclusion: { in: PROVIDER_PAIRS.keys }, presence: true
   validates :uid, uniqueness: { scope: :provider }, presence: true
 
   serialize :raw_info, Hash
@@ -35,10 +35,6 @@ class Identity < ActiveRecord::Base
   end
 
   def provider_name
-    case provider
-      when 'google_oauth2' then 'Google+'
-      when 'open_id' then 'OpenID'
-      else provider.titleize
-    end
+    PROVIDER_PAIRS.key?(provider) ? PROVIDER_PAIRS[provider] : provider.titleize
   end
 end

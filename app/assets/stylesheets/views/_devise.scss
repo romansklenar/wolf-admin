@@ -110,6 +110,9 @@
         background-color: $google;
         border-color: darken($google, 7%)
       }
+      .fa-google_oauth2::before {
+        content: "\f1a0";
+      }
     }
 
     .fields {

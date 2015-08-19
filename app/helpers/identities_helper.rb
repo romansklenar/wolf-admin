@@ -11,7 +11,7 @@ module IdentitiesHelper
   end
 
   def authenticate_link(provider, text: "Sign in")
-    link_to "#{fa_icon(provider)} &nbsp; #{text} via #{provider.titleize}".html_safe, user_omniauth_authorize_path(provider), class: "btn btn-primary btn-lg #{provider}"
+    link_to "#{fa_icon(provider)} &nbsp; #{text}".html_safe, user_omniauth_authorize_path(provider), class: "btn btn-primary btn-lg #{provider}"
   end
 
 end
