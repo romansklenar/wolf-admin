@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  include HasName
+  
   ROLE_PAIRS  = { 'administrator' => 'Administrator', 'member' => 'Member' }
   LOCALE_PAIRS = { 'en' => 'English', 'cs' => 'Czech' }
   TIME_ZONE_PAIRS = ActiveSupport::TimeZone::MAPPING
@@ -12,7 +14,7 @@ class User < ActiveRecord::Base
 
   has_many :identities, dependent: :destroy
 
-  validates :name, :locale, :time_zone, presence: true
+  validates :first_name, :last_name, :locale, :time_zone, presence: true
   validates :role, inclusion: { in: ROLE_PAIRS.keys }, allow_blank: true, if: 'role.present?'
   validates :locale, inclusion: { in: LOCALE_PAIRS.keys }, if: 'locale.present?'
   validates :time_zone, inclusion: { in: TIME_ZONE_PAIRS.keys }, if: 'time_zone.present?'
@@ -27,8 +29,6 @@ class User < ActiveRecord::Base
       record.password = Devise.friendly_token[0,20]
     end
   end
-  
-  alias_attribute :display_name, :name
 
   def assign_role
     add_role(role) if role.present?
@@ -47,4 +47,8 @@ class User < ActiveRecord::Base
   end
 
   delegate :can?, :cannot?, to: :ability
+  
+  def gravatar_url(size: 50)
+    "http://gravatar.com/avatar/#{Digest::MD5.hexdigest(email.downcase)}.png?d=mm&s=#{size if size}"
+  end
 end

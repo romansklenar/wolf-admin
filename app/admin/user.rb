@@ -4,9 +4,10 @@ ActiveAdmin.register User do
   menu priority: 100
   # actions :all, except: [:new]
 
-  permit_params :name, :email, :password, :password_confirmation, :locale, :time_zone, :role
+  permit_params :first_name, :last_name, :full_name, :email, :password, :password_confirmation, :locale, :time_zone, :role
 
-  filter :name
+  filter :first_name
+  filter :last_name
   filter :email
   filter :locale, as: :select, collection: -> { User::LOCALE_PAIRS.invert }
   filter :time_zone, as: :select, collection: -> { time_zone_options_for_select(params[:q].fetch(:time_zone_eq)) }
@@ -18,7 +19,7 @@ ActiveAdmin.register User do
     selectable_column
     id_column
     column :email
-    column :name
+    column :full_name
     column :locale
     column :time_zone
     column :current_sign_in_at
@@ -30,7 +31,7 @@ ActiveAdmin.register User do
   show do
     attributes_table do
       row :id
-      row :name
+      row :full_name
       row :email
       row :locale
       row :time_zone
@@ -58,7 +59,8 @@ ActiveAdmin.register User do
 
   form do |f|
     f.inputs title: :user_details do
-      f.input :name
+      f.input :first_name
+      f.input :last_name
       f.input :email
       f.input :locale, as: :select, collection: User::LOCALE_PAIRS.invert, prompt: true
       f.input :time_zone, as: :select, collection: time_zone_options_for_select(f.object.time_zone), prompt: true

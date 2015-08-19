@@ -3,7 +3,8 @@ class DeviseCreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       ## Credentials
       t.string :type
-      t.string :name
+      t.string :first_name
+      t.string :last_name
       t.string :locale
       t.string :time_zone
       

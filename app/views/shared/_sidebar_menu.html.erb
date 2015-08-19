@@ -1,9 +1,9 @@
 <div id="sidebar-default" class="main-sidebar fix-scroll">
   <div class="current-user">
     <%= link_to "#", class: "name" do %>
-      <%= image_tag "avatars/1.jpg", class: "avatar" %>
+      <%= image_tag current_user.gravatar_url, class: "avatar" %>
       <span>
-        <%= fa_icon('chevron-down', text: "John Smith", reverse: true) %>
+        <%= fa_icon('chevron-down', text: current_user.display_name, reverse: true) %>
       </span>
     <% end %>
     
