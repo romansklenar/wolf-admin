@@ -1,5 +1,6 @@
 <%= render layout: "layouts/base" do %>
 <body id="devise" class="<%= yield :body_class %>" data-view-class="<%= javascript_view_class %>">
+  <%= render partial: 'shared/flashes' %>
   <div class="bg clear">
     <%= yield %>
   </div>

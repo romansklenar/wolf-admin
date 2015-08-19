@@ -43,7 +43,11 @@
       font-size: 26px;
     }
   }
-  
+
+  .alert {
+    margin-bottom: 0;
+  }
+
   .logo {
     text-align: center;
     display: block;
@@ -72,7 +76,7 @@
   }
 
   .content {
-    max-width: 460px;
+    max-width: 480px;
     margin: 0 auto;
     margin-top: 40px;
     padding: 42px 48px;
@@ -83,6 +87,29 @@
     @media (max-width: $maxSmall) {
       max-width: 90%;
       padding: 35px;
+    }
+    
+    .btn {
+      &.facebook, &.twitter, &.linkedin, &.google, &.google_oauth2 {
+        font-size: 16px;
+        padding: 6px 10px;
+      }
+      &.facebook {
+        background-color: $facebook;
+        border-color: darken($facebook, 7%)
+      }
+      &.twitter {
+        background-color: $twitter;
+        border-color: darken($twitter, 7%)
+      }
+      &.linkedin {
+        background-color: $linkedin;
+        border-color: darken($linkedin, 7%)
+      }
+      &.google, &.google_oauth2 {
+        background-color: $google;
+        border-color: darken($google, 7%)
+      }
     }
 
     .fields {

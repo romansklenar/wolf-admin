@@ -44,6 +44,15 @@
       <%= f.submit "Sign up", class: "btn btn-success btn-lg" %>
     </div>
   <% end %>
+
+  <hr>
+
+  <p class="text-center lead">Sign up using your social newtwork accounts<br>and follow the process.</p>
+  <p class="text-center">
+    <% Identity::PROVIDERS.each do |provider| %>
+      <%= authenticate_link(provider, text: "Sign up") %>
+    <% end %>
+  </p>
 </div>
 
 <div class="bottom-wrapper">

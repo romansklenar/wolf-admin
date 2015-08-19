@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   # devise_for :administrators, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  
+
   devise_for :users, controllers: {
     confirmations:      "users/devise/confirmations",
-    # omniauth_callbacks: "users/devise/omniauth_callbacks",
+    omniauth_callbacks: "users/devise/omniauth_callbacks",
     passwords:          "users/devise/passwords",
     registrations:      "users/devise/registrations",
     sessions:           "users/devise/sessions",
