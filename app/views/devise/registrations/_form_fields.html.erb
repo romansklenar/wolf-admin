@@ -1,3 +1,10 @@
+<% if f.object.temp_email? && f.object.sign_in_count <= 1 %>
+  <div class="alert alert-info" role="alert">
+    Since this is your first login please provide us your <strong>valid email address</strong> and <strong>setup your password</strong>.
+  </div>
+  <br />
+<% end %>
+
 <div class="fields">
   <%= f.label :full_name, "Your name" %>
   <%= f.text_field :full_name, class: "form-control", placeholder: "John Doe" %>
@@ -6,11 +13,10 @@
 <div class="fields">
   <%= f.label :email, "Your email" %>
   <%= f.email_field :email, class: "form-control", placeholder: "john.doe@example.com" %>
+  <% if devise_mapping.confirmable? && f.object.pending_reconfirmation? %>
+    <em>Currently waiting confirmation for: <%= f.object.unconfirmed_email %></em>
+  <% end %>
 </div>
-
-<% if devise_mapping.confirmable? && f.object.pending_reconfirmation? %>
-  <div>Currently waiting confirmation for: <%= f.object.unconfirmed_email %></div>
-<% end %>
 
 <div class="fields">
   <%= f.label :password, "Password" %>
