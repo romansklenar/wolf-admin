@@ -10,18 +10,14 @@
   <% end %>
 </div>
 
-
-<p class="text-center lead">Your social network accounts</p>
-<p class="text-center">
-  <% Identity::PROVIDER_PAIRS.each do |provider, name| %>
-    <%= link_or_unlink_identity_link(resource, provider, text: "#{name}") %>
-  <% end %>
-</p>
+<% unless resource.incomplete_registration? %>
+  <p class="text-center lead">Your social network accounts</p>
+  <p class="text-center">
+    <% Identity::PROVIDER_PAIRS.each do |provider, name| %>
+      <%= link_or_unlink_identity_link(resource, provider, text: "#{name}") %>
+    <% end %>
+  </p>
+<% end %>
 
 <div class="bottom-wrapper">
-  <div class="message">
-    <p class="text-center">
-      <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
-    </p>
-  </div>
 </div>

@@ -10,7 +10,9 @@ Rails.application.routes.draw do
     sessions:           "users/devise/sessions",
     unlocks:            "users/devise/unlocks"
   }
-  
+  resources :identities, only: :destroy
+
+
   
   # you can remove template routes when there is no use for them anymore
   draw :pages
