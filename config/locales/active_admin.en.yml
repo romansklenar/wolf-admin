@@ -1,6 +1,6 @@
 en:
   active_admin:
-    dashboard: Home
+    dashboard: Dashboard
 
     # grep -r "buttons" * | grep "app/admin"
     buttons:

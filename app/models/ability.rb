@@ -23,7 +23,7 @@ class Ability
 
   # Adjusts permissions for virtual _guest_ role
   def guest
-    can :read, ActiveAdmin::Page, name: "Home"
+    can :read, ActiveAdmin::Page, name: "Dashboard"
     can [:read, :update], User, id: user.id
   end
 
