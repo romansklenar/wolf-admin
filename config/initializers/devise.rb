@@ -256,7 +256,7 @@ Devise.setup do |config|
 
   google = Rails.application.secrets.google.symbolize_keys
   config.omniauth :google_oauth2, google[:client_id], google[:client_secret],
-    scope: 'profile', image_aspect_ratio: 'square', image_size: 48, access_type: 'online'
+    scope: 'email,profile', image_aspect_ratio: 'square', image_size: 48, access_type: 'online'
 
   # linkedin = Rails.application.secrets.linkedin.symbolize_keys
   # config.omniauth :linkedin, linkedin[:api_key], linkedin[:secret_key],

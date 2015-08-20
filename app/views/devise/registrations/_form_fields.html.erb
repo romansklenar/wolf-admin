@@ -1,0 +1,50 @@
+<div class="fields">
+  <%= f.label :full_name, "Your name" %>
+  <%= f.text_field :full_name, class: "form-control", placeholder: "John Doe" %>
+</div>
+
+<div class="fields">
+  <%= f.label :email, "Your email" %>
+  <%= f.email_field :email, class: "form-control", placeholder: "john.doe@example.com" %>
+</div>
+
+<% if devise_mapping.confirmable? && f.object.pending_reconfirmation? %>
+  <div>Currently waiting confirmation for: <%= f.object.unconfirmed_email %></div>
+<% end %>
+
+<div class="fields">
+  <%= f.label :password, "Password" %>
+  <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+  <% end %>
+  <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Password" %>
+</div>
+
+<div class="fields">
+  <%= f.label :password_confirmation, "Confirm new password" %>
+  <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: "Confirm password" %>
+</div>
+
+<% if f.object.persisted? && f.object.pending_reconfirmation? %>
+<div class="fields">
+  <%= f.label :current_password %>
+  <em>(we need your current password to confirm your changes)</em>
+  <%= f.password_field :current_password, autocomplete: "off", class: "form-control" %>
+</div>
+<% end %>
+
+<hr>
+
+<div class="fields">
+  <%= f.label :locale, "Preferred language" %>
+  <%= f.select :locale, User::LOCALE_PAIRS.invert, { prompt: true, selected: f.object.locale || browser_locale }, class: "form-control" %>
+</div>
+
+<div class="fields">
+  <%= f.label :time_zone, "Time zone" %>
+  <%= f.select :time_zone, time_zone_options_for_select(f.object.time_zone || browser_time_zone), { prompt: true }, class: "form-control" %>
+</div>
+
+<div class="actions">
+  <%= f.submit f.object.persisted? ? "Update account" : "Sign up", class: "btn btn-success btn-lg" %>
+</div>

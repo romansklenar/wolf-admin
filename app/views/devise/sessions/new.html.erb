@@ -18,7 +18,7 @@
     </div>
     
     <% if devise_mapping.rememberable? -%>
-      <div class="info">
+      <div class="fields">
         <label><%= f.check_box :remember_me %> <%= f.label :remember_me %></label>
       </div>
     <% end -%>
@@ -27,16 +27,16 @@
       <%= f.submit "Sign in", class: "btn btn-success btn-lg" %>
     </div>
   <% end %>
-
-  <hr>
-
-  <p class="text-center lead">Sign in using your social newtwork accounts.</p>
-  <p class="text-center">
-    <% Identity::PROVIDER_PAIRS.each do |provider, name| %>
-      <%= authenticate_link(provider, text: "Sign in via #{name}") %>
-    <% end %>
-  </p>
 </div>
+
+
+<p class="text-center lead">Sign in using your social newtwork accounts</p>
+<p class="text-center">
+  <% Identity::PROVIDER_PAIRS.each do |provider, name| %>
+    <%= authenticate_link(provider, text: "Sign in via #{name}") %>
+  <% end %>
+</p>
+
 
 <div class="bottom-wrapper">
   <div class="message">

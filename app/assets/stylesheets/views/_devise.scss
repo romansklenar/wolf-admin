@@ -88,32 +88,6 @@
       max-width: 90%;
       padding: 35px;
     }
-    
-    .btn {
-      &.facebook, &.twitter, &.linkedin, &.google, &.google_oauth2 {
-        font-size: 16px;
-        padding: 6px 10px;
-      }
-      &.facebook {
-        background-color: $facebook;
-        border-color: darken($facebook, 7%)
-      }
-      &.twitter {
-        background-color: $twitter;
-        border-color: darken($twitter, 7%)
-      }
-      &.linkedin {
-        background-color: $linkedin;
-        border-color: darken($linkedin, 7%)
-      }
-      &.google, &.google_oauth2 {
-        background-color: $google;
-        border-color: darken($google, 7%)
-      }
-      .fa-google_oauth2::before {
-        content: "\f1a0";
-      }
-    }
 
     .fields {
       margin-bottom: 20px;
@@ -138,6 +112,36 @@
       margin-top: 40px;
       text-align: center;
       margin-bottom: 10px;
+    }
+  }
+  
+  p.lead {
+    margin: 60px 0 20px;
+  }
+
+  .btn {
+    &.facebook, &.twitter, &.linkedin, &.google, &.google_oauth2 {
+      font-size: 18px;
+      padding: 6px 10px;
+    }
+    &.facebook {
+      background-color: $facebook;
+      border-color: darken($facebook, 7%)
+    }
+    &.twitter {
+      background-color: $twitter;
+      border-color: darken($twitter, 7%)
+    }
+    &.linkedin {
+      background-color: $linkedin;
+      border-color: darken($linkedin, 7%)
+    }
+    &.google, &.google_oauth2 {
+      background-color: $google;
+      border-color: darken($google, 7%)
+    }
+    .fa-google_oauth2::before {
+      content: "\f1a0";
     }
   }
 
@@ -166,5 +170,13 @@
 #devise.sign_up {
   .content {
     max-width: 620px;
+  }
+}
+
+#devise.sign_in {
+  .content {
+    .actions {
+      margin-top: 20px;
+    }
   }
 }

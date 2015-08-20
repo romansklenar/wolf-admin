@@ -6,54 +6,18 @@
 <div class="content">
   <%= semantic_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
-    
-    <div class="fields">
-      <%= f.label :email, "Your email" %>
-      <%= f.email_field :email, class: "form-control", placeholder: "Email" %>
-    </div>
-    
-    <div class="fields">
-      <%= f.label :full_name, "Your name" %>
-      <%= f.text_field :full_name, class: "form-control", placeholder: "John Doe" %>
-    </div>
-    
-    <div class="fields">
-      <%= f.label :locale, "Preferred language" %>
-      <%= f.select :locale, User::LOCALE_PAIRS.invert, { prompt: true, selected: f.object.locale || browser_locale }, class: "form-control" %>
-    </div>
-    
-    <div class="fields">
-      <%= f.label :time_zone, "Time zone" %>
-      <%= f.select :time_zone, time_zone_options_for_select(f.object.time_zone || browser_time_zone), { prompt: true }, class: "form-control" %>
-    </div>
-    
-    <div class="fields">
-      <%= f.label :password, "Password" %><br />
-      <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Password" %>
-    </div>
-
-    <div class="fields">
-      <%= f.label :password_confirmation, "Confirm new password" %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: "Confirm password" %>
-      <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em><br />
-      <% end %>
-    </div>
-
-    <div class="actions">
-      <%= f.submit "Sign up", class: "btn btn-success btn-lg" %>
-    </div>
+    <%= render 'form_fields', f: f %>
   <% end %>
-
-  <hr>
-
-  <p class="text-center lead">Sign up using your social newtwork accounts<br>and follow the process.</p>
-  <p class="text-center">
-    <% Identity::PROVIDER_PAIRS.each do |provider, name| %>
-      <%= authenticate_link(provider, text: "Sign up via #{name}") %>
-    <% end %>
-  </p>
 </div>
+
+
+<p class="text-center lead">Or sign up using your social newtwork accounts<br>and follow the process</p>
+<p class="text-center">
+  <% Identity::PROVIDER_PAIRS.each do |provider, name| %>
+    <%= authenticate_link(provider, text: "Sign up via #{name}") %>
+  <% end %>
+</p>
+
 
 <div class="bottom-wrapper">
   <div class="message">
