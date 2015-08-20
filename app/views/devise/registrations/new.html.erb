@@ -11,7 +11,7 @@
 </div>
 
 
-<p class="text-center lead">Or sign up using your social newtwork accounts<br>and follow the process</p>
+<p class="text-center lead">Or sign up using your social network accounts<br>and follow the process</p>
 <p class="text-center">
   <% Identity::PROVIDER_PAIRS.each do |provider, name| %>
     <%= authenticate_link(provider, text: "Sign up via #{name}") %>

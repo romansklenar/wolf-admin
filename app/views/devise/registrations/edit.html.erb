@@ -11,7 +11,7 @@
 </div>
 
 
-<p class="text-center lead">Your social newtwork accounts</p>
+<p class="text-center lead">Your social network accounts</p>
 <p class="text-center">
   <% Identity::PROVIDER_PAIRS.each do |provider, name| %>
     <%= link_or_unlink_identity_link(resource, provider, text: "#{name}") %>

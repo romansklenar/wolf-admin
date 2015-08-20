@@ -30,7 +30,7 @@
 </div>
 
 
-<p class="text-center lead">Sign in using your social newtwork accounts</p>
+<p class="text-center lead">Sign in using your social network accounts</p>
 <p class="text-center">
   <% Identity::PROVIDER_PAIRS.each do |provider, name| %>
     <%= authenticate_link(provider, text: "Sign in via #{name}") %>
