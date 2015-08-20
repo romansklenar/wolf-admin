@@ -39,6 +39,13 @@ class Users::Devise::RegistrationsController < Devise::RegistrationsController
   # end
 
   protected
+  
+  # By default we want to require a password checks on update.
+  def update_resource(resource, params)
+    resource_updated = resource.update_with_password(params)
+    sign_in resource, bypass: true
+    resource_updated
+  end
 
   # If you have extra params to permit, append them to the sanitizer.
   def configure_sign_up_params
@@ -63,4 +70,9 @@ class Users::Devise::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+
+  # The default url to be used after updating a resource.
+  def after_update_path_for(resource)
+    edit_user_registration_path(resource)
+  end
 end

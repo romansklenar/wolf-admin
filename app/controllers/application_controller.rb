@@ -1,11 +1,12 @@
 class ApplicationController < ActionController::Base
+  include Localization
+
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-
-  include Localization
-
+  
   before_action :authenticate_user!, unless: -> { user_signed_in? }
+  before_action :ensure_complete_registration, unless: :devise_controller?
   helper_method :administrator_signed_in?, :current_administrator
 
   rescue_from CanCan::AccessDenied do |exception|
@@ -23,10 +24,20 @@ class ApplicationController < ActionController::Base
       when resource.has_role?(:administrator)
         sign_in :administrator, resource
         admin_root_path
+      when resource.incomplete_registration?
+        edit_user_registration_path
       else
         root_path
     end
   end
+
+  def ensure_complete_registration
+    # Redirect to the 'finish signup' page if the user email hasn't been confirmed yet or is invalid
+    if current_user && current_user.incomplete_registration?
+      redirect_to edit_user_registration_path
+    end
+  end
+
 
   protected
 

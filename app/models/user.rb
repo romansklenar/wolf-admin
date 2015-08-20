@@ -62,4 +62,29 @@ class User < ActiveRecord::Base
   def temp_email?
     email.match(TEMP_EMAIL_REGEX) ? true : false
   end
+  
+  def incomplete_registration?
+    !confirmed? || temp_email? || invalid?
+  end
+  
+  # This method also rejects the password field if it is blank (allowing
+  # users to change relevant information like the e-mail without changing
+  # their password). In case the password field is rejected, the confirmation
+  # is also rejected as long as it is also blank.
+  def update_with_password(params, *options)
+    current_password = params.delete(:current_password)
+
+    if params[:password].blank?
+      params.delete(:password)
+      params.delete(:password_confirmation) if params[:password_confirmation].blank?
+    end
+
+    result = unless update_attributes(params, *options)
+      self.assign_attributes(params, *options)
+      self.valid?
+    end
+
+    clean_up_passwords
+    result
+  end
 end

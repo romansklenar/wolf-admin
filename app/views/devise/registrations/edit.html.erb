@@ -1,7 +1,7 @@
 <%= content_for :body_class, "sign_up" %>
 
 <%= link_to fa_icon('users'), root_url, class: "logo" %>
-<h3>Finish your registration</h3>
+<h3><% if resource.incomplete_registration? %>Finish your registration<% else %>Update account<% end %></h3>
 
 <div class="content">
   <%= semantic_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: 'form-horizontal' }) do |f| %>
