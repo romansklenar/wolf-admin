@@ -25,14 +25,6 @@
   <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: "Confirm password" %>
 </div>
 
-<% if f.object.persisted? && f.object.pending_reconfirmation? %>
-<div class="fields">
-  <%= f.label :current_password %>
-  <em>(we need your current password to confirm your changes)</em>
-  <%= f.password_field :current_password, autocomplete: "off", class: "form-control" %>
-</div>
-<% end %>
-
 <hr>
 
 <div class="fields">

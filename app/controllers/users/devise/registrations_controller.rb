@@ -58,7 +58,7 @@ class Users::Devise::RegistrationsController < Devise::RegistrationsController
   end
 
   def resource_attributes
-    %i[first_name last_name full_name email locale time_zone role password password_confirmation current_password]
+    %i[first_name last_name full_name email locale time_zone role password password_confirmation]
   end
 
   # The path used after sign up.

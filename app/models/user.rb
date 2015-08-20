@@ -72,8 +72,6 @@ class User < ActiveRecord::Base
   # their password). In case the password field is rejected, the confirmation
   # is also rejected as long as it is also blank.
   def update_with_password(params, *options)
-    current_password = params.delete(:current_password)
-
     if params[:password].blank?
       params.delete(:password)
       params.delete(:password_confirmation) if params[:password_confirmation].blank?
