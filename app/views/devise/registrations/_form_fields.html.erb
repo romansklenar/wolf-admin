@@ -1,11 +1,3 @@
-<% if f.object.temp_email? && f.object.sign_in_count <= 1 %>
-  <div class="alert alert-info text-center" role="alert">
-    Since this is your first login please provide us <br />
-    <strong>your valid email address</strong> and <strong>setup your password</strong>.
-  </div>
-  <br />
-<% end %>
-
 <div class="fields">
   <%= f.label :full_name, "Your name" %>
   <%= f.text_field :full_name, class: "form-control", placeholder: "John Doe" %>

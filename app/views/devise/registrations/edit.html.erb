@@ -5,6 +5,14 @@
 
 <div class="content">
   <%= semantic_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: 'form-horizontal' }) do |f| %>
+    <% if f.object.temp_email? && f.object.sign_in_count <= 1 %>
+      <div class="alert alert-info text-center" role="alert">
+        Since this is your first login please provide us <br />
+        <strong>your valid email address</strong> and <strong>setup your password</strong>.
+      </div>
+      <br />
+    <% end %>
+    
     <%= devise_error_messages! %>
     <%= render 'form_fields', f: f %>
   <% end %>
