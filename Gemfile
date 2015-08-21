@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.2.2'
 
+# dotenv must be loaded first to load environment variables from .env file
+gem 'dotenv-rails', groups: [:development, :test]
+
 gem 'rails', '~> 4.2.0'
 gem 'thin'
 gem 'pg'

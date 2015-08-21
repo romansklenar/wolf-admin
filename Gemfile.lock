@@ -119,6 +119,10 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    dotenv (2.0.2)
+    dotenv-rails (2.0.2)
+      dotenv (= 2.0.2)
+      railties (~> 4.0)
     draper (2.1.0)
       actionpack (>= 3.0)
       activemodel (>= 3.0)
@@ -395,6 +399,7 @@ DEPENDENCIES
   compass-rails
   database_cleaner
   devise
+  dotenv-rails
   draper
   factory_girl_rails
   faker
