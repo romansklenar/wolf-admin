@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   include HasName
   include HasImage
+  include Paranoid
   
   TEMP_EMAIL_PREFIX = 'change-me'
   TEMP_EMAIL_REGEX  = /\Achange-me/
