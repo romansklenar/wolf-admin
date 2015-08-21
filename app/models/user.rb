@@ -69,7 +69,7 @@ class User < ActiveRecord::Base
     !confirmed? || temp_email? || invalid?
   end
   
-  # This method also rejects the password field if it is blank (allowing
+  # Devise method which rejects the password field if it is blank (allowing
   # users to change relevant information like the e-mail without changing
   # their password). In case the password field is rejected, the confirmation
   # is also rejected as long as it is also blank.
@@ -82,5 +82,15 @@ class User < ActiveRecord::Base
     assign_attributes(params, *options) unless update_attributes(params, *options)
     clean_up_passwords
     valid?
+  end
+
+  # Devise method for check if model is active
+  def active_for_authentication?
+    super && !destroyed?
+  end
+
+  # Devise asks the reason why model is inactive
+  def inactive_message
+    !destroyed? ? super : :deleted
   end
 end
