@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 admin = User.new(full_name: "Dummy Admin", email: "admin@example.com", locale: "en", time_zone: "Prague", password: "topsecret", password_confirmation: "topsecret", role: "administrator")
-admin.confirm!
+admin.confirm
 admin.save!
 
 user = User.new(full_name: "John Doe", email: "john.doe@example.com", locale: "en", time_zone: "Prague", password: "topsecret", password_confirmation: "topsecret")
-user.confirm!
+user.confirm
 user.save!
