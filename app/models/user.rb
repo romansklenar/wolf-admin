@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
 
   has_many :identities, dependent: :destroy
   
-  validates :email, format: { without: TEMP_EMAIL_REGEX }, on: :update
+  validates :email, format: { without: TEMP_EMAIL_REGEX }, on: :update, unless: :pending_reconfirmation?
   validates :first_name, :last_name, presence: true
   validates :role, inclusion: { in: ROLE_PAIRS.keys }, allow_blank: true, if: 'role.present?'
   with_options unless: :temp_email? do |user|
@@ -77,12 +77,8 @@ class User < ActiveRecord::Base
       params.delete(:password_confirmation) if params[:password_confirmation].blank?
     end
 
-    result = unless update_attributes(params, *options)
-      self.assign_attributes(params, *options)
-      self.valid?
-    end
-
+    assign_attributes(params, *options) unless update_attributes(params, *options)
     clean_up_passwords
-    result
+    valid?
   end
 end

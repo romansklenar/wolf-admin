@@ -73,6 +73,6 @@ class Users::Devise::RegistrationsController < Devise::RegistrationsController
 
   # The default url to be used after updating a resource.
   def after_update_path_for(resource)
-    edit_user_registration_path(resource)
+    edit_user_registration_path
   end
 end
