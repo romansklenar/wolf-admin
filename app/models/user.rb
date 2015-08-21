@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
 
   has_many :identities, dependent: :destroy
   
+  validates :email, presence: true, email: true
   validates :email, format: { without: TEMP_EMAIL_REGEX }, on: :update, unless: :pending_reconfirmation?
   validates :first_name, :last_name, presence: true
   validates :role, inclusion: { in: ROLE_PAIRS.keys }, allow_blank: true, if: 'role.present?'

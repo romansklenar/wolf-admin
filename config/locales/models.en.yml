@@ -26,6 +26,10 @@ en:
     _clear: Clear
     _destroy: Destroy?
 
+  errors:
+    messages:
+      url: is not a valid URL
+      email: is not a valid email address
 
   # activemodel:
   #   errors:

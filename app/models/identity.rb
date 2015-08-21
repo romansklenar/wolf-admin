@@ -6,6 +6,8 @@ class Identity < ActiveRecord::Base
 
   belongs_to :user
 
+  validates :email, email: true, allow_blank: true
+  validates :avatar_url, url: true, allow_blank: true
   validates :provider, inclusion: { in: PROVIDER_PAIRS.keys }, presence: true
   validates :uid, uniqueness: { scope: :provider }, presence: true
 
